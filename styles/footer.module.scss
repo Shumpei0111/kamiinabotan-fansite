@@ -1,0 +1,21 @@
+.footer {
+	font-size: 1.2rem;
+	padding: 24px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #cecece;
+	margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+	background-color: white;
+
+	a {
+		text-decoration: underline;
+	}
+
+	.madeBy {
+		color: #a4a4a4;
+		font-size: 1rem;
+	}
+}

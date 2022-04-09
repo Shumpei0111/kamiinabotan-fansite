@@ -1,9 +1,9 @@
 {
     "author": "塀",
     "author_sns": [
-        { "twitter": "https://twitter.com/tonarinohey" },
-        { "instagram": "https://www.instagram.com/tonarinohey/" },
-        { "blog": "https://tonarinohey.hatenablog.com/" }
+        { "name": "Twitter", "url": "https://twitter.com/tonarinohey" },
+        { "name": "Instagram", "url": "https://www.instagram.com/tonarinohey/" },
+        { "name": "blog", "url": "https://tonarinohey.hatenablog.com/" }
     ],
     "title": "上伊那ぼたん、酔へる姿は百合の花",
     "kana": "かみいなぼたん、よへるすがたはゆりのはな",
@@ -15,5 +15,7 @@
     "pubulished_category": "ヤングチャンピオン・コミックス",
     "category_by_media": "大人",
     "genre_by_media": ["ほのぼの", "百合", "料理・グルメ"],
-    "description_by_media": "上伊那ぼたんは２０歳の大学生。¥n入った寮の歓迎パーティで寮長のいぶきにハイボールを飲ませてもらうと酔った勢いでいぶきに絡み始めて・・・?¥n酔っ払いいちゃいちゃガールズコメディ！"
+    "description_by_media": "上伊那ぼたんは２０歳の大学生。¥n入った寮の歓迎パーティで寮長のいぶきにハイボールを飲ませてもらうと酔った勢いでいぶきに絡み始めて・・・?¥n酔っ払いいちゃいちゃガールズコメディ！",
+
+    "site_description": "このサイトはマンガクロスで連載中の「上伊那ぼたん、酔へる姿は百合の花」のファンサイトです。原作者様ならびに秋田書店様とは一切関係ございません。"
 }

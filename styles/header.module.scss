@@ -1,0 +1,37 @@
+@use './variables.module.scss' as v;
+
+.header {    
+    .alert {
+        overflow: hidden;
+        color: white;
+        background-color: v.$mainBlue;
+        padding: 8px 0;
+        font-weight: bold;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+    }
+
+    .marqueeText {
+        white-space: nowrap;
+        width: fit-content;
+        overflow-y: hidden;
+    }
+
+    .siteTitleWrapper {
+        padding: 24px 0;
+        position: fixed;
+        background-color: white;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        width: 100%;
+
+        h1 {
+            margin-bottom: 6px;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}

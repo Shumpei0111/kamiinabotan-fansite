@@ -2,11 +2,103 @@
     "data": [
         {
             "id": 1,
-            "title": "",
+            "title": "#1",
             "description": "",
             "body": "",
             "character_id": [],
-            "liquor_id": []
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
+        },
+        {
+            "id": 2,
+            "title": "#2",
+            "description": "",
+            "body": "",
+            "character_id": [],
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
+        },
+        {
+            "id": 3,
+            "title": "#3",
+            "description": "",
+            "body": "",
+            "character_id": [],
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
+        },
+        {
+            "id": 4,
+            "title": "#4",
+            "description": "",
+            "body": "",
+            "character_id": [],
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
+        },
+        {
+            "id": 5,
+            "title": "#5",
+            "description": "",
+            "body": "",
+            "character_id": [],
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
+        },
+        {
+            "id": 6,
+            "title": "#6",
+            "description": "",
+            "body": "",
+            "character_id": [],
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
+        },
+        {
+            "id": 7,
+            "title": "#7",
+            "description": "",
+            "body": "",
+            "character_id": [],
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
+        },
+        {
+            "id": 8,
+            "title": "#8",
+            "description": "",
+            "body": "",
+            "character_id": [],
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
+        },
+        {
+            "id": 9,
+            "title": "#9",
+            "description": "",
+            "body": "",
+            "character_id": [],
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
+        },
+        {
+            "id": 10,
+            "title": "#9.5",
+            "description": "",
+            "body": "",
+            "character_id": [],
+            "liquor_id": [],
+            "location_name": "",
+            "location_latlong": []
         }
     ]
 }
