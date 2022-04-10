@@ -4,9 +4,13 @@
     width: 100%;
     margin-top: 127px;
 
+    .intro {
+        margin-bottom: 64px;
+    }
+
     .charaWrapper {
         .charaItem {
-            margin-bottom: 32px;
+            margin-bottom: 100px;
         }
     }
 
@@ -26,5 +30,19 @@
 
     .charaIntro {
         margin-top: 6px;
+        margin-bottom: 8px;
+    }
+
+    .charaImage {
+        margin: 24px 0;
+        &__image {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 8px;
+        }
+
+        &__inyouText {
+            font-size: 1.2rem;
+        }
     }
 }
