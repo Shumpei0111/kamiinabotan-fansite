@@ -47,6 +47,10 @@ a {
   box-sizing: border-box;
 }
 
+p {
+  line-height: 1.4;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -54,6 +58,17 @@ h1 {
 h2 {
   font-size: 1.8rem;
   margin-bottom: 16px;
+  position: relative;
+}
+
+.head__en {
+  position: absolute;
+  color: #45D2DB;
+  font-family: 'Homemade Apple', cursive;
+  top: -10px;
+  z-index: -1;
+  font-size: 4rem;
+  opacity: .4;
 }
 
 h3 {

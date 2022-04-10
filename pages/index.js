@@ -6,6 +6,7 @@ import HomeContents from '../components/homeContents';
 import styles from '../styles/Home.module.scss';
 
 import master from '../storage/master.json';
+import TwitterTimeline from '../components/twitterTimeline';
 
 
 export default function Home() {
@@ -45,30 +46,20 @@ export default function Home() {
 					<section className={styles.sectionWrapper}>
 						<h2>公式Twitter</h2>
 						<div className={styles.twitterTimeline}>
-							<a
-								className="twitter-timeline"
-								data-height="270"
-								data-theme="light"
-								data-align="center"
-								data-chrome="noheader nofooter transparent noborders"
-								href="https://twitter.com/kamiinabotan?ref_src=twsrc%5Etfw">
-								Tweets by kamiinabotan
-							</a>
-							<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+							<TwitterTimeline />
 						</div>
 					</section>
 
 					<section className={styles.sectionWrapper}>
 						<h2>作者紹介（敬称略）</h2>
 						<div>
-							<p>{master.author}</p>
+							<p className={styles.authName}>{master.author}</p>
 							<div>
-								<h3>SNS</h3>
-								<ul>
+								<ul className={styles.authSNSList}>
 									{
 										authSNS.map( sns => {
 											return (
-												<li key={sns.name}>
+												<li className={styles.authSNSItem} key={sns.name}>
 													<a className="underline" href={sns.url}>{sns.name}</a>
 												</li>
 											)

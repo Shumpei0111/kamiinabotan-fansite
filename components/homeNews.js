@@ -13,7 +13,7 @@ export default function HomeNews() {
                         return (
                             <li className={style.newsList__item} key={n.text}>
                                 <p className={style.newsDate}>{n.date}</p>
-                                <a className="underline" href={n.url} target="_blank" rel="noopener noreferrer">{n.text}</a>
+                                <a className="underline" href={n.url} target="_blank" rel="noopener noreferrer">{n.head}</a>
                             </li>
                         )
                     } )}

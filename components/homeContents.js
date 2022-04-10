@@ -6,11 +6,11 @@ export default function HomeContents() {
         <>
             <h2>コンテンツ</h2>
             <ul className={styles.contentsItems}>
-                <li className={styles.item}>
+                {/* <li className={styles.item}>
                     <Link href="/episode">
                         <a>エピソードを見る</a>
                     </Link>
-                </li>
+                </li> */}
                 <li className={styles.item}>
                     <Link href="/characters">
                         <a>キャラクターを見る</a>
