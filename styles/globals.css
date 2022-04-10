@@ -51,6 +51,16 @@ h1 {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -70,14 +80,23 @@ body {
   justify-content: center;
   align-items: center;
   margin: 80px auto;
-  width: 150px;
-  height: 80px;
+  width: 156px;
+  height: 94px;
   background-color: #45D2DB;
-  border-radius: 41% 59% 58% 42% / 37% 49% 51% 63%;
+  border-radius: 41% 59% 58% 42% / 45% 49% 51% 55%;
 }
 
 .backHomeLink {
   color: white;
   font-weight: bold;
   padding: 24px;
+}
+
+header .narrowView {
+  top: 0;
+  left: 0;
+  margin: auto !important;
+  padding: 16px !important;
+  z-index: 100;
+  border-bottom: 1px solid #cecece;
 }

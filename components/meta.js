@@ -11,9 +11,6 @@ export default function Meta() {
             <title>{SITE_FULL_TITLE}</title>
             <meta name="description" content={`マンガ「${product_title}」のファンサイトです。`} />
             <link rel="icon" href="/favicon.ico" />
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet"></link>
         </Head>
     )
 }

@@ -1,4 +1,5 @@
 import news from "../storage/news";
+import style from '../styles/Home.module.scss';
 
 export default function HomeNews() {
 	const _news = news.slice();
@@ -7,11 +8,11 @@ export default function HomeNews() {
         <>
             <h2>ニュース</h2>
             <div>
-                <ul>
+                <ul className={style.newsList}>
                     {_news.map( n => {
                         return (
-                            <li key={n.text}>
-                                <p>{n.date}</p>
+                            <li className={style.newsList__item} key={n.text}>
+                                <p className={style.newsDate}>{n.date}</p>
                                 <a className="underline" href={n.url} target="_blank" rel="noopener noreferrer">{n.text}</a>
                             </li>
                         )

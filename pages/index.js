@@ -23,10 +23,10 @@ export default function Home() {
 							<p className={styles.inyouText}>出典：「<a className="underline" href="https://mangacross.jp/comics/kamiinabotan" target="_blank" rel="noopener noreferrer">上伊那ぼたん、酔へる姿は百合の花</a>」マンガクロス（秋田書店）</p>
 						</div>
 						<div>
-							<p className={styles.siteDescription}>
-							<p className={styles.siteDescription__label}>はじめに</p>
+							<div className={styles.siteDescription}>
+								<p className={styles.siteDescription__label}>はじめに</p>
 								<p>{master.site_description}</p>
-							</p>
+							</div>
 						</div>
 					</section>
 
@@ -43,7 +43,19 @@ export default function Home() {
 					</section>
 
 					<section className={styles.sectionWrapper}>
-						<h2>作品詳細</h2>
+						<h2>公式Twitter</h2>
+						<div className={styles.twitterTimeline}>
+							<a
+								className="twitter-timeline"
+								data-height="270"
+								data-theme="light"
+								data-align="center"
+								data-chrome="noheader nofooter transparent noborders"
+								href="https://twitter.com/kamiinabotan?ref_src=twsrc%5Etfw">
+								Tweets by kamiinabotan
+							</a>
+							<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
+						</div>
 					</section>
 
 					<section className={styles.sectionWrapper}>
