@@ -1,6 +1,6 @@
 @use './variables.module.scss' as v;
 
-.header {    
+.header {
     .alert {
         overflow: hidden;
         color: white;
@@ -21,9 +21,7 @@
         padding: 24px 0;
         position: fixed;
         background-color: white;
-        margin-left: calc(-50vw + 50%);
-        margin-right: calc(-50vw + 50%);
-        width: 100%;
+        width: 100vw;
         transition: .2s;
 
         h1 {
@@ -31,8 +29,23 @@
             display: inline-block;
         }
 
+        .title_en {
+            position: relative;
+            font-size: 1.2rem;
+            display: block;
+            width: 230px;
+            top: 30%;
+        }
+
         p {
+            display: inline-block;
             font-size: 1.1rem;
+        }
+
+        .siteTitleItem {
+            display: inline-block;
+            max-width: 736px;
+            margin: 0 auto;
         }
     }
 }

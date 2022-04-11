@@ -2,10 +2,93 @@
     "data": [
         {
             "id": 1,
+            "name": "秩父麦酒",
+            "description": "第1巻の表紙でぼたんが手に持っているビール。第3話でもかなでが冷蔵庫から取り出すところが描かれている。また、第5話でも長瀞でやえかがみんなに振る舞うなど、作品でもよく登場するお酒である。",
+            "url": "https://chichibubeer.shop-pro.jp/?pid=162979014",
+            "marker_id": 1,
+            "imagePath": "https://img07.shop-pro.jp/PA01448/162/product/162979014_o3.jpg?cmsp_timestamp=20210828091808",
+            "imageInyou": "コグマのビール屋さん 秩父麦酒「あの花10周年記念 特別セット」"
+        },
+        {
+            "id": 2,
             "name": "ハイボール",
-            "description": "第1話でいぶきが1人でこっそり飲んでいたお酒。",
+            "description": "第1話でいぶきが1人でこっそり飲んでいたお酒。偶然ぼたんがそこに出くわしたことで物語が始まったきっかけのお酒でもある。",
             "url": "",
-            "marker_id": ""
+            "marker_id": null,
+            "imagePath": "",
+            "imageInyou": ""
+        },
+        {
+            "id": 3,
+            "name": "源作印 巨峰 ロゼ",
+            "description": "第2話でいぶきがぼたんの部屋に遊びにきた時に持ってきたお酒。",
+            "url": "http://chichibuwine.co.jp/lineup/2-4/",
+            "marker_id": 2,
+            "imagePath": "http://chichibuwine.co.jp/lineup/2-4/img.png",
+            "imageInyou": "秩父ワイン"
+        },
+        {
+            "id": 4,
+            "name": "ニッカ シングルモルト 宮城峡",
+            "description": "第2話で談話室に入ったぼたんが見つけたお酒の一つ。",
+            "url": "https://www.nikka.com/products/malt/yoichi_miyagikyo/",
+            "marker_id": 3,
+            "imagePath": "",
+            "imageInyou": ""
+        },
+        {
+            "id": 5,
+            "name": "HIBIKI 響",
+            "description": "第2話で談話室に入ったぼたんが見つけたお酒の一つ。",
+            "url": "https://www.suntory.co.jp/whisky/hibiki/",
+            "marker_id": 4,
+            "imagePath": "",
+            "imageInyou": ""
+        },
+        {
+            "id": 6,
+            "name": "純米大吟醸 「秩父錦」",
+            "description": "第2話でかなでがぼたんと一緒に飲んだお酒。かなでのお気に入り。",
+            "url": "https://chichibunishiki.com/meishu/",
+            "marker_id": 5,
+            "imagePath": "",
+            "imageInyou": ""
+        },
+        {
+            "id": 7,
+            "name": "大吟醸 「秩父錦」",
+            "description": "第6話でかなでがいぶきにプレゼントしたお酒。かなではいぶきと飲みたかったのだが、あえなく失敗。。",
+            "url": "https://chichibunishiki.com/meishu/",
+            "marker_id": 5,
+            "imagePath": "",
+            "imageInyou": ""
+        },
+        {
+            "id": 8,
+            "name": "スーパードライ",
+            "description": "「郡上先輩 お昼からお酒ですか？」",
+            "url": "https://www.asahibeer.co.jp/superdry/",
+            "marker_id": 6,
+            "imagePath": "",
+            "imageInyou": ""
+        },
+        {
+            "id": 9,
+            "name": "イチローズ・モルト＆グレーン・ホワイトラベル",
+            "description": "第6話でいぶきとかなでが酒屋で目にしたお酒の一つ。秩父蒸留所で作られた人気の国産ウィスキー。",
+            "url": "https://www.sasesaketen.com/products/detail/1313",
+            "marker_id": 7,
+            "imagePath": "",
+            "imageInyou": ""
+        },
+        {
+            "id": 10,
+            "name": "ニコレッロ ネッビオーロ ダルバ(Nicolello Nebbiolo d'Alba)",
+            "description": "第6話でいぶきとかなでが酒屋で目にしたフルボディのワイン。伝統的なワイナリー「カーサ・ヴィニコラ・ニコレッロ」で作られている。",
+            "url": "",
+            "marker_id": 8,
+            "imagePath": "",
+            "imageInyou": ""
         }
     ]
 }

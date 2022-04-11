@@ -22,19 +22,30 @@ export default function Episode() {
                             キャラクター一覧 | {SITE_FULL_TITLE}
                         </title>
                     </Meta>
-                    <main className={style.charaMain}>
+                    <div className={style.charaMain}>
                         <h2>
                             <p className="head__ja">キャラクター一覧</p>
                             <span className="head__en">Characters</span>
                         </h2>
-                        <div className={style.intro}>
+                        <p className={style.intro}>
                             秩父にある学生寮を舞台に、新入生で主人公の「ぼたん」や寮長の3年生の「いぶき」をはじめ、魅力的なキャラクターたちが暮らしています。
+                        </p>
+                        <div className={style.intro}>
+                            <ul className={style.charaNameList}>
+                                {
+                                    _characters.map( c => {
+                                        return (
+                                            <li className={style.charaNameList__item}><a className={style.charaNameList__name} href={`#${c.id}`}>{c.name}</a></li>
+                                        )
+                                    } )
+                                }
+                            </ul>
                         </div>
                         <div className={style.charaWrapper}>
                             {
                                 _characters.map( c => {
                                     return (
-                                        <div className={style.charaItem} key={c.id}>
+                                        <div id={c.id} className={style.charaItem} key={c.id}>
                                             <ruby>
                                                 <rt>{c.ruby}</rt>
                                                 <rb>{c.name}</rb>
@@ -56,7 +67,7 @@ export default function Episode() {
                                 } )
                             }
                         </div>
-                    </main>
+                    </div>
                 </>
             )}
         </Layout>

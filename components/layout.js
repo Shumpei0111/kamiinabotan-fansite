@@ -26,7 +26,7 @@ export default function Layout({ children }) {
             <Meta />
             <div id="__kamiinaBotan__root__">
                 <Header isLoading={loading} />
-                <main>{children}</main>
+                <main className="contents">{children}</main>
                     {
                         isIndexPage ? false :
                         <div className="backHome">                        

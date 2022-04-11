@@ -2,14 +2,39 @@
 
 .charaMain {
     width: 100%;
-    margin-top: 127px;
 
     .intro {
         margin-bottom: 64px;
     }
 
+    .charaNameList {
+        display: flex;
+        flex-wrap: wrap;
+
+        .charaNameList__name {
+            text-decoration: underline;
+        }
+
+        .charaNameList__item {
+            margin: 8px 0;
+        }
+
+        .charaNameList__item::after {
+            content: "/";
+            padding: 0 12px;
+        }
+
+        .charaNameList__item:last-of-type:after {
+            content: "";
+            padding: 0;
+        }
+
+    }
+
     .charaWrapper {
         .charaItem {
+            margin-top: -100px;
+            padding-top: 100px;
             margin-bottom: 100px;
         }
     }

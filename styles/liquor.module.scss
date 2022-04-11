@@ -1,0 +1,52 @@
+@use './variables.module.scss' as v;
+
+.intro {
+    margin-bottom: 64px;
+}
+
+.liquorContainer {
+
+    .liquorItemList {
+
+        .liquorItemList__item {
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid v.$mainGrey;
+            border-radius: 24px;
+
+            .item__name {
+                font-weight: bold;
+                margin-bottom: 16px;
+            }
+
+            .item__img {
+                padding: 16px 0;
+            }
+            
+            .item__imgInyou {
+                font-size: 1.2rem;
+            }
+        }
+
+        .makerInfo {
+            margin: 24px auto 0;
+            padding: 16px 24px;
+            background-color: #ECECEC;
+            font-size: 1.2rem;
+            border-radius: 10px;
+
+            .makerInfo__label {
+                text-decoration: underline;
+                margin-bottom: 4px;
+            }
+
+            .makerInfo__url {
+                display: inline;
+                word-break: break-all;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
