@@ -9,6 +9,8 @@ import styles from '../styles/Home.module.scss';
 import master from '../storage/master.json';
 import TwitterTimeline from '../components/twitterTimeline';
 
+import { LINE_STAMP_URL } from '../lib/constraint';
+
 
 export default function Home() {
 	const authSNS = master.author_sns.slice();
@@ -48,6 +50,17 @@ export default function Home() {
 						<h2>公式Twitter</h2>
 						<div className={styles.twitterTimeline}>
 							<TwitterTimeline />
+						</div>
+					</section>
+
+					<section className={styles.sectionWrapper}>
+						<h2>LINEスタンプ</h2>
+
+						<div className={styles.lineStamp}>
+							<a href={LINE_STAMP_URL} target="_blank" rel="noopener noreferrer">
+								<Image className={styles.lineStamp__image} width={300} height={400} objectFit="contain" src="/../public/assets/img/line-stamp.png" alt="LINEスタンプ" />
+								<p className={styles.lineStamp__attention}>※クリックすると別ウィンドウが開きます</p>
+							</a>
 						</div>
 					</section>
 

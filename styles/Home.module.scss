@@ -66,6 +66,17 @@
 	}
 }
 
+.lineStamp {
+	.lineStamp__image {
+		border: 1px solid v.$mainGrey !important;
+		border-radius: 6px;
+	}
+
+	.lineStamp__attention {
+		font-size: 1.3rem;
+	}
+}
+
 .twitterTimeline {
 	border-radius: 30px;
 	padding: 20px 1rem;

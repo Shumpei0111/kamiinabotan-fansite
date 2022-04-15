@@ -1,9 +1,11 @@
 {
-    "author": "塀(hey)",
+    "author": "塀(H3Y)",
     "author_sns": [
         { "name": "Twitter", "url": "https://twitter.com/tonarinohey" },
         { "name": "Instagram", "url": "https://www.instagram.com/tonarinohey/" },
-        { "name": "blog", "url": "https://tonarinohey.hatenablog.com/" }
+        { "name": "blog", "url": "https://tonarinohey.hatenablog.com/" },
+        { "name": "pixiv", "url": "https://www.pixiv.net/users/2473929" },
+        { "name": "マシュマロ", "url": "https://marshmallow-qa.com/tonarinohey" }
     ],
     "title": "上伊那ぼたん、酔へる姿は百合の花",
     "kana": "かみいなぼたん、よへるすがたはゆりのはな",
