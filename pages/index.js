@@ -56,6 +56,13 @@ export default function Home() {
 					</section>
 
 					<section className={styles.sectionWrapper}>
+						<h2>公式サイト</h2>
+						<div>
+							<a className="underline" href={master.published_url} target="_blank" rel="noopener noreferrer">「{master.title}」 {master.published_media_name} {master.published_by}</a>
+						</div>
+					</section>
+
+					<section className={styles.sectionWrapper}>
 						<h2>公式Twitter</h2>
 						<div className={styles.twitterTimeline}>
 							<TwitterTimeline />
