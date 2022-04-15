@@ -7,7 +7,10 @@
             "url": "https://chichibubeer.shop-pro.jp/?pid=162979014",
             "marker_id": 1,
             "imagePath": "https://img07.shop-pro.jp/PA01448/162/product/162979014_o3.jpg?cmsp_timestamp=20210828091808",
-            "imageInyou": "コグマのビール屋さん 秩父麦酒「あの花10周年記念 特別セット」"
+            "imageInyou": "コグマのビール屋さん 秩父麦酒「あの花10周年記念 特別セット」",
+            "genre": "ビール",
+            "epidode": "1,3,5",
+            "book_number": 1
         },
         {
             "id": 2,
@@ -16,52 +19,70 @@
             "url": "",
             "marker_id": null,
             "imagePath": "",
-            "imageInyou": ""
+            "imageInyou": "",
+            "genre": "カクテル",
+            "epidode": "1",
+            "book_number": 1
         },
         {
             "id": 3,
             "name": "源作印 巨峰 ロゼ",
-            "description": "第2話でいぶきがぼたんの部屋に遊びにきた時に持ってきたお酒。",
+            "description": "第2話でいぶきがぼたんの部屋に遊びにきた時に持ってきたお酒。巨峰の甘い香りが広がるフルーティなワイン。",
             "url": "http://chichibuwine.co.jp/lineup/2-4/",
             "marker_id": 2,
             "imagePath": "http://chichibuwine.co.jp/lineup/2-4/img.png",
-            "imageInyou": "秩父ワイン"
+            "imageInyou": "秩父ワイン",
+            "genre": "ワイン",
+            "epidode": "2",
+            "book_number": 1
         },
         {
             "id": 4,
             "name": "ニッカ シングルモルト 宮城峡",
-            "description": "第2話で談話室に入ったぼたんが見つけたお酒の一つ。",
+            "description": "第3話で談話室に入ったぼたんが見つけたお酒の一つ。ニッカウヰスキーが古くから作るウイスキー初心者にも飲みやすい国産シングルモルト。",
             "url": "https://www.nikka.com/products/malt/yoichi_miyagikyo/",
             "marker_id": 3,
             "imagePath": "",
-            "imageInyou": ""
+            "imageInyou": "",
+            "genre": "ウイスキー",
+            "epidode": "3",
+            "book_number": 1
         },
         {
             "id": 5,
             "name": "HIBIKI 響",
-            "description": "第2話で談話室に入ったぼたんが見つけたお酒の一つ。",
+            "description": "第3話で談話室に入ったぼたんが見つけたお酒の一つ。1920年代からの国産最高峰のブレンデッドウイスキー。大麦麦芽と穀物を主原料としたのが特徴。",
             "url": "https://www.suntory.co.jp/whisky/hibiki/",
             "marker_id": 4,
             "imagePath": "",
-            "imageInyou": ""
+            "imageInyou": "",
+            "genre": "ウイスキー",
+            "epidode": "3",
+            "book_number": 1
         },
         {
             "id": 6,
-            "name": "純米大吟醸 「秩父錦」",
-            "description": "第2話でかなでがぼたんと一緒に飲んだお酒。かなでのお気に入り。",
+            "name": "純米大吟醸 秩父錦",
+            "description": "第3話でかなでがぼたんと一緒に飲んだお酒。かなでのお気に入り。",
             "url": "https://chichibunishiki.com/meishu/",
             "marker_id": 5,
             "imagePath": "",
-            "imageInyou": ""
+            "imageInyou": "",
+            "genre": "日本酒",
+            "epidode": "3",
+            "book_number": 1
         },
         {
             "id": 7,
-            "name": "大吟醸 「秩父錦」",
+            "name": "大吟醸 秩父錦",
             "description": "第6話でかなでがいぶきにプレゼントしたお酒。かなではいぶきと飲みたかったのだが、あえなく失敗。。",
             "url": "https://chichibunishiki.com/meishu/",
             "marker_id": 5,
             "imagePath": "",
-            "imageInyou": ""
+            "imageInyou": "",
+            "genre": "日本酒",
+            "epidode": "6",
+            "book_number": 1
         },
         {
             "id": 8,
@@ -70,16 +91,22 @@
             "url": "https://www.asahibeer.co.jp/superdry/",
             "marker_id": 6,
             "imagePath": "",
-            "imageInyou": ""
+            "imageInyou": "",
+            "genre": "ビール",
+            "epidode": "6",
+            "book_number": 1
         },
         {
             "id": 9,
             "name": "イチローズ・モルト＆グレーン・ホワイトラベル",
-            "description": "第6話でいぶきとかなでが酒屋で目にしたお酒の一つ。秩父蒸留所で作られた人気の国産ウィスキー。",
+            "description": "第6話でいぶきとかなでが酒屋で目にしたお酒の一つ。秩父蒸留所で作られた人気の国産ウイスキー。",
             "url": "https://www.sasesaketen.com/products/detail/1313",
             "marker_id": 7,
             "imagePath": "",
-            "imageInyou": ""
+            "imageInyou": "",
+            "genre": "ウイスキー",
+            "epidode": "6",
+            "book_number": 1
         },
         {
             "id": 10,
@@ -88,7 +115,142 @@
             "url": "",
             "marker_id": 8,
             "imagePath": "",
-            "imageInyou": ""
+            "imageInyou": "",
+            "genre": "ワイン",
+            "epidode": "6",
+            "book_number": 1
+        },
+        {
+            "id": 11,
+            "name": "アルケミエ グリーン アブサン 2弾",
+            "description": "第6話でいぶきとかなでが酒屋で目にしたお酒の一つ。2017年に辰巳祥平さんが1人で立ち上げた「辰巳蒸留所」で蒸留されたアブサン。",
+            "url": "",
+            "marker_id": 9,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "リキュール",
+            "epidode": "6",
+            "book_number": 1
+        },
+        {
+            "id": 12,
+            "name": "R-type 2020",
+            "description": "第6話でいぶきとかなでが酒屋で目にしたお酒の一つ。新政の定番生酒の「No.6」シリーズ。その中でも「R-type」はRegularの名を冠したエントリーモデル。",
+            "url": "http://www.aramasa.jp/collection/no.6.html",
+            "marker_id": 10,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "日本酒",
+            "epidode": "6",
+            "book_number": 1
+        },
+        {
+            "id": 13,
+            "name": "喜久盛 タクシードライバー 純米生原酒",
+            "description": "第6話でいぶきとかなでが酒屋で目にしたお酒の一つ。お燗で飲むのが一番おすすめ。熱いお酒が苦手な方はソーダ割りなどでも楽しめる親やすい日本酒。",
+            "url": "https://www.jizake.com/c/sake/kikuzakari/Sake7083_1800",
+            "marker_id": 11,
+            "imagePath": "https://sanoya.itembox.design/product/038/000000003849/000000003849-01-l.jpg?t=20220415161212",
+            "imageInyou": "佐野屋 JIZAKE.COM",
+            "genre": "日本酒",
+            "epidode": "6",
+            "book_number": 1
+        },
+        {
+            "id": 14,
+            "name": "イットキー IT'S THE KEY 純米吟醸",
+            "description": "第6話でいぶきとかなでが酒屋で目にしたお酒の一つ。ワイングラスでおいしい日本酒アワードで最高金賞を取るなどの評価が高く、女性にも飲みやすい度数の日本酒。",
+            "url": "http://www.yukikura.com/product/itsthekey.html",
+            "marker_id": 12,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "日本酒",
+            "epidode": "6",
+            "book_number": 1
+        },
+        {
+            "id": 15,
+            "name": "六代目百合",
+            "description": "第6話でいぶきが角打ちで飲む際に選んだお酒。軽い口当たりといも焼酎のしっかりとした風味を残すために手間暇かけて作られている。「六代目」は現社長が6代目であること、また産地の甑(こしき)島特産の「鹿の子百合」百合(ひゃくごう)単位で製造していたことからつけられた。",
+            "url": "https://www.kinoshimaya.co.jp/products/detail27.html",
+            "marker_id": 13,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "焼酎",
+            "epidode": "6",
+            "book_number": 1
+        },
+        {
+            "id": 16,
+            "name": "Emeraude Bovet la Valote",
+            "description": "第7話でいぶきは部屋でバルサンを焚き、ぼたんは雷で寝られないからと食堂でナイトキャップ（寝酒）を楽しむのに出てきたお酒。アルコール度数は77%。「飲めば飲むほどハマっていくような、ワクワクするお酒ですね」とぼたんがこぼした感想は、いぶきと同じものだった。",
+            "url": "https://maison-absinthe.ch/produit/emeraude-bovet-la-valote-50cl-77/",
+            "marker_id": 14,
+            "imagePath": "https://maison-absinthe.ch/wp-content/uploads/2021/05/emeraude-20cl-scaled.jpg",
+            "imageInyou": "Maison de l'Absinthe",
+            "genre": "リキュール",
+            "epidode": "7",
+            "book_number": 1
+        },
+        {
+            "id": 17,
+            "name": "Punk IPA",
+            "description": "第8話であかねがぼたんといぶきに振る舞ったビール。音楽鑑賞のお供に、と差し出すそれは世界一のIPA(インディアペールエール)を目指して採算度外視で作られたビール。大量のホップを使った贅沢な逸品。",
+            "url": "https://item.rakuten.co.jp/yunyuusyu/75505/",
+            "marker_id": 15,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "ビール",
+            "epidode": "8",
+            "book_number": 1
+        },
+        {
+            "id": 18,
+            "name": "貸切温泉で飲んだお酒",
+            "description": "第9話でぼたんといぶきが2人だけで貸切温泉に入りながら飲んだお酒。第7話で急接近した2人がさらに近づく。これをきっかけに2人は下の名前で呼び合う関係になる。お酒って開放的になりますね。ちなみに「霖雨の湯」で検索するも該当するものが見つからず、代わりに「霖雨の森」という高級宿がヒットする。",
+            "url": "",
+            "marker_id": null,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "その他",
+            "epidode": "9",
+            "book_number": 1
+        },
+        {
+            "id": 19,
+            "name": "ホッピー",
+            "description": "第9.5話であかねが乾杯するときに持っていたお酒。1948年から続く日本でもっとも親しまれているお酒のひとつ。",
+            "url": "https://www.hoppy-happy.com/onlineshop/product/hoppy.html",
+            "marker_id": 16,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "その他",
+            "epidode": "9.5",
+            "book_number": 1
+        },
+        {
+            "id": 20,
+            "name": "伯楽星",
+            "description": "第9.5話でかなでが飲んでいたお酒。糖度が一般的な日本酒に比べて1/2に抑えられた「究極の食中酒」を目指して作られている。冷たく冷やして飲むのがおすすめ。",
+            "url": "https://www.sabun-saketen.com/item/sake56/",
+            "marker_id": 17,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "日本酒",
+            "epidode": "9.5",
+            "book_number": 1
+        },
+        {
+            "id": 21,
+            "name": "モヒート",
+            "description": "第9.5話でやえかが飲んでいたお酒。モヒートはラムベースのカクテルでミント・ライム(レモン)・砂糖で作る。作り方のバリエーションは様々ある定番のお酒。",
+            "url": "",
+            "marker_id": null,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "カクテル",
+            "epidode": "9.5",
+            "book_number": 1
         }
     ]
 }

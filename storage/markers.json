@@ -5,56 +5,152 @@
             "name": "秩父麦酒",
             "address": "埼玉県秩父市下吉田3786-1",
             "url": "https://chichibubeer.shop-pro.jp/",
-            "introduction": ""
+            "introduction": "",
+            "twitter": ""
+
         },
         {
             "id": 2,
             "name": "(有)秩父ワイン",
             "address": "埼玉県秩父郡小鹿野町両神薄41",
             "url": "http://chichibuwine.co.jp/",
-            "introduction": ""
+            "introduction": "",
+            "twitter": ""
+
         },
         {
             "id": 3,
             "name": "ニッカウヰスキー株式会社",
             "address": "東京都港区南青山5丁目4番31号",
             "url": "https://www.nikka.com/products/malt/yoichi_miyagikyo/",
-            "introduction": "ブランドサイト"
+            "introduction": "",
+            "twitter": ""
+
         },
         {
             "id": 4,
             "name": "ビーム サントリー",
             "address": "222 W Merchandise Mart Plaza, Chicago, IL 60654, United States",
             "url": "https://www.beamsuntory.com/",
-            "introduction": ""
+            "introduction": "",
+            "twitter": ""
+
         },
         {
             "id": 5,
             "name": "株式会社矢尾本店",
             "address": "埼玉県秩父市別所字久保ノ入1432",
             "url": "https://chichibunishiki.com/",
-            "introduction": ""
+            "introduction": "",
+            "twitter": ""
+
         },
         {
             "id": 6,
             "name": "アサヒグループホールディングス株式会社",
             "address": "東京都墨田区吾妻橋1-23-1",
             "url": "https://www.asahigroup-holdings.com/",
-            "introduction": ""
+            "introduction": "",
+            "twitter": ""
+
         },
         {
             "id": 7,
             "name": "ベンチャーウイスキー 秩父蒸溜所",
             "address": "埼玉県秩父市みどりが丘４９",
             "url": "",
-            "introduction": ""
+            "introduction": "",
+            "twitter": ""
+
         },
         {
             "id": 8,
             "name": "カーサ・ヴィニコラ・ニコレッロ(Casa Vinicola Nicolello)",
             "address": "Via Castellero N. 05 - Frazione Borbore 12040 VEZZA D ALBA - CN",
             "url": "",
-            "introduction": ""
+            "introduction": "",
+            "twitter": ""
+
+        },
+        {
+            "id": 9,
+            "name": "辰巳蒸留所",
+            "address": "岐阜県郡上八幡",
+            "url": "https://www.facebook.com/TatsumiDistillery/",
+            "introduction": "",
+            "twitter": ""
+
+        },
+        {
+            "id": 10,
+            "name": "新政酒造株式会社",
+            "address": "秋田県秋田市大町６丁目２番３５号",
+            "url": "http://www.aramasa.jp/",
+            "introduction": "",
+            "twitter": ""
+
+        },
+        {
+            "id": 11,
+            "name": "喜久盛酒造株式会社",
+            "address": "岩手県北上市",
+            "url": "http://kikuzakari.jp/",
+            "introduction": "",
+            "twitter": ""
+
+        },
+        {
+            "id": 12,
+            "name": "玉川酒造株式会社",
+            "address": "新潟県魚沼市須原１６４３",
+            "url": "http://www.yukikura.com/",
+            "introduction": "",
+            "twitter": ""
+
+        },
+        {
+            "id": 13,
+            "name": "塩田酒造株式会社",
+            "address": "鹿児島県薩摩川内市里村里1604（旧薩摩郡里村里）",
+            "url": "",
+            "introduction": "",
+            "twitter": ""
+
+        },
+        {
+            "id": 14,
+            "name": "Distillery Absinthe Bovet La Valote",
+            "address": "Françoise Bovet Rue de la Gare 5 CH – 2112 Môtiers (NE)",
+            "url": "https://absinthe-bovet.ch/en/introduction/",
+            "introduction": "",
+            "twitter": "absinthebovet"
+        },
+        {
+            "id": 15,
+            "name": "BrewDpg",
+            "address": "Balmacassie Commercial Park, Ellon, Aberdeenshire, AB41 8BX",
+            "url": "https://www.brewdog.com/uk",
+            "introduction": "",
+            "twitter": "brewdog"
+
+        },
+        {
+            "id": 16,
+            "name": "ホッピービバレッジ株式会社",
+            "address": "東京都港区赤坂2丁目15番12号",
+            "url": "https://www.hoppy-happy.com/",
+            "introduction": "",
+            "twitter": "HoppyBeverageCo"
+
+        },
+        {
+            "id": 17,
+            "name": "株式会社新澤醸造店",
+            "address": "宮城県大崎市三本木北町 63",
+            "url": "https://niizawa-brewery.co.jp/",
+            "introduction": "",
+            "twitter": "niizawabrewery"
+
         }
     ]
 }

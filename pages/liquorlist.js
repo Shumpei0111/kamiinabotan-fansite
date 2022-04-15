@@ -31,8 +31,15 @@ export default function LiquorList() {
                 name: _maker && _maker.name ? _maker.name : "",
                 address: _maker && _maker.address ? _maker.address : "",
                 url: _maker && _maker.url ? _maker.url : "",
-                introduction: _maker && _maker.introduction ? _maker.introduction : ""
-            }
+                introduction: _maker && _maker.introduction ? _maker.introduction : "",
+                twitter: _maker && _maker.twitter ? _maker.twitter : "",
+            },
+            genre: baseItem.genre,
+            episode: ( (epi) => {
+                if(epi.indexOf(',') > 0) return epi.split(',').map(e => `#${e}`).join(' ');
+                return `#${epi}`;
+            } )(baseItem.epidode),
+            bookNumber: baseItem.book_number,
         };
     } );
 
@@ -58,11 +65,23 @@ export default function LiquorList() {
                                         return (
                                             <div className={style.liquorItemList__item} key={liq.id}>
                                                 <p className={style.item__name}>{liq.name}</p>
+                                                <div className={style.item__meta}>
+                                                    <p className={style.tag}>{liq.genre}</p>
+                                                    <p className={style.tag}>{liq.episode}</p>
+                                                    <p className={style.tag}>{liq.bookNumber}巻</p>
+                                                </div>
                                                 <p className={style.item__description}>{liq.description}</p>
                                                 { liq.imagePath ?
                                                     <div className={style.item__img}>
-                                                        <img height="160" src={liq.imagePath} />
+                                                        <Image height={160} width={168} objectFit="contain" src={liq.imagePath} alt={`引用：${liq.imageInyou}`} />
                                                         <p className={style.item__imgInyou}>引用：{liq.imageInyou}</p>
+                                                    </div>
+                                                    :
+                                                    <></>
+                                                }
+                                                { liq.url ?
+                                                    <div className="">
+                                                        <a href={liq.url} className="underline" target="_blank" rel="noopener noreferrer">▶︎販売リンクへ飛ぶ</a>
                                                     </div>
                                                     :
                                                     <></>
@@ -72,7 +91,16 @@ export default function LiquorList() {
                                                     <p>名前：{`${liq.maker.name ? liq.maker.name : "-"}`}</p>
                                                     <p>住所：{`${liq.maker.address ? liq.maker.address : "-" }`}</p>
                                                     <p>HP：<a className={`underline ${style.makerInfo__url}`} href={`${liq.maker.url ? liq.maker.url : ""}`}>{`${liq.maker.url ? liq.maker.url : "-"}`}</a></p>
-                                                    <p>紹介：{`${liq.maker.introduction ? liq.maker.introduction : "-"}`}</p>
+                                                    { liq.maker.introduction ?
+                                                        <p>紹介：{liq.maker.introduction}</p>
+                                                        :
+                                                        <></>
+                                                    }
+                                                    { liq.maker.twitter ?
+                                                        <p>Twitter：<a className="underline" href={`https://twitter.com/${liq.maker.twitter.toLowerCase()}`} target="_blank" rel="noopener noreferrer">{`@${liq.maker.twitter}`}</a></p>
+                                                        :
+                                                        <></>
+                                                    }
                                                 </div>
                                             </div>
                                         )

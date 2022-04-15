@@ -16,7 +16,20 @@
 
             .item__name {
                 font-weight: bold;
+                margin-bottom: 8px;
+            }
+
+            .item__meta {
                 margin-bottom: 16px;
+                font-size: 1.2rem;
+                display: flex;
+
+                .tag {
+                    border: 1px solid v.$mainGrey;
+                    border-radius: 3px;
+                    padding: 3px 6px;
+                    margin-right: 8px;
+                }
             }
 
             .item__img {
@@ -26,6 +39,10 @@
             .item__imgInyou {
                 font-size: 1.2rem;
             }
+        }
+
+        .item__description {
+            margin-bottom: 8px;
         }
 
         .makerInfo {
