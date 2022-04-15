@@ -11,7 +11,7 @@ export default function HomeNews() {
                 <ul className={style.newsList}>
                     {_news.map( n => {
                         return (
-                            <li className={style.newsList__item} key={n.text}>
+                            <li className={style.newsList__item} key={n.url}>
                                 <p className={style.newsDate}>{n.date}</p>
                                 <a className="underline" href={n.url} target="_blank" rel="noopener noreferrer">{n.head}</a>
                             </li>
