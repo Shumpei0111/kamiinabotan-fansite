@@ -10,7 +10,7 @@
 }
 
 .sectionWrapper {
-	margin-bottom: 42px;
+	margin-bottom: 60px;
 }
 
 .topInyou {
@@ -63,6 +63,17 @@
 				padding: 16px;
 			}
 		}
+	}
+}
+
+.lineStamp {
+	.lineStamp__image {
+		border: 1px solid v.$mainGrey !important;
+		border-radius: 6px;
+	}
+
+	.lineStamp__attention {
+		font-size: 1.3rem;
 	}
 }
 

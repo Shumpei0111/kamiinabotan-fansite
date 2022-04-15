@@ -1,0 +1,19 @@
+@use './variables.module.scss' as v;
+
+.baseLinksContaienr {
+    margin-top: 132px;
+
+    .baseLinksList {
+        display: flex;
+
+        a {
+            color: v.$mainBlue;
+            font-weight: bold;
+            margin-right: 30px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

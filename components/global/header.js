@@ -21,7 +21,7 @@ export default function Header(props) {
     }, [scroll]);
 
     return (
-        <header className={style.header}>
+        <header id="gHeader" className={style.header}>
             {
                 hasAlert ? (
                     <div className={style.alert}>

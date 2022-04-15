@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import Meta from "./meta";
 import Header from "./global/header";
+import BaseLinks from "./global/baseLinks";
+import ToTopPage from "./toPageTop";
 import Footer from "./global/footer";
 import { useState, useEffect } from "react";
 
@@ -26,6 +28,7 @@ export default function Layout({ children }) {
             <Meta />
             <div id="__kamiinaBotan__root__">
                 <Header isLoading={loading} />
+                <BaseLinks />
                 <main className="contents">{children}</main>
                     {
                         isIndexPage ? false :
@@ -33,6 +36,7 @@ export default function Layout({ children }) {
                             <Link href="/"><a className="backHomeLink">ホームへ戻る</a></Link>
                         </div>
                     }
+                <ToTopPage />
                 <Footer />
             </div>
         </>

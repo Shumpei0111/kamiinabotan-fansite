@@ -4,25 +4,25 @@
 
 /* My Project */
 html {
-    font-size: 62.5%;
-    height: 100%;
+  font-size: 62.5%;
+  height: 100%;
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    line-height: 1.2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.2;
 }
 
 body {
-    font-size: 1.4rem;
-    position: relative;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-size: 1.4rem;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -82,6 +82,7 @@ body {
 }
 
 #__kamiinaBotan__root__ {
+  position: relative;
   min-height: 100vh;
   max-width: 768px;
   margin: 0 auto;
@@ -122,6 +123,33 @@ header .narrowView .subTitle {
 }
 
 .contents {
-    margin-top: 180px;
+    margin-top: 100px;
     flex: 1;
+}
+
+.to-page-top-container {
+  opacity: 0;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  transition: .3s;
+}
+
+.to-page-top-container.--show {
+  opacity: 1;
+}
+
+.to-page-top-container .to-page-top__text {
+  font-size: 1.2rem;
+}
+
+.to-page-top {
+  width: 20px;
+  height: 20px;
+  border-top: solid 2px black;
+  border-right: solid 2px black;
+  margin: auto;
+  transform: rotate(315deg);
 }

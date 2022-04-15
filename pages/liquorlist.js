@@ -57,7 +57,7 @@ export default function LiquorList() {
                             <p className="head__ja">お酒一覧</p>
                             <span className="head__en">Liquor list</span>
                         </h2>
-                        <p className={style.intro}>この作品はお酒が重要なアイテムとして登場します。舞台である秩父の地酒が多く登場しています。</p>
+                        <p className={style.intro}>この作品はお酒が重要なアイテムとして登場します。舞台である秩父の地酒も多く登場しています。</p>
                         <div className={style.liquorContainer}>
                             <div className={style.liquorItemList}>
                                 {
