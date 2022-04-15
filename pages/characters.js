@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Layout from "../components/layout";
 import Meta from "../components/meta";
 import { SITE_FULL_TITLE } from "../lib/constraint";
@@ -35,7 +36,9 @@ export default function Episode() {
                                 {
                                     _characters.map( c => {
                                         return (
-                                            <li className={style.charaNameList__item}><a className={style.charaNameList__name} href={`#${c.id}`}>{c.name}</a></li>
+                                            <li className={style.charaNameList__item} key={c.id}>
+                                                <a className={style.charaNameList__name} href={`#${c.id}`}>{c.name}</a>
+                                            </li>
                                         )
                                     } )
                                 }
@@ -53,7 +56,7 @@ export default function Episode() {
                                             {
                                                 c.imgPath !== "" ?
                                                 <div className={style.charaImage}>
-                                                    <img className={style.charaImage__image} src={c.imgPath} alt={`${c.ruby}の画像`} />
+                                                    <Image className={style.charaImage__image} src={c.imgPath} alt={`引用：「${master.title}」${c.ruby}の画像`} objectFit="contain" width={200} height={300} />
                                                     <p className={style.charaImage__inyouText}>引用：「{master.title}」{c.inyou}</p>
                                                 </div>
 
