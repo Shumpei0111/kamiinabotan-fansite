@@ -35,6 +35,15 @@ export default function Home() {
 					</section>
 
 					<section className={styles.sectionWrapper}>
+						<h2>あらすじ</h2>
+						<p className={styles.arasuji}>上伊那ぼたんは２０歳の大学生。<br />
+							入った寮の歓迎パーティで寮長のいぶきにハイボールを飲ませてもらうと酔った勢いでいぶきに絡み始めて・・・?<br />
+							酔っ払いいちゃいちゃガールズコメディ！
+						</p>
+						<p className={styles.topInyou}>引用：マンガクロス「上伊那ぼたん、酔へる姿は百合の花」公式サイト</p>
+					</section>
+
+					<section className={styles.sectionWrapper}>
 						{/* ニュース */}
 						<HomeNews />
 					</section>
