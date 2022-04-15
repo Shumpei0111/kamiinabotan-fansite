@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import Meta from "./meta";
 import Header from "./global/header";
+import ToTopPage from "./toPageTop";
 import Footer from "./global/footer";
 import { useState, useEffect } from "react";
 
@@ -33,6 +34,7 @@ export default function Layout({ children }) {
                             <Link href="/"><a className="backHomeLink">ホームへ戻る</a></Link>
                         </div>
                     }
+                <ToTopPage />
                 <Footer />
             </div>
         </>
