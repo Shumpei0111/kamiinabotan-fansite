@@ -8,7 +8,6 @@ import { useScrollHandler } from '../../lib/useScrollHandler';
 import { useState, useEffect } from 'react';
 
 export default function Header(props) {
-    const _isLoading = props.isLoading;
     const scroll = useScrollHandler();
     const hasAlert = true;
 
@@ -19,7 +18,7 @@ export default function Header(props) {
         } else {
             setNarrowViewClassName("");
         }
-    });
+    }, [scroll]);
 
     return (
         <header className={style.header}>

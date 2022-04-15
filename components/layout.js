@@ -19,7 +19,7 @@ export default function Layout({ children }) {
     useEffect(() => {
         router.events.on( "routeChangeStart", handleStart );
         return () => { router.events.off( "routeChangeStart", handleStart ); }
-    }, [])
+    });
 
     return (
         <>
