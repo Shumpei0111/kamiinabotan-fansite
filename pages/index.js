@@ -58,7 +58,7 @@ export default function Home() {
 
 						<div className={styles.lineStamp}>
 							<a href={LINE_STAMP_URL} target="_blank" rel="noopener noreferrer">
-								<Image className={styles.lineStamp__image} width={300} height={400} objectFit="contain" src="/../public/assets/img/line-stamp.png" alt="LINEスタンプ" />
+								<Image className={styles.lineStamp__image} width={300} height={400} objectFit="contain" src="/assets/img/line-stamp.png" alt="LINEスタンプ" />
 								<p className={styles.lineStamp__attention}>※クリックすると別ウィンドウが開きます</p>
 							</a>
 						</div>
