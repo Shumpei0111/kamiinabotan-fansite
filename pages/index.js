@@ -1,4 +1,5 @@
 import Layout from '../components/layout';
+import Image from 'next/image';
 import Meta from '../components/meta';
 import HomeNews from '../components/homeNews';
 import HomeContents from '../components/homeContents';
@@ -20,7 +21,7 @@ export default function Home() {
 				<main className={styles.main}>
 					<section className={styles.sectionWrapper}>
 						<div className={styles.topInyou}>
-							<img className="" src="https://mangacross.jp/images/comic/cSQw6TT0qND00AUZQf2I0cFqCAO08NGZq6yqLFEWbkM/image_sp/original.jpg?1647590065" />
+							<Image width={386} height={200} objectFit="contain" src="https://mangacross.jp/images/comic/cSQw6TT0qND00AUZQf2I0cFqCAO08NGZq6yqLFEWbkM/image_sp/original.jpg?1647590065" alt="新刊のバナー" />
 							<p className={styles.inyouText}>出典：「<a className="underline" href="https://mangacross.jp/comics/kamiinabotan" target="_blank" rel="noopener noreferrer">上伊那ぼたん、酔へる姿は百合の花</a>」マンガクロス（秋田書店）</p>
 						</div>
 						<div>

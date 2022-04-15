@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Layout from "../components/layout";
 import Meta from "../components/meta";
 import { SITE_FULL_TITLE } from "../lib/constraint";
