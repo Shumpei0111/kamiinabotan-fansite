@@ -1,4 +1,4 @@
-import useSanitizeHtml from '../lib/useSanitizeHTML';
+import getSanitizeHtml from '../lib/getSanitizeHTML';
 import style from '../styles/kikanComics.module.scss';
 
 export default function KikanComics() {
@@ -26,9 +26,9 @@ export default function KikanComics() {
             <div className="flex">
                 {
                     linkList.map( item => (
-                        <div className={style.linkItem}>
-                            <div dangerouslySetInnerHTML={{__html: useSanitizeHtml(item.html)}} key={item.title}></div>
-                            <a href={item.url} className="underline" target="_blank">{item.title}(Amazon)</a>
+                        <div className={style.linkItem} key={item.title}>
+                            <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(item.html)}}></div>
+                            <a href={item.url} className="underline" target="_blank" rel="noopener noreferrer">{item.title}(Amazon)</a>
                         </div>
                         
                     ) )
