@@ -14,7 +14,7 @@ const news = [
     {
         date: "2022.03.17",
         head: "単行本題3巻がされました！",
-        url: "",
+        url: "https://amzn.to/3JOSmSX",
         tag: tags.goods,
     },
     {

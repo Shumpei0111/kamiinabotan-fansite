@@ -59,6 +59,8 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 16px;
   position: relative;
+  border-left: 3px solid #45D2DB;
+  padding-left: 6px;
 }
 
 .head__en {

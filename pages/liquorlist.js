@@ -138,13 +138,13 @@ export default function LiquorList() {
                                                     :
                                                     <></>
                                                 }
-                                                { liq.url ?
+                                                {/* { liq.url ?
                                                     <div className="">
                                                         <a href={liq.url} className="underline" target="_blank" rel="noopener noreferrer">▶︎販売リンクへ飛ぶ</a>
                                                     </div>
                                                     :
                                                     <></>
-                                                }
+                                                } */}
                                                 <div className={style.makerInfo}>
                                                     <p className={style.makerInfo__label}>メーカー情報</p>
                                                     <p>名前：{`${liq.maker.name ? liq.maker.name : "-"}`}</p>

@@ -26,7 +26,7 @@ export default function Header(props) {
                 hasAlert ? (
                     <div className={style.alert}>
                         <Marquee speed={50} gradient={false}>
-                            <a href="" className={`underline ${style.marqueeText}`}>「{master.title}」第３巻好評発売中！</a>
+                            <a href="https://amzn.to/37VR9MD" className={`underline ${style.marqueeText}`} target="_blank">「{master.title}」第３巻好評発売中！</a>
                         </Marquee>
                     </div>
                 ) :

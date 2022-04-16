@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Meta from '../components/meta';
 import HomeNews from '../components/homeNews';
 import HomeContents from '../components/homeContents';
+import KikanComics from '../components/kikanComics';
+import KanrenComics from '../components/kanrenComics';
 
 import styles from '../styles/Home.module.scss';
 
@@ -56,6 +58,11 @@ export default function Home() {
 					</section>
 
 					<section className={styles.sectionWrapper}>
+						<h2>既刊</h2>
+						<KikanComics />
+					</section>
+
+					<section className={styles.sectionWrapper}>
 						<h2>公式サイト</h2>
 						<div>
 							<a className="underline" href={master.published_url} target="_blank" rel="noopener noreferrer">「{master.title}」</a>
@@ -85,7 +92,7 @@ export default function Home() {
 						<h2>作者紹介（敬称略）</h2>
 						<div>
 							<p className={styles.authName}>{master.author}</p>
-							<div>
+							<div className={styles.authSNS}>
 								<ul className={styles.authSNSList}>
 									{
 										authSNS.map( sns => {
@@ -97,6 +104,10 @@ export default function Home() {
 										} )
 									}
 								</ul>
+							</div>
+							<div className={styles.authReleasedGoods}>
+								<h3>著者関連書籍</h3>
+								<KanrenComics />
 							</div>
 						</div>
 					</section>

@@ -5,3 +5,12 @@
 .relative {
     position: relative;
 }
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex > * {
+    margin-right: 16px;
+}
