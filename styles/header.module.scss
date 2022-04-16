@@ -47,5 +47,12 @@
             max-width: 736px;
             margin: 0 auto;
         }
+
+        @media screen and (max-width: 768px) {
+            p {
+                display: block;
+            }
+            
+        }
     }
 }

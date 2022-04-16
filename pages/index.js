@@ -24,7 +24,7 @@ export default function Home() {
 					<section className={styles.sectionWrapper}>
 						<div className={styles.topInyou}>
 							<Image width={386} height={200} objectFit="contain" src="https://mangacross.jp/images/comic/cSQw6TT0qND00AUZQf2I0cFqCAO08NGZq6yqLFEWbkM/image_sp/original.jpg?1647590065" alt="新刊のバナー" />
-							<p className={styles.inyouText}>出典：「<a className="underline" href="https://mangacross.jp/comics/kamiinabotan" target="_blank" rel="noopener noreferrer">上伊那ぼたん、酔へる姿は百合の花</a>」マンガクロス（秋田書店）</p>
+							<p className={styles.inyouText}>引用：「<a className="underline" href="https://mangacross.jp/comics/kamiinabotan" target="_blank" rel="noopener noreferrer">上伊那ぼたん、酔へる姿は百合の花</a>」マンガクロス（秋田書店）</p>
 						</div>
 						<div>
 							<div className={styles.siteDescription}>
@@ -58,12 +58,13 @@ export default function Home() {
 					<section className={styles.sectionWrapper}>
 						<h2>公式サイト</h2>
 						<div>
-							<a className="underline" href={master.published_url} target="_blank" rel="noopener noreferrer">「{master.title}」 {master.published_media_name} {master.published_by}</a>
+							<a className="underline" href={master.published_url} target="_blank" rel="noopener noreferrer">「{master.title}」</a>
 						</div>
 					</section>
 
 					<section className={styles.sectionWrapper}>
 						<h2>公式Twitter</h2>
+						<a className="underline" href={master.official_twitter} target="_blank" rel="noopener noreferrer">@kamiinabotan</a>
 						<div className={styles.twitterTimeline}>
 							<TwitterTimeline />
 						</div>

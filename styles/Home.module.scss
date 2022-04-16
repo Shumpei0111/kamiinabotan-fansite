@@ -67,6 +67,11 @@
 			a {
 				display: block;
 				padding: 16px;
+				transition: .2s;
+
+				&:hover {
+					background-color: v.$mainGrey;
+				}
 			}
 		}
 	}
@@ -127,6 +132,7 @@
 
 .authSNSList {
 	display: flex;
+	flex-wrap: wrap;
 
 	.authSNSItem::after {
 		content: "/";
