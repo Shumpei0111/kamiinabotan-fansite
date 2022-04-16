@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Layout from "../components/layout";
@@ -43,6 +44,49 @@ export default function LiquorList() {
         };
     } );
 
+    const base = groups.slice();
+    const getListByGenres = (genre) => {
+        return base.filter( item => item.genre === genre );
+    }
+
+    const beers = getListByGenres("ビール");
+    const cocktails = getListByGenres("カクテル");
+    const wines = getListByGenres("ワイン");
+    const whiskys = getListByGenres("ウイスキー");
+    const sakes = getListByGenres("日本酒");
+    const liqueurs = getListByGenres("リキュール");
+    const shochus = getListByGenres("焼酎");
+    const etc = getListByGenres("その他");
+
+    const genreLists = [
+        {name: "すべて", list:base},
+        {name: "ビール", list:beers},
+        {name: "カクテル", list:cocktails},
+        {name: "ワイン", list:wines},
+        {name: "ウイスキー", list:whiskys},
+        {name: "日本酒", list:sakes},
+        {name: "リキュール", list:liqueurs},
+        {name: "焼酎", list:shochus},
+        {name: "その他", list:etc}
+    ];
+
+    const initList = genreLists[0].list.slice();
+    const [currentDisplayList, setCurrentDisplayList] = useState(initList);
+    const [currentInd, setCurrentInd] = useState(0);
+    const [isChange, setChange] = useState(false);
+
+    const handleUpdateDisplayGenre = (ind) => {
+        setChange(true);
+
+        setTimeout(() => {
+            const list = genreLists[ind].list.slice();
+            setCurrentDisplayList(list);
+            setCurrentInd(ind);
+            setChange(false);
+        }, 200);
+    };
+
+
     return (
         <Layout>
             {router.isFallback ? (
@@ -57,11 +101,26 @@ export default function LiquorList() {
                             <p className="head__ja">お酒一覧</p>
                             <span className="head__en">Liquor list</span>
                         </h2>
+
                         <p className={style.intro}>この作品はお酒が重要なアイテムとして登場します。舞台である秩父の地酒も多く登場しています。</p>
-                        <div className={style.liquorContainer}>
-                            <div className={style.liquorItemList}>
+
+                        <div className={style.categoryContainer}>
+                            <ul className={style.category}>
                                 {
-                                    groups.map( liq => {
+                                    genreLists.map( (item, index) => (
+                                        <li onClick={()=>handleUpdateDisplayGenre(index)} className={`${style.category__item} ${currentInd === index ? style.current : ""}`} key={item.name}>
+                                            <span className={style.category__item__name}>{item.name}</span>
+                                            <span className={style.category__length}>{item.list.length}</span>
+                                        </li>
+                                    ) )
+                                }
+                            </ul>
+                        </div>
+
+                        <div className={style.liquorContainer}>
+                            <div className={`${style.liquorItemList} ${isChange ? style.changing : ""}`}>
+                                {
+                                    currentDisplayList.map( liq => {
                                         return (
                                             <div className={style.liquorItemList__item} key={liq.id}>
                                                 <p className={style.item__name}>{liq.name}</p>

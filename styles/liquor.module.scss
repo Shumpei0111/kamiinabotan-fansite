@@ -1,12 +1,56 @@
 @use './variables.module.scss' as v;
 
 .intro {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+}
+
+.categoryContainer {
+    .category {
+        margin-bottom: 32px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .category__item {
+            margin-right: 24px;
+            margin-bottom: 8px;
+            font-family: serif;
+            font-size: 1.2rem;
+            // color: v.$mainGrey;
+
+            .category__item__name {
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .category__length {
+            font-size: 1rem;
+            vertical-align: top;
+            margin-left: 4px;
+        }
+
+        .current {
+            color: v.$mainBlue;
+            font-weight: bold;
+
+            .category__item__name {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .liquorContainer {
 
     .liquorItemList {
+        transition: .2s;
+        opacity: 1;
+
+        &.changing {
+            opacity: 0;
+        }
 
         .liquorItemList__item {
             padding: 32px;
