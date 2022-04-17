@@ -30,8 +30,8 @@ const liquorList = {
             "description": "第2話でいぶきがぼたんの部屋に遊びにきた時に持ってきたお酒。巨峰の甘い香りが広がるフルーティなワイン。",
             "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26b939dd.52e22f47.26b939de.3d5703b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchichibu-yao%2F00042631roze%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26b939dd.52e22f47.26b939de.3d5703b1/?me_id=1209549&item_id=10004033&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fchichibu-yao%2Fcabinet%2Fnewnishiki%2Fgennsakuroza20210513.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
             "marker_id": 2,
-            "imagePath": "http://chichibuwine.co.jp/lineup/2-4/img.png",
-            "imageInyou": "秩父ワイン",
+            "imagePath": "",
+            "imageInyou": "",
             "genre": "ワイン",
             "epidode": "2",
             "book_number": 1
