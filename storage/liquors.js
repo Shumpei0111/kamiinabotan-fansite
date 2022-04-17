@@ -219,7 +219,7 @@ const liquorList = {
         {
             "id": 19,
             "name": "ホッピー",
-            "description": "第9.5話であかねが乾杯するときに持っていたお酒。1948年から続く日本でもっとも親しまれているお酒のひとつ。元祖ビアテイスト清涼飲料水として、焼酎と割るためのお酒として君臨している。",
+            "description": "第9.5話であかねが乾杯するときに持っていたお酒。1948年から続く日本でもっとも親しまれているお酒のひとつ。「元祖ビアテイスト清涼飲料水」を標榜する。",
             "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26c0d699.234231cd.26c0d69a.cd5baec7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyo-sake%2F85588x24%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26c0d699.234231cd.26c0d69a.cd5baec7/?me_id=1345661&item_id=10012559&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fyo-sake%2Fcabinet%2Fdrink%2Fdrink1%2F85588-1.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
             "marker_id": 16,
             "imagePath": "",
