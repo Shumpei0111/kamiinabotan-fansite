@@ -5,8 +5,10 @@ import Layout from "../components/layout";
 import Meta from "../components/meta";
 import { SITE_FULL_TITLE } from "../lib/constraint";
 
-import liquorList from '../storage/liquors.json';
+import liquorList from '../storage/liquors.js';
 import makerList from '../storage/markers.json';
+
+import getSanitizeHtml from '../lib/getSanitizeHTML';
 
 import style from '../styles/liquor.module.scss';
 
@@ -130,26 +132,30 @@ export default function LiquorList() {
                                                     <p className={style.tag}>{liq.bookNumber}巻</p>
                                                 </div>
                                                 <p className={style.item__description}>{liq.description}</p>
-                                                { liq.imagePath ?
-                                                    <div className={style.item__img}>
-                                                        <Image height={160} width={168} objectFit="contain" src={liq.imagePath} alt={`引用：${liq.imageInyou}`} />
-                                                        <p className={style.item__imgInyou}>引用：{liq.imageInyou}</p>
+                                                
+                                                { liq.url && !liq.imagePath ?
+                                                    <div className={style.item__imgEx}>
+                                                        <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(liq.url) }}></div>
+                                                        <p className='underline bold textCenter'>{liq.name} | Rakutenで購入する</p>
                                                     </div>
                                                     :
                                                     <></>
                                                 }
-                                                {/* { liq.url ?
-                                                    <div className="">
-                                                        <a href={liq.url} className="underline" target="_blank" rel="noopener noreferrer">▶︎販売リンクへ飛ぶ</a>
+
+                                                { liq.imagePath ?
+                                                    <div className={style.item__imgEx}>
+                                                        <Image width={240} height={200} objectFit="contain" src={liq.imagePath} />
+                                                        <p className='text_ms textCenter'>引用：{liq.imageInyou}</p>
                                                     </div>
                                                     :
                                                     <></>
-                                                } */}
+                                                }
+
                                                 <div className={style.makerInfo}>
                                                     <p className={style.makerInfo__label}>メーカー情報</p>
                                                     <p>名前：{`${liq.maker.name ? liq.maker.name : "-"}`}</p>
                                                     <p>住所：{`${liq.maker.address ? liq.maker.address : "-" }`}</p>
-                                                    <p>HP：<a className={`underline ${style.makerInfo__url}`} href={`${liq.maker.url ? liq.maker.url : ""}`}>{`${liq.maker.url ? liq.maker.url : "-"}`}</a></p>
+                                                    <p>HP：<a className={`underline ${style.makerInfo__url}`} href={`${liq.maker.url ? liq.maker.url : ""}`} target="_blank" rel="noopener noreferrer">{`${liq.maker.url ? liq.maker.url : "-"}`}</a></p>
                                                     { liq.maker.introduction ?
                                                         <p>紹介：{liq.maker.introduction}</p>
                                                         :
