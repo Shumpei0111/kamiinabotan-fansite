@@ -42,8 +42,6 @@ export default function Policy() {
                         <div className={style.policy__section}>
                             <h3>著作権について</h3>
                             <p>当サイトで掲載している画像の著作権・肖像権等は各権利所有者に帰属致します。権利を侵害する目的ではございません。記事の内容や掲載画像等に問題がございましたら、各権利所有者様本人が<a className="underline" href="https://forms.gle/ubM94Xn2J5mouMzZ6" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a>からご連絡ください。できるだけ迅速に対応させて頂きます。<br />
-                            <br />
-                            当サイトに掲載している、文章・画像・動画等の著作権は当サイトに帰属します。これらの情報を無断転載することを禁止します。
                             </p>
                         </div>
                         <div className={style.policy__section}>
