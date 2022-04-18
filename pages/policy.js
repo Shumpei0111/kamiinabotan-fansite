@@ -36,7 +36,24 @@ export default function Policy() {
                             <p>当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。<br />
                             このGoogleアナリティクスはアクセス情報の収集のためにCookieを使用しています。このアクセス情報は匿名で収集されており、個人を特定するものではありません。<br />
                             <br />
-                            GoogleアナリティクスのCookieは、26ヶ月間保持されます。この機能は Cookie を無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。</p>
+                            GoogleアナリティクスのCookieは、26ヶ月間保持されます。この機能は Cookie を無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。<br />
+                            この規約に関して、詳しくは「<a className="underline" href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopner noreferrer">Googleアナリティクス利用規約</a>」をご覧ください。</p>
+                        </div>
+                        <div className={style.policy__section}>
+                            <h3>著作権について</h3>
+                            <p>当サイトで掲載している画像の著作権・肖像権等は各権利所有者に帰属致します。権利を侵害する目的ではございません。記事の内容や掲載画像等に問題がございましたら、各権利所有者様本人が<a className="underline" href="https://forms.gle/ubM94Xn2J5mouMzZ6" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a>からご連絡ください。できるだけ迅速に対応させて頂きます。<br />
+                            <br />
+                            当サイトに掲載している、文章・画像・動画等の著作権は当サイトに帰属します。これらの情報を無断転載することを禁止します。
+                            </p>
+                        </div>
+                        <div className={style.policy__section}>
+                            <h3>免責事項</h3>
+                            <p>当サイトからリンクやバナーなどによって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。<br />
+                            サービスの利用・商品の購入に関してましては、自己責任でお願いします。<br />
+                            <br />
+                            当サイトのコンテンツ・情報につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤った情報の場合や、情報が古くなっていることもございます。<br />
+                            当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
+                            </p>
                         </div>
                         <div className={style.policy__section}>
                             <h3>プライバシーポリシーの変更について</h3>
