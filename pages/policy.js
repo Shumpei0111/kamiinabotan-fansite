@@ -8,9 +8,7 @@ export default function Policy() {
     return (
         <Layout>
             <div>
-                <Meta>
-                    プライバシーポリシー | {SITE_FULL_TITLE}
-                </Meta>
+                <Meta title="プライバシーポリシー" />
                 <main>
                     <section className={style.introSection}>
                         <h2>

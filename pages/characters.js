@@ -18,11 +18,7 @@ export default function Episode() {
                 <p>Loading...</p>
             ) : (
                 <>
-                    <Meta>
-                        <title>
-                            キャラクター一覧 | {SITE_FULL_TITLE}
-                        </title>
-                    </Meta>
+                    <Meta title="キャラクター一覧" />
                     <div className={style.charaMain}>
                         <h2>
                             <p className="head__ja">キャラクター一覧</p>

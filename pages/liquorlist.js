@@ -95,9 +95,7 @@ export default function LiquorList() {
                 <p>Loading...</p>
             ) : (
                 <>
-                    <Meta>
-                        登場するお酒一覧 | {SITE_FULL_TITLE}
-                    </Meta>
+                    <Meta title="登場するお酒一覧" />
                     <main>
                         <h2>
                             <p className="head__ja">お酒一覧</p>
