@@ -49,9 +49,8 @@ export default function LiquorList() {
     } );
 
     const base = groups.slice();
-    const getListByGenres = (genre) => {
-        return base.filter( item => item.genre === genre );
-    }
+    const getListByGenres = (genre) => base.filter( item => item.genre === genre );
+    const getListByBookNum = (num) => base.filter(item => item.bookNumber === num );
 
     const beers = getListByGenres("ビール");
     const cocktails = getListByGenres("カクテル");
@@ -62,6 +61,10 @@ export default function LiquorList() {
     const shochus = getListByGenres("焼酎");
     const etc = getListByGenres("その他");
 
+    const book1 = getListByBookNum(1);
+    const book2 = getListByBookNum(2);
+    const book3 = getListByBookNum(3);
+
     const genreLists = [
         {name: "すべて", list:base},
         {name: "ビール", list:beers},
@@ -71,8 +74,12 @@ export default function LiquorList() {
         {name: "日本酒", list:sakes},
         {name: "リキュール", list:liqueurs},
         {name: "焼酎", list:shochus},
-        {name: "その他", list:etc}
+        {name: "その他", list:etc},
+        {name: "1巻に登場するお酒", list:book1},
+        {name: "2巻に登場するお酒", list:book2},
+        // {name: "3巻に登場するお酒", list:book3}
     ];
+    console.log(genreLists);
 
     const initList = genreLists[0].list.slice();
     const [currentDisplayList, setCurrentDisplayList] = useState(initList);
