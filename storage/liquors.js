@@ -251,6 +251,31 @@ const liquorList = {
             "genre": "カクテル",
             "epidode": "9.5",
             "book_number": 1
+        },
+        {
+            "id": 22,
+            "name": "瑠璃 -Ruri-",
+            "description": "第2巻の表紙でぼたんと一緒に写っているビール。ホップの苦味と爽やかな口あたりのプレミアムピルスナービール。ピルスナービールは1840年代にチェコで生まれた透き通る金色のラガービールで、日本で流通しているほぼすべてのビールがピルスナービールに分類される。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26d0e9b7.469e3b75.26d0e9b8.774ce775/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshusendo%2F15236%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26d0e9b7.469e3b75.26d0e9b8.774ce775/?me_id=1365205&item_id=10000842&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fshusendo%2Fcabinet%2F07201781%2Fcompass1593915544.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 18,
+            "imagePath": "",
+            "imageInyou": "",
+            "genre": "ビール",
+            "epidode": "",
+            "book_number": 2
+        },
+        {
+            "id": 23,
+            "name": "狼山 秩父錦金印",
+            "description": "第2巻の10話で登場。寮のみんなで三峰神社へ参拝したときに、いぶきが抜け出して買ってきたカップ酒。ラベルに描かれているのはオオカミ。三峰神社を祀った日本武尊が三峰神社に入山した際、どこからともなく現れて道案内をしたことが由来となっている。オオカミは三峰神社にとって「御眷属」として祀られ、三峰信仰の中心となっている。",
+            "url": '',
+            "marker_id": 5,
+            "imagePath": "https://blog-imgs-77.fc2.com/d/i/c/dice1968/GR015822.jpg",
+            "imageInyou": "DICEを転がせ「秩父錦 狼山 ワンカップ」",
+            "inyouURL": "http://dice1968.blog137.fc2.com/blog-entry-784.html",
+            "genre": "日本酒",
+            "epidode": "10",
+            "book_number": 2
         }
     ]
 }

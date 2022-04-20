@@ -30,6 +30,7 @@ export default function LiquorList() {
             url: baseItem.url,
             imagePath: baseItem.imagePath,
             imageInyou: baseItem.imageInyou,
+            inyouURL: baseItem.inyouURL,
             maker: {
                 name: _maker && _maker.name ? _maker.name : "",
                 address: _maker && _maker.address ? _maker.address : "",
@@ -39,6 +40,7 @@ export default function LiquorList() {
             },
             genre: baseItem.genre,
             episode: ( (epi) => {
+                if(!epi) return null;
                 if(epi.indexOf(',') > 0) return epi.split(',').map(e => `#${e}`).join(' ');
                 return `#${epi}`;
             } )(baseItem.epidode),
@@ -126,7 +128,7 @@ export default function LiquorList() {
                                                 <p className={style.item__name}>{liq.name}</p>
                                                 <div className={style.item__meta}>
                                                     <p className={style.tag}>{liq.genre}</p>
-                                                    <p className={style.tag}>{liq.episode}</p>
+                                                    {liq.episode ? <p className={style.tag}>{liq.episode}</p> : <></>}
                                                     <p className={style.tag}>{liq.bookNumber}巻</p>
                                                 </div>
                                                 <p className={style.item__description}>{liq.description}</p>
@@ -143,7 +145,13 @@ export default function LiquorList() {
                                                 { liq.imagePath ?
                                                     <div className={style.item__imgEx}>
                                                         <Image width={240} height={200} objectFit="contain" src={liq.imagePath} />
-                                                        <p className='text_ms textCenter'>引用：{liq.imageInyou}</p>
+                                                        <p className='text_ms textCenter'>
+                                                        引用：{ liq.inyouURL ?
+                                                            <a href={liq.inyouURL} target="_blank" rel="noopener noreferrer">{liq.imageInyou}</a>
+                                                            :
+                                                            <>{liq.imageInyou}</>
+                                                        }
+                                                        </p>
                                                     </div>
                                                     :
                                                     <></>
