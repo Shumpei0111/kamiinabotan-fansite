@@ -255,13 +255,13 @@ const liquorList = {
         {
             "id": 22,
             "name": "瑠璃 -Ruri-",
-            "description": "第2巻の表紙でぼたんと一緒に写っているビール。ホップの苦味と爽やかな口あたりのプレミアムピルスナービール。ピルスナービールは1840年代にチェコで生まれた透き通る金色のラガービールで、日本で流通しているほぼすべてのビールがピルスナービールに分類される。",
+            "description": "第2巻の表紙でぼたんと一緒に写っているビール。また、12話でいぶき、ぼたん、やえかで訪れた川越の足湯カフェでも出された。ホップの苦味と爽やかな口あたりのプレミアムピルスナービール。ピルスナービールは1840年代にチェコで生まれた透き通る金色のラガービールで、日本で流通しているほぼすべてのビールがピルスナービールに分類される。",
             "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26d0e9b7.469e3b75.26d0e9b8.774ce775/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshusendo%2F15236%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26d0e9b7.469e3b75.26d0e9b8.774ce775/?me_id=1365205&item_id=10000842&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fshusendo%2Fcabinet%2F07201781%2Fcompass1593915544.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
             "marker_id": 18,
             "imagePath": "",
             "imageInyou": "",
             "genre": "ビール",
-            "epidode": "",
+            "epidode": "12",
             "book_number": 2
         },
         {
@@ -275,6 +275,97 @@ const liquorList = {
             "inyouURL": "http://dice1968.blog137.fc2.com/blog-entry-784.html",
             "genre": "日本酒",
             "epidode": "10",
+            "book_number": 2
+        },
+        {
+            "id": 24,
+            "name": "キリン・ザ・ストロング 本格レモン",
+            "description": "第2巻の11話で登場。かなでのアルバイト先で行われた飲み会であまったチューハイ。たいていこういうお酒は余りがちで、多分に漏れずかなでも持て余していたので、ぼたんと一緒に消費することにした。アルコール度数は9%で比較的高いが、それに負けない柑橘エキスと、キリンのチューハイ史上最強クラスの炭酸が特徴。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26d6e048.76eed311.26d6e049.98325515/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkakuyasu-liquor%2Fc343550%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26d6e048.76eed311.26d6e049.98325515/?me_id=1307485&item_id=10006432&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fkakuyasu-liquor%2Fcabinet%2Fb216808%2Ftokuseiremon1.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 19,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "チューハイ",
+            "epidode": "11",
+            "book_number": 2
+        },
+        {
+            "id": 25,
+            "name": "ソルティドッグ",
+            "description": "第2巻の13話で登場。いぶきとぼたんがデートで行ったバーで、いぶきが初めに頼んだお酒。メニューも見ずに気軽にマスターに注文したいぶきとは対照的に、ぼたんは初めてのバーということもあり緊張していた。「ソルティドッグ」はグレープフルーツジュースとウォッカを使い、グラスの縁に食塩をスノースタイルであしらい、最後にステアで作られる世界でも人気の高いカクテルの一つ。ちなみに縁に塩をつけない場合は「グレイハウンド」または「ブルドック」とも呼ぶ。",
+            "url": '',
+            "marker_id": null,
+            "imagePath": "https://jazzandcocktail.com/wp-content/uploads/slooProImg_20190313234354.jpg",
+            "imageInyou": "Jazz&Cocktail カクテル「ソルティドッグ」の作り方",
+            "inyouURL": "https://jazzandcocktail.com/salty_dog/",
+            "genre": "カクテル",
+            "epidode": "13",
+            "book_number": 2
+        },
+        {
+            "id": 26,
+            "name": "元気がでるカクテル",
+            "description": "「カクテルって自由なお酒なんだよな」ぼたんにだからこそ、つらい胸のうちを開けられたいぶき。そんな彼女が頼んだお酒はどんな味なのだろうか。",
+            "url": '',
+            "marker_id": null,
+            "imagePath": "http://vinbruleverre.com/wp-content/uploads/sites/5/2016/09/20160909_182859.jpg",
+            "imageInyou": "Vin Brule Verre",
+            "inyouURL": "http://vinbruleverre.com/blog/910/",
+            "genre": "カクテル",
+            "epidode": "13",
+            "book_number": 2
+        },
+        {
+            "id": 27,
+            "name": "ザ・グレンリベット",
+            "description": "第2巻14話で登場。かなでが用意したスコッチウイスキー。いぶきが一番好きなウイスキーで、いぶきの誕生日プレゼントに渡すため、ぼたん、あかねといちごウイスキーを作った。グレンリベットは初心者から愛好家まで、幅広い層に親しまれる人気のウイスキー。果実やフローラルなアロマを楽しめ、クセのない味わいでストレートに飲むのがおすすめ。ぼたんは「苦いチョコレートみたいな味」と評している。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26d7427b.7ed623f2.26d7427c.8674b7ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwhisky%2F510104%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26d7427b.7ed623f2.26d7427c.8674b7ad/?me_id=1322933&item_id=10002960&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fwhisky%2Fcabinet%2Frakuten4%2F510104_1.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 20,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "ウイスキー",
+            "epidode": "14",
+            "book_number": 2
+        },
+        {
+            "id": 28,
+            "name": "富士桜高原麦酒 ピルス",
+            "description": "第2巻15話で登場。いぶきとかなでが山梨までドライブデートで訪れた霧ヶ峰高原。そこでかなでがいぶきに一緒に飲もうと誘ったときに取り出したお酒。ピルスはドイツ仕込みの技術と富士山麓の上質な軟水で作られた質の高いクラフトビール。ぼたんの登場によって徐々に気持ちが抑えられなくなってきたかなでは、ついいぶきに振り向いて欲しいそぶりをしてしまう回でもある。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26d786d7.61d27e91.26d786d8.b213beac/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffujizakura%2Fbeer_p3s%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26d786d7.61d27e91.26d786d8.b213beac/?me_id=1211073&item_id=10000002&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Ffujizakura%2Fcabinet%2F02517644%2F202002%2Fbeer_p3s.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 21,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "ビール",
+            "epidode": "15",
+            "book_number": 2
+        },
+        {
+            "id": 29,
+            "name": "秩父麦酒 華熊",
+            "description": "第2巻17話で登場。いぶき・ぼたん・ジンランで「まほろバル」に訪れた際に思い出話として話題に出たビール。まほろバルは秩父麦酒オフィシャルタップルーム（ビール専門のバー）。いぶきが「IPAもこの前一緒に飲んだよ」と口にしていたのはおそらく「Punk IPA」だろう。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26b939dd.52e22f47.26b939de.3d5703b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchichibu-yao%2F00042631koguma%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26b939dd.52e22f47.26b939de.3d5703b1/?me_id=1209549&item_id=10004036&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fchichibu-yao%2Fcabinet%2Fnewnishiki%2Fkurafuto3.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 1,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "ビール",
+            "epidode": "17",
+            "book_number": 2
+        },
+        {
+            "id": 30,
+            "name": "イチローズモルト MWR(ミズナラ ウッド リザーブ)",
+            "description": "第2巻17話で登場。いぶき・ぼたん・ジンランで「まほろバル」に訪れた際にお店の棚に置かれていたお酒。ミズナラはブナ科の落葉広葉樹で、イチローズモルトは北海道産の良質なミズナラを使用している。定番のリーフシリーズのなかでもとりわけ看板商品として深い味わいで人気が高い。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26d7c6f7.e3d45cdd.26d7c6f8.829efaff/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fveritas%2Fyairmwj0%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26d7c6f7.e3d45cdd.26d7c6f8.829efaff/?me_id=1195685&item_id=10048676&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fveritas%2Fcabinet%2Ft3%2Fyairmwj0_1.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 7,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "ビール",
+            "epidode": "17",
             "book_number": 2
         }
     ]

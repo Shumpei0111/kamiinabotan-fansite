@@ -160,6 +160,33 @@
             "introduction": "",
             "twitter": "COEDOBREWERY"
 
+        },
+        {
+            "id": 19,
+            "name": "キリンビール株式会社",
+            "address": "東京都中野区中野4-10-2 中野セントラルパークサウス",
+            "url": "https://www.kirin.co.jp/",
+            "introduction": "",
+            "twitter": "Kirin_Company"
+
+        },
+        {
+            "id": 20,
+            "name": "ペルノ・リカール・ジャパン株式会社　PERNOD RICARD JAPAN K.K.",
+            "address": "東京都文京区後楽2-6-1住友不動産飯田橋ファーストタワー34階",
+            "url": "https://www.theglenlivet.jp/",
+            "introduction": "",
+            "twitter": "PernodRicard_jp"
+
+        },
+        {
+            "id": 21,
+            "name": "富士観光開発株式会社",
+            "address": "山梨県南都留郡富士河口湖町船津3633-1",
+            "url": "https://www.fujizakura-beer.jp/",
+            "introduction": "",
+            "twitter": "fujizakurahb"
+
         }
     ]
 }
