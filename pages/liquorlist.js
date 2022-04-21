@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Layout from "../components/layout";
 import Meta from "../components/meta";
-import { SITE_FULL_TITLE } from "../lib/constraint";
 
 import liquorList from '../storage/liquors.js';
 import makerList from '../storage/markers.json';
@@ -14,6 +13,7 @@ import style from '../styles/liquor.module.scss';
 
 export default function LiquorList() {
     const router = useRouter();
+    const { q } = router.query;
     const items = liquorList.data.slice();
     const makers = makerList.data.slice();
 
@@ -59,6 +59,7 @@ export default function LiquorList() {
     const sakes = getListByGenres("日本酒");
     const liqueurs = getListByGenres("リキュール");
     const shochus = getListByGenres("焼酎");
+    const chuhai = getListByGenres("チューハイ");
     const etc = getListByGenres("その他");
 
     const book1 = getListByBookNum(1);
@@ -66,20 +67,20 @@ export default function LiquorList() {
     const book3 = getListByBookNum(3);
 
     const genreLists = [
-        {name: "すべて", list:base},
-        {name: "ビール", list:beers},
-        {name: "カクテル", list:cocktails},
-        {name: "ワイン", list:wines},
-        {name: "ウイスキー", list:whiskys},
-        {name: "日本酒", list:sakes},
-        {name: "リキュール", list:liqueurs},
-        {name: "焼酎", list:shochus},
-        {name: "その他", list:etc},
-        {name: "1巻に登場するお酒", list:book1},
-        {name: "2巻に登場するお酒", list:book2},
-        // {name: "3巻に登場するお酒", list:book3}
+        {name: "すべて", list:base, q: null},
+        {name: "ビール", list:beers, q: "beer"},
+        {name: "カクテル", list:cocktails, q: "cocktail"},
+        {name: "ワイン", list:wines, q: "wine"},
+        {name: "ウイスキー", list:whiskys, q: "whisky"},
+        {name: "日本酒", list:sakes, q: "sake"},
+        {name: "リキュール", list:liqueurs, q: "liqueur"},
+        {name: "焼酎", list:shochus, q: "shochu"},
+        {name: "チューハイ", list:chuhai, q: "shochu_highball"},
+        {name: "その他", list:etc, q: "etc"},
+        {name: "1巻に登場するお酒", list:book1, q: "book1"},
+        {name: "2巻に登場するお酒", list:book2, q: "book2"},
+        // {name: "3巻に登場するお酒", list:book3, q: "book3"}
     ];
-    console.log(genreLists);
 
     const initList = genreLists[0].list.slice();
     const [currentDisplayList, setCurrentDisplayList] = useState(initList);
@@ -91,12 +92,29 @@ export default function LiquorList() {
 
         setTimeout(() => {
             const list = genreLists[ind].list.slice();
+            console.log("handleUpdateDisplayGenre",list);
             setCurrentDisplayList(list);
             setCurrentInd(ind);
+            router.push({ query: {q: genreLists[ind].q} });
             setChange(false);
         }, 200);
     };
 
+    useEffect(() => {
+        if(!router.isReady) return;
+
+        let targetInd = 0;
+        const getListByQuery = (query) => genreLists.filter( (item, ind) => {
+            if(item.q === query) targetInd = ind;
+            return item.q === query;
+        });
+        const narrowByQueryList = getListByQuery(q);
+
+        const displayList = narrowByQueryList[0].list;
+        setCurrentDisplayList(displayList);
+        setCurrentInd(targetInd);
+
+    }, [q, router]);
 
     return (
         <Layout>
@@ -154,7 +172,7 @@ export default function LiquorList() {
                                                         <Image width={240} height={200} objectFit="contain" src={liq.imagePath} />
                                                         <p className='text_ms textCenter'>
                                                         引用：{ liq.inyouURL ?
-                                                            <a href={liq.inyouURL} target="_blank" rel="noopener noreferrer">{liq.imageInyou}</a>
+                                                            <a className="underline" href={liq.inyouURL} target="_blank" rel="noopener noreferrer">{liq.imageInyou}</a>
                                                             :
                                                             <>{liq.imageInyou}</>
                                                         }
