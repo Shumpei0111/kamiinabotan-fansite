@@ -110,7 +110,7 @@ export default function LiquorList() {
         });
         const narrowByQueryList = getListByQuery(q);
 
-        const displayList = narrowByQueryList[0].list;
+        const displayList = narrowByQueryList && narrowByQueryList[0] ? narrowByQueryList[0].list : genreLists[0].list;
         setCurrentDisplayList(displayList);
         setCurrentInd(targetInd);
 
