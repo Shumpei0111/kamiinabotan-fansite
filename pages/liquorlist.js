@@ -132,6 +132,7 @@ export default function LiquorList() {
                         <p className={style.intro}>この作品はお酒が重要なアイテムとして登場します。舞台である秩父の地酒も多く登場しています。</p>
 
                         <div className={style.categoryContainer}>
+                            <p className={style.category__title}>カテゴリー一覧</p>
                             <ul className={style.category}>
                                 {
                                     genreLists.map( (item, index) => (

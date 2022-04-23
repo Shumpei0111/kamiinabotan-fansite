@@ -5,6 +5,15 @@
 }
 
 .categoryContainer {
+    .category__title {
+        font-size: 1.2rem;
+        padding: 4px 12px;
+        margin-bottom: 12px;
+        border: 1px solid v.$mainGrey;
+        border-radius: 4px;
+        display: inline-block;
+    }
+
     .category {
         margin-bottom: 32px;
         display: flex;
@@ -15,7 +24,6 @@
             margin-bottom: 8px;
             font-family: serif;
             font-size: 1.2rem;
-            // color: v.$mainGrey;
 
             .category__item__name {
                 &:hover {
@@ -43,6 +51,7 @@
 }
 
 .liquorContainer {
+    margin-bottom: 100px;
 
     .liquorItemList {
         transition: .2s;
