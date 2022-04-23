@@ -12,12 +12,12 @@ import TwitterShare from "./global/twitterShare";
 import { SITE_FULL_TITLE } from "../lib/constraint";
 
 export default function Layout({ children }) {
-    const pageTitle = children.props.children.filter( children => (
+    const pageTitle = children.props.children ? children.props.children.filter( children => (
         children.type.name === "Meta"
     ) ).map( item => ( item.props.title ) )
-    .join( "" );
+    .join( "" ) : "";
 
-    const sharePageTitle = `${pageTitle} | ${SITE_FULL_TITLE}`;
+    const sharePageTitle = pageTitle ? `${pageTitle} | ${SITE_FULL_TITLE}` : `${SITE_FULL_TITLE}`;
 
     const router = useRouter();
     const isIndexPage = router.pathname === '/';
