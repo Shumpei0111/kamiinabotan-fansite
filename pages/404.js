@@ -34,18 +34,6 @@ const NotFoundPage = () => {
                                     <Link href="/liquorlist"><a className="underline">▶︎ 登場するお酒一覧</a></Link>
                                 </li>
                             </ul>
-                            <div className="separate"></div>
-                            <div className="mt-60">
-                                <div className="mt-24">
-                                    <h3>既刊を読む</h3>
-                                    <KikanComics />
-                                </div>
-
-                                <div className="mt-24">
-                                    <h3>著者関連書籍を読む</h3>
-                                    <KanrenComics />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </>

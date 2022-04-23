@@ -4,6 +4,7 @@ import Link from "next/link";
 import Meta from "./meta";
 import Header from "./global/header";
 import BaseLinks from "./global/baseLinks";
+import KikanComics from "./kikanComics";
 import ToTopPage from "./toPageTop";
 import Footer from "./global/footer";
 import { useState, useEffect } from "react";
@@ -32,9 +33,16 @@ export default function Layout({ children }) {
                 <main className="contents">{children}</main>
                     {
                         isIndexPage ? false :
-                        <div className="backHome">                        
-                            <Link href="/"><a className="backHomeLink">ホームへ戻る</a></Link>
-                        </div>
+                        <>
+                            <div className="separate"></div>
+                            <div className="mt-32">
+                                <h3>既刊を読む</h3>
+                                <KikanComics />
+                            </div>
+                            <div className="backHome">                        
+                                <Link href="/"><a className="backHomeLink">ホームへ戻る</a></Link>
+                            </div>
+                        </>
                     }
                 <ToTopPage />
                 <Footer />
