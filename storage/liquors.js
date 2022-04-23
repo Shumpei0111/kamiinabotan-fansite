@@ -2,7 +2,7 @@ const liquorList = {
     "data": [
         {
             "id": 1,
-            "name": "秩父麦酒",
+            "name": "秩父麦酒 ",
             "description": "第1巻の表紙でぼたんが手に持っているビール。第3話でもかなでが冷蔵庫から取り出すところが描かれている。また、第5話でも長瀞でやえかがみんなに振る舞うなど、作品でもよく登場するお酒である。",
             "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26b939dd.52e22f47.26b939de.3d5703b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchichibu-yao%2F00042631koguma%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26b939dd.52e22f47.26b939de.3d5703b1/?me_id=1209549&item_id=10004036&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fchichibu-yao%2Fcabinet%2Fnewnishiki%2Fkurafuto1.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
             "marker_id": 1,
@@ -345,7 +345,7 @@ const liquorList = {
         {
             "id": 29,
             "name": "秩父麦酒 華熊",
-            "description": "第2巻17話で登場。いぶき・ぼたん・ジンランで「まほろバル」に訪れた際に思い出話として話題に出たビール。まほろバルは秩父麦酒オフィシャルタップルーム（ビール専門のバー）。いぶきが「IPAもこの前一緒に飲んだよ」と口にしていたのはおそらく「Punk IPA」だろう。",
+            "description": "第2巻17話で登場。いぶき・ぼたん・ジンランで「まほろバル」に訪れた際に思い出話として話題に出た苦味が控えめなビール。まほろバルは秩父麦酒オフィシャルタップルーム（ビール専門のバー）。いぶきが「IPAもこの前一緒に飲んだよ」と口にしていたのはおそらく「Punk IPA」だろう。",
             "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26b939dd.52e22f47.26b939de.3d5703b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchichibu-yao%2F00042631koguma%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26b939dd.52e22f47.26b939de.3d5703b1/?me_id=1209549&item_id=10004036&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fchichibu-yao%2Fcabinet%2Fnewnishiki%2Fkurafuto3.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
             "marker_id": 1,
             "imagePath": "",
@@ -366,6 +366,45 @@ const liquorList = {
             "inyouURL": "",
             "genre": "ビール",
             "epidode": "17",
+            "book_number": 2
+        },
+        {
+            "id": 31,
+            "name": "秩父麦酒 紅熊X",
+            "description": "第2巻17話で登場。いぶき・ぼたん・ジンランで「まほろバル」に訪れた際に注文したビール。希少モルトの「Red-X」のみを使用した紅色のビール。ミズナラの香りが特徴。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26b939dd.52e22f47.26b939de.3d5703b1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchichibu-yao%2F00042631koguma%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26b939dd.52e22f47.26b939de.3d5703b1/?me_id=1209549&item_id=10004036&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fchichibu-yao%2Fcabinet%2Fnewnishiki%2Fkurafuto6.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 1,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "ビール",
+            "epidode": "17",
+            "book_number": 2
+        },
+        {
+            "id": 32,
+            "name": "武甲正宗 純米生酒",
+            "description": "第2巻18話で登場。いぶき・ぼたん・ジンランで民泊に宿泊した際、泊まった部屋の冷蔵庫に用意されていたお酒。創業 宝暦三年の老舗酒造が作るお酒の中でも爽やかな喉ごしで、カジュアルに楽しめる。冷やして飲むのがおすすめ。製造している武甲酒造では非対面型利き酒機が利用でき、冷たい日本酒や希少ワインを試飲することができる。",
+            "url": '',
+            "marker_id": 22,
+            "imagePath": "https://image.raku-uru.jp/01/9242/246/zyunnama300_1592371699381.jpg",
+            "imageInyou": "武甲酒造",
+            "inyouURL": "https://bukou.raku-uru.jp/item-detail/399656",
+            "genre": "日本酒",
+            "epidode": "18",
+            "book_number": 2
+        },
+        {
+            "id": 33,
+            "name": "武甲正宗 純米生酒 ワンカップ",
+            "description": "第2巻18話で登場。いぶき・ぼたん・ジンランで民泊に宿泊した際、泊まった部屋の冷蔵庫に用意されていたワンカップ。創業 宝暦三年の老舗酒造が作るお酒の中でも軽くすっきりとした味わい。冷やして飲むのがおすすめ。製造している武甲酒造では非対面型利き酒機が利用でき、冷たい日本酒や希少ワインを試飲することができる。",
+            "url": '',
+            "marker_id": 22,
+            "imagePath": "https://image.raku-uru.jp/01/9242/245/zyunnama180n_1592371682414.jpg",
+            "imageInyou": "武甲酒造",
+            "inyouURL": "https://bukou.raku-uru.jp/item-detail/399657",
+            "genre": "日本酒",
+            "epidode": "18",
             "book_number": 2
         }
     ]

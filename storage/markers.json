@@ -6,7 +6,7 @@
             "address": "埼玉県秩父市下吉田3786-1",
             "url": "https://chichibubeer.shop-pro.jp/",
             "introduction": "",
-            "twitter": ""
+            "twitter": "Chichibubeer"
 
         },
         {
@@ -186,6 +186,15 @@
             "url": "https://www.fujizakura-beer.jp/",
             "introduction": "",
             "twitter": "fujizakurahb"
+
+        },
+        {
+            "id": 22,
+            "name": "武甲酒造株式会社",
+            "address": "埼玉県秩父市宮側町21-27",
+            "url": "https://www.bukou.co.jp/",
+            "introduction": "",
+            "twitter": "bukousyuzou"
 
         }
     ]
