@@ -18,7 +18,7 @@ export default function Meta(props) {
             <meta property="og:url" content={url} />
             <meta property="og:title" content={title_tag} />
             <meta property="og:site_name" content={SITE_FULL_TITLE} />
-            <meta property="og:description" content={`マンガ「${product_title}」のファンサイトです。`} />
+            <meta property="og:description" content={`マンガ「${product_title}」のファンサイトです。登場するキャラはもちろん、お酒の情報なども掲載しています！`} />
             <meta property="og:type" content="website" />
             <meta property="og:image" content={imgURL} />
             <meta property="og:image:width" content={String(imgWidth)} />

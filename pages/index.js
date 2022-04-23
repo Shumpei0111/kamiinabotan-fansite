@@ -10,8 +10,9 @@ import styles from '../styles/Home.module.scss';
 
 import master from '../storage/master.json';
 import TwitterTimeline from '../components/twitterTimeline';
+import TwitterShare from '../components/global/twitterShare';
 
-import { LINE_STAMP_URL } from '../lib/constraint';
+import { LINE_STAMP_URL, SITE_FULL_TITLE } from '../lib/constraint';
 
 
 export default function Home() {
@@ -128,6 +129,15 @@ export default function Home() {
 								<KanrenComics />
 							</div>
 						</div>
+					</section>
+
+					<section className={styles.sectionWrapper}>
+					<TwitterShare
+						url={"https://yuriyoi.site"}
+						title={SITE_FULL_TITLE}
+						via="seventhseven"
+						related={["seventhseven"]}
+					/>
 					</section>
 				</main>
 				{/* コンテンツエンド */}
