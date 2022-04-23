@@ -6,7 +6,10 @@ export default function HomeNews() {
 
     return (
         <>
-            <h2>ニュース</h2>
+            <h2>
+                <p className="head__ja">ニュース</p>
+                <span className="head__en">News</span>
+            </h2>
             <div>
                 <ul className={style.newsList}>
                     {_news.map( n => {

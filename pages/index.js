@@ -37,7 +37,10 @@ export default function Home() {
 					</section>
 
 					<section className={styles.sectionWrapper}>
-						<h2>あらすじ</h2>
+						<h2>
+							<p className="head__ja">あらすじ</p>
+							<span className="head__en">Story</span>
+						</h2>
 						<p className={styles.arasuji}>上伊那ぼたんは２０歳の大学生。<br />
 							入った寮の歓迎パーティで寮長のいぶきにハイボールを飲ませてもらうと酔った勢いでいぶきに絡み始めて・・・?<br />
 							酔っ払いいちゃいちゃガールズコメディ！
@@ -58,19 +61,28 @@ export default function Home() {
 					</section>
 
 					<section className={styles.sectionWrapper}>
-						<h2>既刊</h2>
+						<h2>
+							<p className="head__ja">既刊</p>
+							<span className="head__en">Books</span>
+						</h2>
 						<KikanComics />
 					</section>
 
 					<section className={styles.sectionWrapper}>
-						<h2>公式サイト</h2>
+						<h2>
+							<p className="head__ja">公式サイト</p>
+							<span className="head__en">Official Site</span>
+						</h2>
 						<div>
 							<a className="underline" href={master.published_url} target="_blank" rel="noopener noreferrer">「{master.title}」</a>
 						</div>
 					</section>
 
 					<section className={styles.sectionWrapper}>
-						<h2>公式Twitter</h2>
+						<h2>
+							<p className="head__ja">公式Twitter</p>
+							<span className="head__en">Twitter</span>
+						</h2>
 						<a className="underline" href={master.official_twitter} target="_blank" rel="noopener noreferrer">@kamiinabotan</a>
 						<div className={styles.twitterTimeline}>
 							<TwitterTimeline />
@@ -78,7 +90,10 @@ export default function Home() {
 					</section>
 
 					<section className={styles.sectionWrapper}>
-						<h2>LINEスタンプ</h2>
+						<h2>
+							<p className="head__ja">LINEスタンプ</p>
+							<p className="head__en">Goods</p>
+						</h2>
 
 						<div className={styles.lineStamp}>
 							<a href={LINE_STAMP_URL} target="_blank" rel="noopener noreferrer">
@@ -89,7 +104,10 @@ export default function Home() {
 					</section>
 
 					<section className={styles.sectionWrapper}>
-						<h2>作者紹介（敬称略）</h2>
+						<h2>
+							<p className="head__ja">作者紹介（敬称略）</p>
+							<span className="head__en">Author</span>
+						</h2>
 						<div>
 							<p className={styles.authName}>{master.author}</p>
 							<div className={styles.authSNS}>

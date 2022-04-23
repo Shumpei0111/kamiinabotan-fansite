@@ -4,7 +4,10 @@ import Link from 'next/link';
 export default function HomeContents() {
     return (
         <>
-            <h2>コンテンツ</h2>
+            <h2>
+                <p className="head__ja">コンテンツ</p>
+                <span className="head__en">Contents</span>
+            </h2>
             <ul className={styles.contentsItems}>
                 {/* <li className={styles.item}>
                     <Link href="/episode">
