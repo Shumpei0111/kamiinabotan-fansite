@@ -196,6 +196,15 @@
             "introduction": "",
             "twitter": "bukousyuzou"
 
+        },
+        {
+            "id": 23,
+            "name": "Wolfburn Distillery",
+            "address": "Henderson Park, Thurso, Caithness, Scotland KW14 7XW",
+            "url": "https://wolfburn.com/",
+            "introduction": "",
+            "twitter": "wolfburn_whisky"
+
         }
     ]
 }

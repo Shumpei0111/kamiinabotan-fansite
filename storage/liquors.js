@@ -406,6 +406,19 @@ const liquorList = {
             "genre": "日本酒",
             "epidode": "18",
             "book_number": 2
+        },
+        {
+            "id": 34,
+            "name": "ウルフバーン三峰神社境内限定販売ボトル",
+            "description": "第2巻10話で登場。具体的にラベルが描かれているわけではないが、作中でいぶきが「海外の蒸留所とコラボしたウイスキーとか売ってる!!」と話していたことから特定。狼をシンボルとするウルフバーン蒸留所と、同じく狼を「御眷属」として祀っている三峰神社のコラボモデル。香ばしいナッツ・アプリコットなどのような柔らかい味わい。ハイボールにして飲むのがおすすめ。",
+            "url": '',
+            "marker_id": 23,
+            "imagePath": "https://pbs.twimg.com/media/FILKq6WacAkRNXr?format=jpg&name=large",
+            "imageInyou": "おぎおぎ太様(Twitter)",
+            "inyouURL": "https://twitter.com/o2lupin/status/1477966488338583554?s=20&t=EG3IJV7AGSluN6QUz-mJNg",
+            "genre": "ウイスキー",
+            "epidode": "10",
+            "book_number": 2
         }
     ]
 }
