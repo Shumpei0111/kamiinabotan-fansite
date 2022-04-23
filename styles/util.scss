@@ -11,6 +11,14 @@
     flex-wrap: wrap;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.just-center {
+    justify-content: center;
+}
+
 .flex > * {
     margin-right: 16px;
 }
@@ -29,6 +37,10 @@
 
 .mt-60 {
     margin-top: 60px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
 }
 
 .mt-32 {

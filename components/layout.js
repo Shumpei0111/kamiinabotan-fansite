@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -7,11 +8,13 @@ import BaseLinks from "./global/baseLinks";
 import KikanComics from "./kikanComics";
 import ToTopPage from "./toPageTop";
 import Footer from "./global/footer";
-import { useState, useEffect } from "react";
+import TwitterShare from "./global/twitterShare";
+import { SITE_FULL_TITLE } from "../lib/constraint";
 
 export default function Layout({ children }) {
     const router = useRouter();
     const isIndexPage = router.pathname === '/';
+    const pageURL = `https://yuriyoi.site${router.asPath}`
 
     const [loading, setLoading] = useState( false );
 
@@ -34,6 +37,13 @@ export default function Layout({ children }) {
                     {
                         isIndexPage ? false :
                         <>
+                            <p className="text-center">このコンテンツが「面白い」と思ったら、下記ボタンからTwitterでのシェアをお願いします！</p>
+                            <TwitterShare
+                                url={pageURL}
+                                title={SITE_FULL_TITLE}
+                                via="seventhseven"
+                                related={["seventhseven"]}
+                            />
                             <div className="separate"></div>
                             <div className="mt-32">
                                 <h3>既刊を読む</h3>
