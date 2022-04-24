@@ -86,16 +86,30 @@ export default function LiquorList() {
     const [currentDisplayList, setCurrentDisplayList] = useState(initList);
     const [currentInd, setCurrentInd] = useState(0);
     const [isChange, setChange] = useState(false);
+    const [isReverse, setIsReverse] = useState(false);
 
     const handleUpdateDisplayGenre = (ind) => {
         setChange(true);
 
         setTimeout(() => {
             const list = genreLists[ind].list.slice();
-            console.log("handleUpdateDisplayGenre",list);
             setCurrentDisplayList(list);
             setCurrentInd(ind);
             router.push({ query: {q: genreLists[ind].q} });
+            setChange(false);
+        }, 200);
+    };
+
+    function getReverseList(list) { return list.slice().reverse() };
+
+    const handleUpdateReverseList = () => {
+        setChange(true);
+
+        setTimeout(() => {
+            const list = currentDisplayList.slice();
+            const rList = getReverseList(list);
+            setCurrentDisplayList(rList);
+            setIsReverse( isReverse =! isReverse );
             setChange(false);
         }, 200);
     };
@@ -111,7 +125,8 @@ export default function LiquorList() {
         const narrowByQueryList = getListByQuery(q);
 
         const displayList = narrowByQueryList && narrowByQueryList[0] ? narrowByQueryList[0].list : genreLists[0].list;
-        setCurrentDisplayList(displayList);
+        const resList = isReverse ? getReverseList(displayList) : displayList;
+        setCurrentDisplayList(resList);
         setCurrentInd(targetInd);
 
     }, [q, router]);
@@ -132,7 +147,16 @@ export default function LiquorList() {
                         <p className={style.intro}>この作品はお酒が重要なアイテムとして登場します。舞台である秩父の地酒も多く登場しています。</p>
 
                         <div className={style.categoryContainer}>
-                            <p className={style.category__title}>カテゴリー一覧</p>
+                            <div className="flex just-between">
+                                <p className={style.category__title}>カテゴリー一覧</p>
+                                <p className={style.listReverseButton} onClick={()=>handleUpdateReverseList()}>
+                                    { !isReverse ? (
+                                        <span>新しい順に並び替える▲</span>
+                                        ) : (
+                                        <span>古い順に並び替える▼</span>
+                                    )}
+                                </p>
+                            </div>
                             <ul className={style.category}>
                                 {
                                     genreLists.map( (item, index) => (

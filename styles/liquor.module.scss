@@ -14,6 +14,21 @@
         display: inline-block;
     }
 
+    .listReverseButton {
+        font-size: 1.2rem;
+        padding: 4px 12px;
+        margin-bottom: 12px;
+        display: inline-block;
+        border-radius: 4px;
+        background-color: v.$mainGrey;
+        width: 156px;
+        text-align: center;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
     .category {
         margin-bottom: 32px;
         display: flex;
