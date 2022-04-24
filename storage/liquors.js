@@ -482,7 +482,20 @@ const liquorList = {
             "imageInyou": "鶴見酒造 夢乃寒梅 19年古酒",
             "inyouURL": "https://tsurumi008.stores.jp/items/5fbdf0fcf0b10828159ad828",
             "genre": "ビール",
-            "epidode": "20",
+            "epidode": "21",
+            "book_number": 3
+        },
+        {
+            "id": 40,
+            "name": "黄金湯で飲んだクラフトビール",
+            "description": "第3巻第22話で登場。バンド活動と就職活動、進路に悩むあかね。やえか・ぼたん・ジンランと食事をするもずっとぼーっとしているあかねに見かねてやえかは錦糸町にある黄金湯という銭湯に誘う。黄金湯は創業1932年の老舗なものの、「大衆浴場」のスタイルを守りつつ、大規模改修によってDJブースやサウナ、オリジナルクラフトビールが楽しめる番台バーなど現代に合わせたスタイルも取り入れている。",
+            "url": '',
+            "marker_id": 26,
+            "imagePath": "https://www.houyhnhnm.jp/wp-content/uploads/2020/09/IMG_6350-1.jpg",
+            "imageInyou": "HOUYHNHNM オートロウリュにクラフトビール、DJブースまで⁉︎ ニューウェーブ銭湯「黄金湯」が示す、新時代の風呂屋のカタチ。",
+            "inyouURL": "https://www.houyhnhnm.jp/news/386293/",
+            "genre": "ビール",
+            "epidode": "22",
             "book_number": 3
         }
     ]
