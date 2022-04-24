@@ -79,7 +79,7 @@ export default function LiquorList() {
         {name: "その他", list:etc, q: "etc"},
         {name: "1巻に登場するお酒", list:book1, q: "book1"},
         {name: "2巻に登場するお酒", list:book2, q: "book2"},
-        // {name: "3巻に登場するお酒", list:book3, q: "book3"}
+        {name: "3巻に登場するお酒", list:book3, q: "book3"}
     ];
 
     const initList = genreLists[0].list.slice();

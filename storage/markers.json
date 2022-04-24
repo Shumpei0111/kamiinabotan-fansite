@@ -205,6 +205,24 @@
             "introduction": "",
             "twitter": "wolfburn_whisky"
 
+        },
+        {
+            "id": 24,
+            "name": "宇宙カンパニー合同会社",
+            "address": "山梨県北杜市高根町蔵原937番地1",
+            "url": "https://uchubrewing.com/",
+            "introduction": "",
+            "twitter": "uchubrewing"
+
+        },
+        {
+            "id": 25,
+            "name": "鶴見酒造",
+            "address": "愛知県津島市百町字旭46番地",
+            "url": "https://www.tsurumi-jp.com/",
+            "introduction": "",
+            "twitter": "tsurumi1873"
+
         }
     ]
 }

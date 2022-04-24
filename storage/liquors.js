@@ -419,6 +419,71 @@ const liquorList = {
             "genre": "ウイスキー",
             "epidode": "10",
             "book_number": 2
+        },
+        {
+            "id": 35,
+            "name": "アルケミエ ラベンダージン",
+            "description": "第3巻表紙で登場。ぼたんが腕に抱えている、手のイラストが特徴的なボトルがポイント。個性的で人気が高く、瞬く間に完売し、市場には高額で売買されるほど。",
+            "url": '',
+            "marker_id": 23,
+            "imagePath": "https://item-shopping.c.yimg.jp/i/n/chagatapark_162413222",
+            "imageInyou": "お酒のちゃがたパークPayPayモール店",
+            "inyouURL": "https://paypaymall.yahoo.co.jp/store/chagatapark/item/162413222/",
+            "genre": "リキュール",
+            "epidode": "",
+            "book_number": 3
+        },
+        {
+            "id": 36,
+            "name": "武甲正宗 本醸造 ワンカップ",
+            "description": "第3巻第19話で登場。いぶき・かなで・ジンランで登山した武甲山の山中の祠にお供えされていたお酒。直前でいぶきが出会ったおばあさんと何か関係があるかも...?秩父を代表する清酒で、すっきりでやや辛口。冷や・お燗・熱燗なんでも合うバランスの良い日本酒。",
+            "url": '',
+            "marker_id": 22,
+            "imagePath": "https://image.raku-uru.jp/01/9242/235/masamunecup180_1592371435541.jpg",
+            "imageInyou": "武甲正宗 本醸造 ワンカップ 180ml",
+            "inyouURL": "https://bukou.raku-uru.jp/item-detail/399713",
+            "genre": "日本酒",
+            "epidode": "",
+            "book_number": 3
+        },
+        {
+            "id": 37,
+            "name": "THUNDER",
+            "description": "第3巻第20話で登場。いぶきとぼたんがスカイツリーがあるソラマチ周辺でデートした際、いぶきが寮から持ってきたIPA系のビール。宇宙に起こったことを9つのテーマに分けてビールとして表現したシリーズで、THUNDERは4番目のストーリーとして位置づけられている。ホップを大量に使用することで、果実感・爽快感のある苦味を表現している。作中でもいぶきが「私も宇宙に想いを馳せて味わいたいんだ」と言うシーンがあるが、ぼたんへの理解と重ねているのかもしれない。",
+            "url": '',
+            "marker_id": 24,
+            "imagePath": "https://img07.shop-pro.jp/PA01416/174/product/147370655.jpg?cmsp_timestamp=20200529164644",
+            "imageInyou": "宇宙ブルーイング THUNDER",
+            "inyouURL": "https://uchubrew.shop-pro.jp/?pid=147370655",
+            "genre": "ビール",
+            "epidode": "20",
+            "book_number": 3
+        },
+        {
+            "id": 38,
+            "name": "ETERNITY",
+            "description": "第3巻第20話で登場。いぶきとぼたんがスカイツリーがあるソラマチ周辺でデートした際、いぶきが寮から持ってきたビール。モザイクインコグニートという超濃厚ホップエキスを使った、グレープフルーツなどのようなトロピカルな味わいを楽しめるIPA系ビール。",
+            "url": '',
+            "marker_id": 24,
+            "imagePath": "https://img07.shop-pro.jp/PA01423/875/product/155782861.jpg?cmsp_timestamp=20201127142307",
+            "imageInyou": "一期一会〜る 宇宙ブルーイング ETERNITY",
+            "inyouURL": "https://151l.shop/?pid=155782861",
+            "genre": "ビール",
+            "epidode": "20",
+            "book_number": 3
+        },
+        {
+            "id": 39,
+            "name": "夢乃寒梅 19年古酒",
+            "description": "第3巻第21話で登場。寮のお風呂が沸くまでの間、かなでがジンランと飲んだお酒。蔵の中でじっくりと寝かせた熟成酒は琥珀色をしていて、甘味の他に酸味や苦味などもある。実はいぶきがかなでにプレゼントしたお酒。かなではあまり日本酒を飲まないので、まだ難しいお酒だと評しているが、少しいぶきの事を重ねているのかもしれない。作中に出てきた「海外コンペ」とは、ロンドンで開催されたIWC(インターナショナル・ワイン・チャレンジ)の日本古酒部門で銀メダルを受賞。IWCは1984年に設立の世界的にも権威のある審査会。",
+            "url": '',
+            "marker_id": 25,
+            "imagePath": "https://p1-e6eeae93.imageflux.jp/tsurumi008/699cb615b9013be6ca1c.jpg",
+            "imageInyou": "鶴見酒造 夢乃寒梅 19年古酒",
+            "inyouURL": "https://tsurumi008.stores.jp/items/5fbdf0fcf0b10828159ad828",
+            "genre": "ビール",
+            "epidode": "20",
+            "book_number": 3
         }
     ]
 }
