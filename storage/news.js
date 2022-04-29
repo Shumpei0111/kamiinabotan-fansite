@@ -6,6 +6,12 @@ const tags = {
 
 const news = [
     {
+        date: "2022.04.28",
+        head: "単行本題1巻の重版が決定しました！",
+        url: "https://amzn.to/3rYpS2Y",
+        tag: tags.goods,
+    },
+    {
         date: "2022.04.26",
         head: "第29話が更新されました！",
         url: "https://mangacross.jp/comics/kamiinabotan/32",
