@@ -82,7 +82,13 @@
             "introduction": "留学生。寮生。台湾出身。おっとりした雰囲気でマイペースな性格。かなでが内に秘める恋心を感じ取り、そっとそばにいる優しい気持ちの持ち主。有意思〜。",
             "clothConcept": "-",
             "imgPath": "/assets/img/ginran.jpeg",
-            "inyou": "第3巻 p46"
+            "inyou": "第3巻 p46",
+            "model": {
+                "name": "KAVALAN / マスターブレンダー「張 郁嵐(イアン・チャン)」氏",
+                "url": "https://www.kavalan.jp/",
+                "company": "金車噶瑪蘭威士忌酒廠",
+                "address": "No. 326, Section 2, Yuanshan Rd, Yuanshan Township, Yilan County, 台湾 264"
+            }
         }
     ]
 }
