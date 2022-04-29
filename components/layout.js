@@ -39,7 +39,9 @@ export default function Layout({ children }) {
             <div id="__kamiinaBotan__root__">
                 <Header isLoading={loading} />
                 <BaseLinks />
-                <main className="contents">{children}</main>
+                <main className="contents relative">{children}</main>
+                    <span className="bg left-_10 --bubble --bubble-blue"></span>
+                    <span className="bg right-_10 bottom-20 --bubble --bubble-pink"></span>
                     {
                         isIndexPage ? false :
                         <>
