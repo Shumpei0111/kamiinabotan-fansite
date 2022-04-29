@@ -40,7 +40,7 @@ export default function Episode() {
                                 }
                             </ul>
                         </div>
-                        <div className={style.charaWrapper}>
+                        <div className={`${style.charaWrapper} relative`}>
                             {
                                 _characters.map( c => {
                                     return (
@@ -60,7 +60,25 @@ export default function Episode() {
                                                 <></>
                                             }
                                             <p className={style.charaIntro}>{c.introduction}</p>
-                                            <p>衣装コンセプト：{c.clothConcept}</p>
+                                            <p><span className="bold">衣装コンセプト：</span><span>{c.clothConcept}</span></p>
+                                            { c.model ? (
+                                                <div className={style.distillery}>
+                                                    <p className="bold">モデルになった蒸留所</p>
+                                                    <dl className={`flex ${style.distillery__container}`}>
+                                                        <dt className={style.distillery__dt}>蒸留所名:</dt>
+                                                        <dd className={style.distillery__dd}>{c.model.name}</dd>
+                                                        <dt className={style.distillery__dt}>住所:</dt>
+                                                        <dd className={style.distillery__dd}>{c.model.address}</dd>
+                                                        <dt className={style.distillery__dt}>URL:</dt>
+                                                        <dd className={style.distillery__dd}><a className="underline" href={c.model.url} target="_blank" rel="noopener noreferrer">{c.model.url}</a></dd>
+                                                        <dt className={style.distillery__dt}>会社名:</dt>
+                                                        <dd className={style.distillery__dd}>{c.model.company}</dd>
+                                                    </dl>
+                                                    <p className="text_ms">※名前の由来から推測した情報です。モデルがあることは明かされていないため、参考情報になります。</p>
+                                                </div>
+                                            ) : (
+                                                <></>
+                                            ) }
                                         </div>
                                     )
                                 } )

@@ -10,6 +10,7 @@
     .charaNameList {
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 64px;
 
         .charaNameList__name {
             text-decoration: underline;
@@ -68,6 +69,43 @@
 
         &__inyouText {
             font-size: 1.2rem;
+        }
+    }
+
+    .distillery {
+        padding: 16px 0;
+
+        .distillery__container {
+            margin-left: 16px;
+
+            .distillery__dt {
+                width: 10%;
+                margin: 0;
+                padding: 4px 0;
+            }
+            .distillery__dd {
+                width: 90%;
+                margin: 0;
+                padding: 4px 0;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .distillery {
+            .distillery__container {
+                margin-left: 0;
+                font-size: 1.2rem;
+
+                .distillery__dt {
+                    width: 100%;
+                }
+                .distillery__dd {
+                    width: 100%;
+                    word-break: break-all;
+                    padding-left: 16px;
+                }
+            }
         }
     }
 }

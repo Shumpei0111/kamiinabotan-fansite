@@ -7,7 +7,13 @@
             "introduction": "主人公。大学1年生。寮生。長野県出身。新入生歓迎会をきっかけにお酒を飲み始める。普段は少しおとなしめな可愛らしい面もあるが、お酒を飲むと積極的になったり、小悪魔的な言動が見え隠れする。",
             "clothConcept": "華やか",
             "imgPath": "/assets/img/botan.jpg",
-            "inyou": "第1巻 p43"
+            "inyou": "第1巻 p43",
+            "model": {
+                "name": "マルス信州蒸溜所",
+                "url": "https://www.hombo.co.jp/company/kura/shinshu.html",
+                "company": "本坊酒造株式会社",
+                "address": "長野県上伊那郡宮田村4752-31"
+            }
         },
         {
             "id": 2,
@@ -16,7 +22,13 @@
             "introduction": "寮長。大学3年生。富山県出身。昔とあることがきっかけで人前でお酒を飲むことを極端に嫌うようになってしまった。お酒を1人で飲んでいるところを偶然ぼたんに見つかったことがきっかけで、徐々に彼女の気持ちも変化していく。",
             "clothConcept": "ストレスフリー",
             "imgPath": "/assets/img/ibuki.jpg",
-            "inyou": "第1巻 p61"
+            "inyou": "第1巻 p61",
+            "model": {
+                "name": "三郎丸蒸留所",
+                "url": "https://www.wakatsuru.co.jp/saburomaru/",
+                "company": "若鶴酒造",
+                "address": "富山県砺波市三郎丸208"
+            }
         },
         {
             "id": 3,
@@ -25,7 +37,13 @@
             "introduction": "寮生。修士1年生。岐阜県出身。高身長で美形なため、ぼたんから「女優のよう」と評される。いぶきのことを常に気にかけている。学年的にもいぶきと過ごした時間が一番長いが、ぼたんが現れたことでやきもちを焼くことがだんだんと増えている。みんなから「郡上先輩」と呼ばれている。",
             "clothConcept": "気品",
             "imgPath": "/assets/img/kanade.jpeg",
-            "inyou": "第2巻 p73"
+            "inyou": "第2巻 p73",
+            "model": {
+                "name": "辰巳蒸留所",
+                "url": "https://www.facebook.com/TatsumiDistillery/",
+                "company": "",
+                "address": "岐阜県郡上市八幡町旭1072-2"
+            }
         },
         {
             "id": 4,
@@ -34,16 +52,28 @@
             "introduction": "寮生。大学2年生。山梨県出身。小柄で可愛らしい見た目とは裏腹に、1人で旅行やアウトドアを楽しむ。あかねと仲を深めたことでバイクの免許も取る行動派。",
             "clothConcept": "少女性と大人の気品",
             "imgPath": "/assets/img/yaeka.jpeg",
-            "inyou": "第1巻 p70"
+            "inyou": "第1巻 p70",
+            "model": {
+                "name": "サントリー白州蒸溜所",
+                "url": "https://www.suntory.co.jp/factory/hakushu/",
+                "company": "サントリーホールディングス株式会社",
+                "address": "山梨県北杜市白州町鳥原2913-1"
+            }
         },
         {
             "id": 5,
             "name": "遊佐あかね",
-            "ruby": "ゆさ・あかね",
+            "ruby": "ゆざ・あかね",
             "introduction": "寮生。大学2年生。両親の影響で音楽に造詣が深い。寮では父が所有するアナログレコードを持ち込み、ぼたんといぶきに聴かせたこともある。自身もギターを弾き、YOus!Rというバンドを組んでいる。",
             "clothConcept": "カジュアル・中性的",
             "imgPath": "/assets/img/akane.jpeg",
-            "inyou": "第2巻 p36"
+            "inyou": "第2巻 p36",
+            "model": {
+                "name": "遊佐蒸留所",
+                "url": "https://yuza-disty.jp/",
+                "company": "株式会社 金龍",
+                "address": "山形県酒田市黒森字草刈谷地180番地の1"
+            }
         },
         {
             "id": 6,
