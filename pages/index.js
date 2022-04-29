@@ -77,6 +77,13 @@ export default function Home() {
 						<div>
 							<a className="underline" href={master.published_url} target="_blank" rel="noopener noreferrer">「{master.title}」</a>
 						</div>
+						<div className="mt-32">
+							<div>
+								<p className="bold">最新29話公開中！</p>
+								<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/32" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/32</a>
+								<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;5月31日(火)</p>
+							</div>
+						</div>
 					</section>
 
 					<section className={styles.sectionWrapper}>
