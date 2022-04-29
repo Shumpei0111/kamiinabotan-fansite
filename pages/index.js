@@ -66,7 +66,45 @@ export default function Home() {
 							<p className="head__ja">既刊</p>
 							<span className="head__en">Books</span>
 						</h2>
-						<KikanComics />
+						<div className="mb-24">
+							<KikanComics />
+						</div>
+						<div className="mb-24">
+							<h3>帯について</h3>
+							<div>
+								<p>第3巻の帯を<span className="bold">名取さな</span>さんが担当されました。</p>
+								<Image width={250} height={368} objectFit="contain" src="https://pbs.twimg.com/media/FN-HdK4agAUCr3Q?format=jpg&name=large" alt="第3巻 帯イメージ" />
+								<p>引用：<a className="underline" href="https://twitter.com/kamiinabotan/status/1504069741975326720?s=20&t=e6-v8nFljF1HGwOclZnAGA" target="_blank" rel="noopener noreferrer">公式Twitter</a>より</p>
+								<div className="mt-32">
+									<p className="bold">名取さなさんについて</p>
+									<div>
+										<p className="mb-24">プロフィール（YouTubeチャンネル「<a className="underline" href="https://www.youtube.com/channel/UCIdEIHpS0TdkqRkHL5OkLtA/featured" target="_blank" rel="noopener noreferrer">さなちゃんねる</a>」より抜粋）</p>
+										<p>
+										おはようございナース🍆<br />
+										こんにちは！名取さなです。<br />
+										バーチャルサナトリウムに住んでいます。<br />
+										インターネットの文化がすきです。<br />
+										<br />
+										Youtube以外ではこんなところで活動しています。<br />
+										<br />
+										◆twitter<br />
+										<a className="underline" target="_blank" rel="noopener noreferrer" href="https://twitter.com/sana_natori">https://twitter.com/sana_natori</a><br />
+										◆FANBOX<br />
+										<a className="underline" target="_blank" rel="noopener noreferrer" href="https://www.pixiv.net/fanbox/creator/30984332">https://www.pixiv.net/fanbox/creator/30984332</a>
+										<br />
+										◆公式サイト<br />
+										<a className="underline" target="_blank" rel="noopener noreferrer" href="https://natorisana.com/">https://natorisana.com/</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<h3>書店特典</h3>
+							<p>第3巻書店特典は色々な衣装を身に纏ったジンランのカード付き。</p>
+							<Image width={375} height={260} objectFit="contain" src="https://pbs.twimg.com/media/FNU7lNcaUAI1-IM?format=jpg&name=4096x4096" alt="第3巻 各書店の特典" />
+							<p>引用：<a className="underline" href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">塀先生Twitter</a>より</p>
+						</div>
 					</section>
 
 					<section className={styles.sectionWrapper}>
@@ -124,7 +162,7 @@ export default function Home() {
 										authSNS.map( sns => {
 											return (
 												<li className={styles.authSNSItem} key={sns.name}>
-													<a className="underline" href={sns.url}>{sns.name}</a>
+													<a className="underline" href={sns.url} target="_blank" rel="noopener noreferrer">{sns.name}</a>
 												</li>
 											)
 										} )
