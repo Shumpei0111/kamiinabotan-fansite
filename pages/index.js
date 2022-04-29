@@ -102,7 +102,9 @@ export default function Home() {
 						<div>
 							<h3>書店特典</h3>
 							<p>第3巻書店特典は色々な衣装を身に纏ったジンランのカード付き。</p>
-							<Image width={375} height={260} objectFit="contain" src="https://pbs.twimg.com/media/FNU7lNcaUAI1-IM?format=jpg&name=4096x4096" alt="第3巻 各書店の特典" />
+							<a href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">
+								<Image width={375} height={260} objectFit="contain" src="https://pbs.twimg.com/media/FNU7lNcaUAI1-IM?format=jpg&name=4096x4096" alt="第3巻 各書店の特典" />
+							</a> 
 							<p>引用：<a className="underline" href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">塀先生Twitter</a>より</p>
 						</div>
 					</section>
