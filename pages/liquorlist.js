@@ -43,7 +43,7 @@ export default function LiquorList() {
                 if(!epi) return null;
                 if(epi.indexOf(',') > 0) return epi.split(',').map(e => `#${e}`).join(' ');
                 return `#${epi}`;
-            } )(baseItem.epidode),
+            } )(baseItem.episode),
             bookNumber: baseItem.book_number,
         };
     } );

@@ -232,6 +232,24 @@
             "introduction": "",
             "twitter": "koganeyu1"
 
+        },
+        {
+            "id": 27,
+            "name": "KAVALAN",
+            "address": "No. 326, Section 2, Yuanshan Rd, Yuanshan Township, Yilan County, 台湾 264",
+            "url": "https://www.kavalan.jp/",
+            "introduction": "",
+            "twitter": "clubkavalan"
+
+        },
+        {
+            "id": 28,
+            "name": "VERTERE",
+            "address": "東京都西多摩郡奥多摩町氷川212",
+            "url": "http://verterebrew.com/",
+            "introduction": "",
+            "twitter": ""
+
         }
     ]
 }

@@ -9,7 +9,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "ビール",
-            "epidode": "1,3,5",
+            "episode": "1,3,5",
             "book_number": 1
         },
         {
@@ -21,7 +21,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "カクテル",
-            "epidode": "1",
+            "episode": "1",
             "book_number": 1
         },
         {
@@ -33,7 +33,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "ワイン",
-            "epidode": "2",
+            "episode": "2",
             "book_number": 1
         },
         {   
@@ -45,7 +45,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "ウイスキー",
-            "epidode": "3",
+            "episode": "3",
             "book_number": 1
         },
         {
@@ -57,7 +57,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "ウイスキー",
-            "epidode": "3",
+            "episode": "3",
             "book_number": 1
         },
         {
@@ -69,7 +69,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "日本酒",
-            "epidode": "3",
+            "episode": "3",
             "book_number": 1
         },
         {
@@ -81,7 +81,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "日本酒",
-            "epidode": "6",
+            "episode": "6",
             "book_number": 1
         },
         {
@@ -93,7 +93,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "ビール",
-            "epidode": "6",
+            "episode": "6",
             "book_number": 1
         },
         {
@@ -105,7 +105,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "ウイスキー",
-            "epidode": "6",
+            "episode": "6",
             "book_number": 1
         },
         {
@@ -117,7 +117,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "ワイン",
-            "epidode": "6",
+            "episode": "6",
             "book_number": 1
         },
         {
@@ -129,7 +129,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "リキュール",
-            "epidode": "6",
+            "episode": "6",
             "book_number": 1
         },
         {
@@ -141,7 +141,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "日本酒",
-            "epidode": "6",
+            "episode": "6",
             "book_number": 1
         },
         {
@@ -153,7 +153,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "日本酒",
-            "epidode": "6",
+            "episode": "6",
             "book_number": 1
         },
         {
@@ -165,7 +165,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "日本酒",
-            "epidode": "6",
+            "episode": "6",
             "book_number": 1
         },
         {
@@ -177,7 +177,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "焼酎",
-            "epidode": "6",
+            "episode": "6",
             "book_number": 1
         },
         {
@@ -189,7 +189,7 @@ const liquorList = {
             "imagePath": "https://maison-absinthe.ch/wp-content/uploads/2021/05/emeraude-20cl-scaled.jpg",
             "imageInyou": "Maison de l'Absinthe",
             "genre": "リキュール",
-            "epidode": "7",
+            "episode": "7",
             "book_number": 1
         },
         {
@@ -201,7 +201,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "ビール",
-            "epidode": "8",
+            "episode": "8",
             "book_number": 1
         },
         {
@@ -213,7 +213,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "その他",
-            "epidode": "9",
+            "episode": "9",
             "book_number": 1
         },
         {
@@ -225,7 +225,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "その他",
-            "epidode": "9.5",
+            "episode": "9.5",
             "book_number": 1
         },
         {
@@ -237,7 +237,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "日本酒",
-            "epidode": "9.5",
+            "episode": "9.5",
             "book_number": 1
         },
         {
@@ -249,7 +249,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "カクテル",
-            "epidode": "9.5",
+            "episode": "9.5",
             "book_number": 1
         },
         {
@@ -261,7 +261,7 @@ const liquorList = {
             "imagePath": "",
             "imageInyou": "",
             "genre": "ビール",
-            "epidode": "12",
+            "episode": "12",
             "book_number": 2
         },
         {
@@ -274,7 +274,7 @@ const liquorList = {
             "imageInyou": "DICEを転がせ「秩父錦 狼山 ワンカップ」",
             "inyouURL": "http://dice1968.blog137.fc2.com/blog-entry-784.html",
             "genre": "日本酒",
-            "epidode": "10",
+            "episode": "10",
             "book_number": 2
         },
         {
@@ -287,7 +287,7 @@ const liquorList = {
             "imageInyou": "",
             "inyouURL": "",
             "genre": "チューハイ",
-            "epidode": "11",
+            "episode": "11",
             "book_number": 2
         },
         {
@@ -300,7 +300,7 @@ const liquorList = {
             "imageInyou": "Jazz&Cocktail カクテル「ソルティドッグ」の作り方",
             "inyouURL": "https://jazzandcocktail.com/salty_dog/",
             "genre": "カクテル",
-            "epidode": "13",
+            "episode": "13",
             "book_number": 2
         },
         {
@@ -313,7 +313,7 @@ const liquorList = {
             "imageInyou": "Vin Brule Verre",
             "inyouURL": "http://vinbruleverre.com/blog/910/",
             "genre": "カクテル",
-            "epidode": "13",
+            "episode": "13",
             "book_number": 2
         },
         {
@@ -326,7 +326,7 @@ const liquorList = {
             "imageInyou": "",
             "inyouURL": "",
             "genre": "ウイスキー",
-            "epidode": "14",
+            "episode": "14",
             "book_number": 2
         },
         {
@@ -339,7 +339,7 @@ const liquorList = {
             "imageInyou": "",
             "inyouURL": "",
             "genre": "ビール",
-            "epidode": "15",
+            "episode": "15",
             "book_number": 2
         },
         {
@@ -352,7 +352,7 @@ const liquorList = {
             "imageInyou": "",
             "inyouURL": "",
             "genre": "ビール",
-            "epidode": "17",
+            "episode": "17",
             "book_number": 2
         },
         {
@@ -365,7 +365,7 @@ const liquorList = {
             "imageInyou": "",
             "inyouURL": "",
             "genre": "ビール",
-            "epidode": "17",
+            "episode": "17",
             "book_number": 2
         },
         {
@@ -378,7 +378,7 @@ const liquorList = {
             "imageInyou": "",
             "inyouURL": "",
             "genre": "ビール",
-            "epidode": "17",
+            "episode": "17",
             "book_number": 2
         },
         {
@@ -391,7 +391,7 @@ const liquorList = {
             "imageInyou": "武甲酒造",
             "inyouURL": "https://bukou.raku-uru.jp/item-detail/399656",
             "genre": "日本酒",
-            "epidode": "18",
+            "episode": "18",
             "book_number": 2
         },
         {
@@ -404,7 +404,7 @@ const liquorList = {
             "imageInyou": "武甲酒造",
             "inyouURL": "https://bukou.raku-uru.jp/item-detail/399657",
             "genre": "日本酒",
-            "epidode": "18",
+            "episode": "18",
             "book_number": 2
         },
         {
@@ -417,7 +417,7 @@ const liquorList = {
             "imageInyou": "おぎおぎ太様(Twitter)",
             "inyouURL": "https://twitter.com/o2lupin/status/1477966488338583554?s=20&t=EG3IJV7AGSluN6QUz-mJNg",
             "genre": "ウイスキー",
-            "epidode": "10",
+            "episode": "10",
             "book_number": 2
         },
         {
@@ -430,7 +430,7 @@ const liquorList = {
             "imageInyou": "お酒のちゃがたパークPayPayモール店",
             "inyouURL": "https://paypaymall.yahoo.co.jp/store/chagatapark/item/162413222/",
             "genre": "リキュール",
-            "epidode": "",
+            "episode": "",
             "book_number": 3
         },
         {
@@ -443,7 +443,7 @@ const liquorList = {
             "imageInyou": "武甲正宗 本醸造 ワンカップ 180ml",
             "inyouURL": "https://bukou.raku-uru.jp/item-detail/399713",
             "genre": "日本酒",
-            "epidode": "",
+            "episode": "",
             "book_number": 3
         },
         {
@@ -456,7 +456,7 @@ const liquorList = {
             "imageInyou": "宇宙ブルーイング THUNDER",
             "inyouURL": "https://uchubrew.shop-pro.jp/?pid=147370655",
             "genre": "ビール",
-            "epidode": "20",
+            "episode": "20",
             "book_number": 3
         },
         {
@@ -469,7 +469,7 @@ const liquorList = {
             "imageInyou": "一期一会〜る 宇宙ブルーイング ETERNITY",
             "inyouURL": "https://151l.shop/?pid=155782861",
             "genre": "ビール",
-            "epidode": "20",
+            "episode": "20",
             "book_number": 3
         },
         {
@@ -482,7 +482,7 @@ const liquorList = {
             "imageInyou": "鶴見酒造 夢乃寒梅 19年古酒",
             "inyouURL": "https://tsurumi008.stores.jp/items/5fbdf0fcf0b10828159ad828",
             "genre": "ビール",
-            "epidode": "21",
+            "episode": "21",
             "book_number": 3
         },
         {
@@ -495,7 +495,98 @@ const liquorList = {
             "imageInyou": "HOUYHNHNM オートロウリュにクラフトビール、DJブースまで⁉︎ ニューウェーブ銭湯「黄金湯」が示す、新時代の風呂屋のカタチ。",
             "inyouURL": "https://www.houyhnhnm.jp/news/386293/",
             "genre": "ビール",
-            "epidode": "22",
+            "episode": "22",
+            "book_number": 3
+        },
+        {
+            "id": 41,
+            "name": "アールグレイハイボール",
+            "description": "第3巻第23話で登場。ぼたんとジンランだけで入ったバーでぼたんがオーダーしたハイボール。茶葉とガムシロップを数時間漬け込むことで気軽に楽しめる。ハイボールにせずともウイスキーストレートでもよいし、牛乳で割ってもおいしい。",
+            "url": '',
+            "marker_id": null,
+            "imagePath": "https://www.nikka.com/products/blended/blacknikka/recipe/img/recipe04/clear05.jpg",
+            "imageInyou": "ニッカウヰスキー「ブラックニッカ クリア × アールグレイ」",
+            "inyouURL": "https://www.nikka.com/products/blended/blacknikka/recipe/recipe04.html",
+            "genre": "ウイスキー",
+            "episode": "23",
+            "book_number": 3
+        },
+        {
+            "id": 42,
+            "name": "カバラン クラシック",
+            "description": "第3巻第23話で登場。バーでぼたんがジンランと飲むため2人分オーダーしたシングルモルト。22話でジンランが「ぼたんはさぁ、いぶきと...つきあってるの？」の問いに答えるときにわざわざ選ぶあたりがぼたんらしい。相手を飲み干す勢いで自分のペースに持っていく。カバランはジンランのモデルになった台湾の蒸留所。サンフランシスコ・ワールド・スピリッツ・コンペティションで何度も金賞を受賞したり、スコットランドやイングランドの有名銘柄と遜色ないウイスキーを製造している。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26c0b6ed.6723bbd1.26c0b6ee.1067edaf/_RTLink45436?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fledled%2F3-kvl-sm%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26c0b6ed.6723bbd1.26c0b6ee.1067edaf/?me_id=1224100&item_id=10017233&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fledled%2Fcabinet%2Fimg034%2F3-kvl-sm_s.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 27,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "ウイスキー",
+            "episode": "23",
+            "book_number": 3
+        },
+        {
+            "id": 43,
+            "name": "Amyris(アミリス)",
+            "description": "第3巻第24話で登場。ぼたんといぶきで奥多摩デートした際に訪れた「VERTERE(バテレ)」にあるクラフトビール。東京でも自然豊かな奥多摩が拠点のVERTEREは「誰とどこでどうやって飲むか」をテーマに掲げる小さな醸造所。柑橘を思わせる柔らかい口当たりとフレーバーが特徴。",
+            "url": '',
+            "marker_id": 28,
+            "imagePath": "http://verterebrew.com/wp/wp-content/uploads/2020/11/5d2c23b1417ed9f061c78a2a0d40f061.jpeg",
+            "imageInyou": "VERTERE公式サイト",
+            "inyouURL": "http://verterebrew.com/brewlog/amyris-2/",
+            "genre": "ビール",
+            "episode": "24",
+            "book_number": 3
+        },
+        {
+            "id": 44,
+            "name": "Scilla(シラー)",
+            "description": "第3巻第24話で登場。ぼたんといぶきで奥多摩デートした際に訪れた「VERTERE(バテレ)」にあるクラフトビール。東京でも自然豊かな奥多摩が拠点のVERTEREは「誰とどこでどうやって飲むか」をテーマに掲げる小さな醸造所。パッケージの写真のとおり、花を思わせる上品なアロマが特徴。作中でも氷川渓谷の清流でぼたんが飲み、「え？お花の香りがする!!」と驚く描写がある。",
+            "url": '',
+            "marker_id": 28,
+            "imagePath": "http://verterebrew.com/wp/wp-content/uploads/2020/09/bde880839a33c98d3ffc8ce36d52b599.png",
+            "imageInyou": "VERTERE公式サイト",
+            "inyouURL": "http://verterebrew.com/brewlog/scilla/",
+            "genre": "ビール",
+            "episode": "24",
+            "book_number": 3
+        },
+        {
+            "id": 45,
+            "name": "Euclea(ユークレア)",
+            "description": "第3巻第24話で登場。ぼたんといぶきで奥多摩デートした際に訪れた「VERTERE(バテレ)」にあるクラフトビール。東京でも自然豊かな奥多摩が拠点のVERTEREは「誰とどこでどうやって飲むか」をテーマに掲げる小さな醸造所。ユークレアはシトラス、白ぶどうのアロマとフレーバーが特徴。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/27339d68.80ed3319.27339d69.42a7d159/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmaruishi%2F10007397%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjMwMHgzMDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/27339d68.80ed3319.27339d69.42a7d159/?me_id=1215363&item_id=10007397&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fmaruishi%2Fcabinet%2F00106875%2Fimgrc0081335532.jpg%3F_ex%3D300x300&s=300x300&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 28,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "ビール",
+            "episode": "24",
+            "book_number": 3
+        },
+        {
+            "id": 46,
+            "name": "Papilio(パピリオ)",
+            "description": "第3巻第24話で登場。ぼたんといぶきで奥多摩デートした際に訪れた「VERTERE(バテレ)」にあるクラフトビール。東京でも自然豊かな奥多摩が拠点のVERTEREは「誰とどこでどうやって飲むか」をテーマに掲げる小さな醸造所。パピリオはラズベリー果汁を使用したサワーエール。サワーエールは酸味が特徴で、発酵にはビール酵母以外に「野生酵母」や「乳酸菌」などを併用して造られるビアスタイルのひとつ。使用する酵母や菌によって香りや味わいが異なるのもポイント。パピリオはヨーグルトを使用している。",
+            "url": '',
+            "marker_id": 28,
+            "imagePath": "http://verterebrew.com/wp/wp-content/uploads/2020/06/8799c22e913126b70c1ae676738c813e.png",
+            "imageInyou": "VERTERE公式サイト",
+            "inyouURL": "http://verterebrew.com/brewlog/papilio/",
+            "genre": "ビール",
+            "episode": "24",
+            "book_number": 3
+        },
+        {
+            "id": 47,
+            "name": "Anfracta(アンフラクタ)",
+            "description": "第3巻第24話で登場。ぼたんといぶきで奥多摩デートした際に訪れた「VERTERE(バテレ)」にあるクラフトビール。東京でも自然豊かな奥多摩が拠点のVERTEREは「誰とどこでどうやって飲むか」をテーマに掲げる小さな醸造所。アンフラクタは草のようなアロマとパイナップルのようなフレーバーが特徴。アルコール度数は4.0%で、7.0%以上も多く存在するVERTEREのビールの中でも低い度数の1本。ただし低アルコールながら程よい苦味も忘れない。",
+            "url": '',
+            "marker_id": 28,
+            "imagePath": "http://verterebrew.com/wp/wp-content/uploads/2021/03/0975e0bbe3eebd088036a51be4cdbf7d.jpeg",
+            "imageInyou": "VERTERE公式サイト",
+            "inyouURL": "http://verterebrew.com/brewlog/anfracta-2/",
+            "genre": "ビール",
+            "episode": "24",
             "book_number": 3
         }
     ]
