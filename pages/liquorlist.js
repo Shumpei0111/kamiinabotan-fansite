@@ -13,10 +13,12 @@ import style from '../styles/liquor.module.scss';
 
 export default function LiquorList() {
     const router = useRouter();
-    const { q } = router.query;
+    const { q, rev } = router.query;
     const items = liquorList.data.slice();
     const makers = makerList.data.slice();
 
+
+    ////////////////////////
     // 表示用マージ配列
     const groups = items.map( item => {
         const baseItem = item;
@@ -48,10 +50,17 @@ export default function LiquorList() {
         };
     } );
 
+
+
+    ////////////////////////
+    // 表示リストの絞りこみ関数
     const base = groups.slice();
     const getListByGenres = (genre) => base.filter( item => item.genre === genre );
     const getListByBookNum = (num) => base.filter(item => item.bookNumber === num );
 
+
+    ////////////////////////
+    // 絞りこみの事前リスト
     const beers = getListByGenres("ビール");
     const cocktails = getListByGenres("カクテル");
     const wines = getListByGenres("ワイン");
@@ -82,12 +91,18 @@ export default function LiquorList() {
         {name: "3巻に登場するお酒", list:book3, q: "book3"}
     ];
 
+
+    ////////////////////////
+    // 状態管理変数
     const initList = genreLists[0].list.slice();
     const [currentDisplayList, setCurrentDisplayList] = useState(initList);
     const [currentInd, setCurrentInd] = useState(0);
     const [isChange, setChange] = useState(false);
     const [isReverse, setIsReverse] = useState(false);
 
+
+    ////////////////////////
+    // 絞りこみ実行関数
     const handleUpdateDisplayGenre = (ind) => {
         setChange(true);
 
@@ -95,13 +110,17 @@ export default function LiquorList() {
             const list = genreLists[ind].list.slice();
             setCurrentDisplayList(list);
             setCurrentInd(ind);
-            router.push({ query: {q: genreLists[ind].q} });
+            const currentQuery = router.query;
+            router.push({ query: { ...currentQuery, q: genreLists[ind].q } })
             setChange(false);
         }, 200);
     };
 
-    function getReverseList(list) { return list.slice().reverse() };
 
+
+    ////////////////////////
+    // リストを昇順・降順に変更する
+    function getReverseList(list) { return list.slice().reverse() };
     const handleUpdateReverseList = () => {
         setChange(true);
 
@@ -110,10 +129,16 @@ export default function LiquorList() {
             const rList = getReverseList(list);
             setCurrentDisplayList(rList);
             setIsReverse( isReverse =! isReverse );
+
+            const currentQuery = router.query;
+            router.push({ query: { ...currentQuery, rev: isReverse} })
             setChange(false);
         }, 200);
     };
 
+
+    ////////////////////////
+    // 状態変更関数
     useEffect(() => {
         if(!router.isReady) return;
 
@@ -125,12 +150,17 @@ export default function LiquorList() {
         const narrowByQueryList = getListByQuery(q);
 
         const displayList = narrowByQueryList && narrowByQueryList[0] ? narrowByQueryList[0].list : genreLists[0].list;
-        const resList = isReverse ? getReverseList(displayList) : displayList;
+        const resList = rev === 'true' || isReverse ? getReverseList(displayList) : displayList;
         setCurrentDisplayList(resList);
         setCurrentInd(targetInd);
 
-    }, [q, router]);
+    }, [q, rev, router, isReverse]);
 
+
+
+
+    ////////////////////////
+    // レイアウト
     return (
         <Layout>
             {router.isFallback ? (
