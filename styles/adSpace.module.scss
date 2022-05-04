@@ -1,0 +1,15 @@
+.adSpaceContainer {
+    width: 100%;
+}
+
+.adSpace {
+    gap: 10px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    a {
+        display: block;
+        max-width: 128px;
+        text-decoration: underline;
+        color: blue;
+    }
+}

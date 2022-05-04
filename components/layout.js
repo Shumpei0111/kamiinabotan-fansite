@@ -10,6 +10,7 @@ import ToTopPage from "./toPageTop";
 import Footer from "./global/footer";
 import TwitterShare from "./global/twitterShare";
 import { SITE_FULL_TITLE } from "../lib/constraint";
+import AdSpace from "./global/adSpace.js";
 
 export default function Layout({ children }) {
     const pageTitle = children.props.children ? children.props.children.filter( children => (
@@ -62,6 +63,7 @@ export default function Layout({ children }) {
                             </div>
                         </>
                     }
+                <AdSpace />
                 <ToTopPage />
                 <Footer />
             </div>
