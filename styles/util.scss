@@ -9,6 +9,14 @@
     flex-wrap: wrap;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
 .inline-block {
     display: inline-block;
 }
@@ -49,6 +57,12 @@
 
 .text_ms {
     font-size: 1.2rem;
+}
+
+/** margin **/
+
+.margin-0 {
+    margin: 0;
 }
 
 /** top **/
@@ -178,4 +192,11 @@
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
     }
+}
+
+
+/** conroll **/
+
+.overflow-y-hidden {
+    overflow-y: hidden;
 }

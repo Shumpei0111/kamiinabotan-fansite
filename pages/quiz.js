@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Layout from "../components/layout";
 import Meta from "../components/meta";
@@ -6,9 +6,9 @@ import Meta from "../components/meta";
 import appendQuiz from "../storage/quiz";
 
 import style from "../styles/quiz.module.scss";
+import Link from "next/link";
 
 export default function Quiz() {
-    const isRelease = true;
     const router = useRouter();
 
     const [answered, setAnswered] = useState(false);
@@ -40,13 +40,36 @@ export default function Quiz() {
 
         setAnswered(true);
         const resultArray = correctAnswers.filter( (ans,ind) => userAnswerList[ind] === ans );
-        console.log(correctAnswers, resultArray);
 
         setCorrectPoint(resultArray.length);
         setModalOn(true);
+
+        document.body.classList.add("overflow-y-hidden");
     };
 
-    const checkedResult = () => setModalOn(false);
+    const checkedResult = () => {
+        setModalOn(false);
+        document.body.classList.remove("overflow-y-hidden");
+    };
+
+    // もう一度クイズをやる
+    const reloadQuiz = () => {
+        router.reload();
+    };
+
+    // 再度クイズをやるボタンをクリックするとクエリストリングが付随するので削除する
+    useEffect(() => {
+        router.replace('/quiz', undefined, {shallow: true});
+        const s = document.createElement("script");
+		s.setAttribute("src", "https://platform.twitter.com/widgets.js");
+		s.setAttribute("async", "true");
+		document.head.appendChild(s);
+    }, []);
+
+    // Twitterにシェア
+    const shareToTwitter = () => {
+        const via = "@seventhseven";
+    };
 
     return (
         <Layout>
@@ -60,7 +83,6 @@ export default function Quiz() {
                     :
                     <></>
                 }
-                {isRelease ? (
                     <div>
                         <h2>
                             <p className="head__ja">上伊那ぼたんクイズ</p>
@@ -97,20 +119,42 @@ export default function Quiz() {
                                     </div>
                                 ) )}
 
-                                <div className="textCenter">
+                                <div className="textCenter flex just-center">
                                     {!answered ?
                                         <button className={style.answerButton} onClick={(e) => setAnswer(e)}>回答する！</button>
                                         :
-                                        <button className={`${style.answerButton} ${style.answerButton__complete}`} onClick={(e) => e.preventDefault()}>回答しました</button>
+                                        <div className="flex just-center flex-column margin-0 gap-16">
+                                            <button className={`${style.answerButton} ${style.answerButton__retry} margin-0`} onClick={reloadQuiz}>もう一度チャレンジする!</button>
+
+                                            <Link href="/quiz/answer">
+                                                <a className={`${style.answerButton} ${style.answerButton__checkanswer} margin-0`}>答えを見る</a>
+                                            </Link>
+
+                                        </div>
                                     }
                                 </div>
                             </form>
                             {answered && modalOn ?
                                 <div className={style.resultModal}>
                                     <h3 className="textCenter">結果発表</h3>
+
                                     <div className={style.resultModal__item}>
                                         <p>{quizLength}問中、<span className={style.resultModal__correnctPoint}>{correctPoint}問正解</span>です！</p>
-                                        <button className={style.resultModal__ok} onClick={checkedResult}>OK</button>
+                                        {correctPoint === quizLength ? <p>🎉全問正解です！すばらしい！🎉</p> : <></>}
+                                        {correctPoint < quizLength && correctPoint > 7 ?  <p>😆おしい！あと一歩です！</p> : <></>}
+                                        {correctPoint < 6 && correctPoint > 3 ?  <p>✊まだまだこれから！</p> : <></>}
+                                        {correctPoint <= 3 ? <p>👀もう一度原作を読んでみよう！</p> : <></>}
+                                        <div>
+                                            <button onClick={shareToTwitter} className={style.resultModal__share} aria-label="twitter">
+                                                <a
+                                                    className={style.resultModal__shareText}
+                                                    href={`https://twitter.com/share?text=${quizLength}問中、${correctPoint}問正解しました！🍺%0a上伊那ぼたんクイズ10問／@seventhsevenより%0a&related=seventhseven&hashtags=上伊那ぼたん%0a&url=https://yuriyoi.site/quiz%0a`}
+                                                    target="_blank"
+                                                >Twitterに結果を投稿する</a>
+                                            </button>
+
+                                            <button className={style.resultModal__ok} onClick={checkedResult}>OK</button>
+                                        </div>
                                     </div>
                                 </div>
                                 :
@@ -118,8 +162,6 @@ export default function Quiz() {
                             }
                         </div>
                     </div>
-                ):( <></>
-                )}
                 </div>
             </>)}
         </Layout>

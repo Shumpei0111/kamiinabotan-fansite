@@ -318,9 +318,9 @@ const liquorList = {
         },
         {
             "id": 27,
-            "name": "ザ・グレンリベット",
+            "name": "ザ・グレンリベット ナデューラ",
             "description": "第2巻14話で登場。かなでが用意したスコッチウイスキー。いぶきが一番好きなウイスキーで、いぶきの誕生日プレゼントに渡すため、ぼたん、あかねといちごウイスキーを作った。グレンリベットは初心者から愛好家まで、幅広い層に親しまれる人気のウイスキー。果実やフローラルなアロマを楽しめ、クセのない味わいでストレートに飲むのがおすすめ。ぼたんは「苦いチョコレートみたいな味」と評している。",
-            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26d7427b.7ed623f2.26d7427c.8674b7ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwhisky%2F510104%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26d7427b.7ed623f2.26d7427c.8674b7ad/?me_id=1322933&item_id=10002960&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fwhisky%2Fcabinet%2Frakuten4%2F510104_1.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/27534781.eb326777.27534782.0635bead/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fricaoh%2F198189%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/27534781.eb326777.27534782.0635bead/?me_id=1192052&item_id=10006110&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fricaoh%2Fcabinet%2F199999%2F198189.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
             "marker_id": 20,
             "imagePath": "",
             "imageInyou": "",

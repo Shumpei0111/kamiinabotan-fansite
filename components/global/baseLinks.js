@@ -16,6 +16,11 @@ export default function BaseLinks() {
                         <a>お酒一覧を見る</a>
                     </Link>
                 </li>
+                <li>
+                    <Link href="/quiz">
+                        <a>上伊那ぼたんクイズ</a>
+                    </Link>
+                </li>
             </ul>
         </div>
     )

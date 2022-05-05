@@ -24,6 +24,11 @@ export default function HomeContents() {
                         <a>お酒一覧を見る</a>
                     </Link>
                 </li>
+                <li className={styles.item}>
+                    <Link href="/quiz">
+                        <a>上伊那ぼたんクイズ</a>
+                    </Link>
+                </li>
             </ul>
         </>
     )

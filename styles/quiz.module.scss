@@ -24,23 +24,30 @@
 .answerButton {
     background-color: v.$mainGrey;
     border: none;
-    padding: 16px 24px;
+    padding: 16px;
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+    width: 140px;
+}
+
+.answerButton__retry {
+    margin-top: 32px;
+    background-color: #eda126;
+    padding: 16px;
+    width: 192px;
 }
 
 .answerButton:hover {
     opacity: .8;
 }
 
-.answerButton__complete {
-    cursor: default;
+.answerButton__checkanswer {
+    width: 192px;
+    background-color: #54cc54;
 }
 
-.answerButton__complete:hover {
-    opacity: 1;
-}
 
 .modalOnCover {
     position: absolute;
@@ -66,8 +73,8 @@
     -ms-transform: translate(-50%, -50%);
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
     border-radius: 4px;
-    width: 280px;
-    height: 200px;
+    width: 300px;
+    height: 260px;
     padding: 32px;
 }
 
@@ -80,8 +87,28 @@
     }
 }
 
+.resultModal__share {
+    margin: 24px 0;
+    padding: 8px 16px;
+    background-color: #429AE1;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    .resultModal__shareText {
+        color: white;
+        font-weight: bold;
+    }
+}
+
 .resultModal__ok {
-    margin-top: 16px;
+    margin-top: 4px;
     padding: 4px 8px;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
