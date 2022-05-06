@@ -42,7 +42,7 @@ export default function Answer() {
                                     <p>第1話1p1コマ目で秩父麦酒ののぼりが写っていたりと舞台の説明がなされていますね。<br />また、連載版では「メゾン・マルジェラ」風の話数表記に、「Kamiina Botan CHICHIBU」と明記されています。</p>
                                     <p>
                                         <a className="mt-16 inline-block underline text_ms" href="https://twitter.com/kamiinabotan/status/1229355142102667265/photo/1" target="_blank" rel="noopener noreferrer">
-                                        <Image width={448} height={640} objectFit="contain" src="https://pbs.twimg.com/media/EQ-L_DgVAAEGqsr?format=jpg&name=medium" />
+                                        <Image width={448} height={640} objectFit="contain" src="https://pbs.twimg.com/media/EQ-L_DgVAAEGqsr?format=jpg&name=medium" alt="引用：公式Twitterより" />
                                         <br />引用：公式Twitterより(外部ウィンドウが開きます)</a>
                                     </p>
                                 </div>
@@ -62,7 +62,7 @@ export default function Answer() {
                                 <h3>3. ジンランが放った、「有意思〜！」ってどんな意味？</h3>
                                 <div>
                                     <h4>こたえ：おもしろ〜！</h4>
-                                    <Image width={340} height={220} objectFit="contain" src="/assets/img/omoshiro.jpg" />
+                                    <Image width={340} height={220} objectFit="contain" src="/assets/img/omoshiro.jpg" alt="引用：「上伊那ぼたん、酔へる姿は百合の花」第2巻112ページ" />
                                     <p className="text_ms">引用：「上伊那ぼたん、酔へる姿は百合の花」第2巻112ページ</p>
                                 </div>
                             </div>
@@ -74,7 +74,7 @@ export default function Answer() {
                                     <p>第15話で郡上先輩はいぶきを連れ立って訪れた霧ヶ峰高原は、長野県諏訪市にある標高1600mある高原です。<br />高山植物が生い茂り、富士山や八ヶ岳連峰なども一望できます。上昇気流が発生しやすく、日本のグライダー発祥の地ともいわれています。<br />
                                     1000m下にある諏訪湖からの水蒸気を含んだ空気が上昇気流にのせて霧ヶ峰を覆うため、湖面との気温差は6度にもなる。半袖でやってきたいぶきはとても寒かっただろうと思います。
                                     </p>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.581791566027!2d138.18571531569376!3d36.103681380097974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c53035a0200ad%3A0x76898a2056f9c6a!2z6LuK5bGx6IKp6aeQ6LuK5aC0!5e0!3m2!1sja!2sjp!4v1651771048728!5m2!1sja!2sjp" width="320" height="300" className="border-none mt-16" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.581791566027!2d138.18571531569376!3d36.103681380097974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c53035a0200ad%3A0x76898a2056f9c6a!2z6LuK5bGx6IKp6aeQ6LuK5aC0!5e0!3m2!1sja!2sjp!4v1651771048728!5m2!1sja!2sjp" width="320" height="300" className="border-none mt-16" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
 
@@ -95,7 +95,7 @@ export default function Answer() {
                                 <h3>6. 25話でいぶき・郡上先輩・ジンランで宅飲みした際、いぶきが出したウイスキーの銘柄は？</h3>
                                 <div>
                                     <h4>こたえ：厚岸蒸留所ニューボーン第4弾ブレンデッド</h4>
-                                    <Image width={340} height={220} objectFit="contain" src="/assets/img/akkeshi.jpg" />
+                                    <Image width={340} height={220} objectFit="contain" src="/assets/img/akkeshi.jpg" alt="引用：「上伊那ぼたん、酔へる姿は百合の花」第3巻103ページ" />
                                     <p className="text_ms">引用：「上伊那ぼたん、酔へる姿は百合の花」第3巻103ページ</p>
                                     <p className="mt-16">厚岸蒸留所は北海道厚岸郡厚岸町にあります。「スコットランドの伝統的な製法でアイラモルトのようなウイスキーを造りたい」という思いから始まったこの蒸留所は2013年から試験熟成を開始したところからスタートしています。<br />2021年には「インターナショナル・スピリッツ・チャレンジ 2021」にて金賞・銀賞を受賞するなどの実力がある蒸留所です。</p>
                                     <a className="mt-8 text_ms inline-block underline" href="http://akkeshi-distillery.com/" target="_blank" rel="noopener noreferrer">厚岸蒸留所HPへ(外部ウィンドウが開きます)</a>
@@ -109,7 +109,7 @@ export default function Answer() {
                                 <h3>7. 作中で出てきた台湾ウイスキー、銘柄は何？</h3>
                                 <div>
                                     <h4>こたえ：カバラン</h4>
-                                    <Image width={340} height={420} objectFit="contain" src="/assets/img/kavalan.jpg" />
+                                    <Image width={340} height={420} objectFit="contain" src="/assets/img/kavalan.jpg" alt="引用：「上伊那ぼたん、酔へる姿は百合の花」第3巻74ページ" />
                                     <p className="text_ms">引用：「上伊那ぼたん、酔へる姿は百合の花」第3巻74ページ</p>
                                     <p className="mt-16">カバランは「いつか台湾でウイスキーを造る」と1970年代に台湾の飲料メーカーのティエンツァイ・リー氏が思い描き、2002年の台湾WTO加盟を機に蒸留所建設計画がスタート、2006年から試作品の蒸留が始まりました。台湾の気候では難しいとされるウイスキーの製造ですが、モルトの粉砕から熟成まですべて台湾で行うことに成功し、今日では多数の賞を受賞するにいたります。</p>
                                     <a className="mt-8 text_ms inline-block underline" href="https://www.kavalan.jp/" target="_blank" rel="noopener noreferrer">KAVALAN HPへ(外部ウィンドウが開きます)</a>
@@ -130,7 +130,7 @@ export default function Answer() {
                                 <h3>9. 15話の扉絵でいぶきが肩にかけているショルダーバッグのブランド名は？</h3>
                                 <div>
                                     <h4>こたえ：KENZO</h4>
-                                    <Image width={300} height={500} objectFit="contain" src="/assets/img/ibuki-tobira.jpg" />
+                                    <Image width={300} height={500} objectFit="contain" src="/assets/img/ibuki-tobira.jpg" alt="引用：「上伊那ぼたん、酔へる姿は百合の花」第2巻83ページ" />
                                     <p className="text_ms">引用：「上伊那ぼたん、酔へる姿は百合の花」第2巻83ページ</p>
                                     <p className="mt-16">MA-1ライクなブルゾン、ロールアップしたスキニーパンツとポンプフューリーに合わせたスタイリングで使用しています。衣装コンセプトは「ストレスフリー」であるいぶきですが、この回は郡上先輩と霧ヶ峰へ訪れた話なので、話の雰囲気にも合わせてカジュアルにまとめられています。<br />
                                     KENZOはデザイナー高田賢三が設立したファッションブランドで、初めてコレクションを発表したのは1970年。花柄や色彩に富んだコレクションは衝撃的で鮮烈なデビューを果たした。数年前には虎の顔がボディの前面に縫い付けられたスエットなどが流行ったこともありました。
@@ -143,7 +143,7 @@ export default function Answer() {
                                 <div>
                                     <h4>こたえ：氷川渓谷</h4>
                                     <p>VERTEREは奥多摩駅そばにある醸造所ですが、氷川渓谷も駅から徒歩6、7分で来れる場所です。流れが激しい多摩川ですが、こちらは広い洲や瀬があるため、キャンプや釣りなどが楽しめる人気スポットになっています。</p>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.699376212835!2d139.09490231568708!3d35.80731288016513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019371753b4693f%3A0x52e06b9d2eda1105!2z5rC35bed5riT6LC3!5e0!3m2!1sja!2sjp!4v1651776450757!5m2!1sja!2sjp" width="320" height="300" className="border-none mt-16" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.699376212835!2d139.09490231568708!3d35.80731288016513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019371753b4693f%3A0x52e06b9d2eda1105!2z5rC35bed5riT6LC3!5e0!3m2!1sja!2sjp!4v1651776450757!5m2!1sja!2sjp" width="320" height="300" className="border-none mt-16" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
 

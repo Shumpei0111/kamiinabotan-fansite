@@ -149,7 +149,7 @@ export default function Quiz() {
                                                 <a
                                                     className={style.resultModal__shareText}
                                                     href={`https://twitter.com/share?text=${quizLength}問中、${correctPoint}問正解しました！🍺%0a上伊那ぼたんクイズ10問／@seventhsevenより%0a&related=seventhseven&hashtags=上伊那ぼたん%0a&url=https://yuriyoi.site/quiz%0a`}
-                                                    target="_blank"
+                                                    target="_blank" rel="noopener noreferrer"
                                                 >Twitterに結果を投稿する</a>
                                             </button>
 

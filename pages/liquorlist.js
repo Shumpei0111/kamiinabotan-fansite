@@ -224,7 +224,7 @@ export default function LiquorList() {
 
                                                 { liq.imagePath ?
                                                     <div className={style.item__imgEx}>
-                                                        <Image width={240} height={200} objectFit="contain" src={liq.imagePath} />
+                                                        <Image width={240} height={200} objectFit="contain" src={liq.imagePath} alt={`引用：${liq.imageInyou}`} />
                                                         <p className='text_ms textCenter'>
                                                         引用：{ liq.inyouURL ?
                                                             <a className="underline" href={liq.inyouURL} target="_blank" rel="noopener noreferrer">{liq.imageInyou}</a>
