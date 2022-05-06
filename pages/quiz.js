@@ -140,7 +140,7 @@ export default function Quiz() {
 
                                     <div className={style.resultModal__item}>
                                         <p>{quizLength}問中、<span className={style.resultModal__correnctPoint}>{correctPoint}問正解</span>です！</p>
-                                        {correctPoint === quizLength ? <p>🎉全問正解です！すばらしい！🎉</p> : <></>}
+                                        {correctPoint === quizLength ? <p>全問正解です！🎉🎉🎉</p> : <></>}
                                         {correctPoint < quizLength && correctPoint > 7 ?  <p>😆おしい！あと一歩です！</p> : <></>}
                                         {correctPoint < 6 && correctPoint > 3 ?  <p>✊まだまだこれから！</p> : <></>}
                                         {correctPoint <= 3 ? <p>👀もう一度原作を読んでみよう！</p> : <></>}

@@ -21,6 +21,14 @@
     }
 }
 
+.quizAnswerContainer {
+    .quiz {
+        .quizWrapper {
+            margin-bottom: 100px;
+        }
+    }
+}
+
 .answerButton {
     background-color: v.$mainGrey;
     border: none;
