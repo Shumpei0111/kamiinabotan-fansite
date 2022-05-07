@@ -423,14 +423,14 @@ const liquorList = {
         {
             "id": 35,
             "name": "アルケミエ ラベンダージン",
-            "description": "第3巻表紙で登場。ぼたんが腕に抱えている、手のイラストが特徴的なボトルがポイント。個性的で人気が高く、瞬く間に完売し、市場には高額で売買されるほど。",
+            "description": "第3巻表紙で登場。ぼたんが腕に抱えている、手のイラストが特徴的なボトルがポイント。個性的で人気が高く、瞬く間に完売し、市場には高額で売買されるほど。第3巻25話でも登場した。いぶきの部屋でかなで、ジンランとともに宅飲みした際にかなでがカクテル用に持ち込んだ。",
             "url": '',
             "marker_id": 23,
             "imagePath": "https://item-shopping.c.yimg.jp/i/n/chagatapark_162413222",
             "imageInyou": "お酒のちゃがたパークPayPayモール店",
             "inyouURL": "https://paypaymall.yahoo.co.jp/store/chagatapark/item/162413222/",
             "genre": "リキュール",
-            "episode": "",
+            "episode": "25",
             "book_number": 3
         },
         {
@@ -587,6 +587,71 @@ const liquorList = {
             "inyouURL": "http://verterebrew.com/brewlog/anfracta-2/",
             "genre": "ビール",
             "episode": "24",
+            "book_number": 3
+        },
+        {
+            "id": 48,
+            "name": "アルケミエ 犬啼",
+            "description": "第3巻第25話で登場。いぶきの書棚に置かれていたお酒の1つ。かなで、ジンランがいぶきの部屋へ訪れた際にかなでが発見した。アルケミエのリキュールは第3巻の表紙やこの25話でも登場するため、この巻では象徴的な位置付けのお酒でもある。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/2761b86b.f88c4a78.2761b86c.5a6a7723/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstock-lab%2Frc_its7msmem9hc_b1cn%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/2761b86b.f88c4a78.2761b86c.5a6a7723/?me_id=1313343&item_id=10043366&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fstock-lab%2Fcabinet%2F09012894%2Fimgrc0101450378.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 9,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "リキュール",
+            "episode": "25",
+            "book_number": 3
+        },
+        {
+            "id": 49,
+            "name": "イチローズモルト",
+            "description": "第3巻第25話で登場。いぶきの書棚に置かれていたお酒の1つ。かなで、ジンランがいぶきの部屋へ訪れた際にかなでが発見した。イチローズモルトのリーフラベルは何種類か存在するが、書き込みの量ではどのラベルかは判断することができなかった。世界で注目されているイチローズモルトは、発酵槽にミズナラを使用している。木材のミズナラにある乳酸菌の働きで、金属素材を使った一般的な製造方法とはことなる風味を演出することができる。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/2761c010.4dba0583.2761c011.30dcdd39/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsakayabic%2F519717-01%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/2761c010.4dba0583.2761c011.30dcdd39/?me_id=1372851&item_id=10003263&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fsakayabic%2Fcabinet%2F06966575%2Fbic519717-01.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 7,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "ウイスキー",
+            "episode": "25",
+            "book_number": 3
+        },
+        {
+            "id": 50,
+            "name": "ウィルキンソン トニックウォーター",
+            "description": "第3巻第25話で登場。いぶき、かなで、ジンランが宅飲みした際、かなでが持ってきたアルケミエを割るために用意した。かなでのアルケミエはジンなので、ジントニックを作る描写がある。いぶきはこのメンバーの前では飲んだことがあるのでいつも通り飲もうとするが、トラウマが一瞬フラッシュバックしてしまう。マンガ表現的には、アルケミエが最初にうつり、このトニックウォーターがそれぞれ1コマずつ描くことで、キャラクターが直接かきまぜる描写がなくても、コマの切り替えだけでお酒が完成する。そうすることで描写のノイズを減らしつつ、ストーリー的にトラウマ表現へのスムーズな移行を表現しているように見える。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/2761c8a2.a58a69f6.2761c8a3.12c11bad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsake-makino%2F10000075-002%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/2761c8a2.a58a69f6.2761c8a3.12c11bad/?me_id=1238086&item_id=10001536&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fsake-makino%2Fcabinet%2F00732467%2F07648828%2F08376154%2Fimgrc0080839756.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 29,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "その他",
+            "episode": "25",
+            "book_number": 3
+        },
+        {
+            "id": 51,
+            "name": "厚岸蒸留所 ニューボーン第4弾",
+            "description": "第3巻第25話で登場。いぶき、かなで、ジンランが宅飲みした際、ジンランが「お酒が足んないよー」というリクエスト(文句？)を受けていぶきが出した。「スコットランドの伝統的な製法で、アイラモルトのようなウイスキーを造りたい」というコンセプトの蒸留所。ストレートで飲んだ際、かなでは「おいしい！スパイシーな口当たりの中にレーズンバターみたいあな甘みを感じるわ」と、高い評価を下している。「上伊那ぼたん」では飲んだお酒の感想を豊かな語彙で表現するのも特徴。",
+            "url": '<a href="https://www.amazon.co.jp/%E5%8E%9A%E5%B2%B8%E8%92%B8%E6%BA%9C%E6%89%80-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%B3%E7%AC%AC%E5%9B%9B%E5%BC%BE-%E3%82%A6%E3%82%A4%E3%82%B9%E3%82%AD%E3%83%BC-%E6%97%A5%E6%9C%AC-200ml/dp/B07WGLDXSD?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=6S6Q827PMG9A&keywords=%E5%8E%9A%E5%B2%B8%E8%92%B8%E7%95%99%E6%89%80&qid=1651949880&sprefix=%E5%8E%9A%E5%B2%B8%E8%92%B8%E7%95%99%E6%89%80%2Caps%2C286&sr=8-7&linkCode=li2&tag=shumpei7g-22&linkId=fdba4d2c913c718d2d7c32dd1030e15d&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07WGLDXSD&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=shumpei7g-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=shumpei7g-22&language=ja_JP&l=li2&o=9&a=B07WGLDXSD" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />',
+            "marker_id": 30,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "その他",
+            "episode": "25",
+            "book_number": 3
+        },
+        {
+            "id": 52,
+            "name": "秩父百花",
+            "description": "第3巻第25話で登場。いぶきの真っ直ぐな「ぼたんとお酒飲むのが楽しい」という言葉に、かなでは完全に脈がないことを悟るシーンで、ジンランが優しく寄り添うように取り出したお酒。蜂蜜酒(ミード)ははちみつを発酵したお酒で、世界最古のお酒ともいわれている。秩父百花はワインのようにさらさらとした甘口のお酒。飲みやすいのでロック・ストレート・ジンジャーエールやソーダなどで割ってもおいしい。傷ついたかなでの気持ちを慰めるようなことを表現しているのかもしれない。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/2761d583.f59ca31d.2761d584.737e648a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Felena-sake%2Fnektar4%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/2761d583.f59ca31d.2761d584.737e648a/?me_id=1344218&item_id=10000024&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Felena-sake%2Fcabinet%2Faizumead%2F08.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 31,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "蜂蜜酒",
+            "episode": "25",
             "book_number": 3
         }
     ]

@@ -250,6 +250,33 @@
             "introduction": "",
             "twitter": ""
 
+        },
+        {
+            "id": 29,
+            "name": "アサヒ飲料",
+            "address": "東京都墨田区吾妻橋一丁目23番1号",
+            "url": "https://www.asahiinryo.co.jp",
+            "introduction": "",
+            "twitter": ""
+
+        },
+        {
+            "id": 30,
+            "name": "厚岸蒸留所",
+            "address": "北海道厚岸郡厚岸町宮園4丁目109-2",
+            "url": "http://akkeshi-distillery.com/",
+            "introduction": "",
+            "twitter": ""
+
+        },
+        {
+            "id": 31,
+            "name": "Deerlet Field Brewery -ディアレットフィールド醸造所 (小鹿野醸造所)",
+            "address": "〒368-0115 埼玉県秩父郡小鹿野町日尾１２６５−２ 旧倉尾中学校体育館跡",
+            "url": "https://www.instagram.com/chichibumead_nektar/",
+            "introduction": "",
+            "twitter": "nektarjp"
+
         }
     ]
 }

@@ -216,7 +216,7 @@ export default function LiquorList() {
                                                 { liq.url && !liq.imagePath ?
                                                     <div className={style.item__imgEx}>
                                                         <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(liq.url) }}></div>
-                                                        <p className='underline bold textCenter'>{liq.name} | Rakutenで購入する</p>
+                                                        <p className='underline bold textCenter'>{liq.name} | { liq.url.indexOf("rakuten") > 0 ? <span>Rakutenで購入する</span> : <span>Amazonで購入する</span>}</p>
                                                     </div>
                                                     :
                                                     <></>
