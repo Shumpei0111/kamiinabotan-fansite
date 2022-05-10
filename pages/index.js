@@ -28,6 +28,14 @@ export default function Home() {
 						<div className={styles.topInyou}>
 							<Image width={386} height={200} objectFit="contain" src="https://mangacross.jp/images/comic/cSQw6TT0qND00AUZQf2I0cFqCAO08NGZq6yqLFEWbkM/image_sp/original.jpg?1647590065" alt="新刊のバナー" />
 							<p className={styles.inyouText}>引用：「<a className="underline" href="https://mangacross.jp/comics/kamiinabotan" target="_blank" rel="noopener noreferrer">上伊那ぼたん、酔へる姿は百合の花</a>」マンガクロス（秋田書店）</p>
+
+							<div className="mt-24 mb-24">
+								<div>
+									<p className="bold">最新29話公開中！</p>
+									<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/32" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/32</a>
+									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;5月31日(火)</p>
+								</div>
+							</div>
 						</div>
 						<div>
 							<div className={styles.siteDescription}>
@@ -35,6 +43,11 @@ export default function Home() {
 								<p>{master.site_description}</p>
 							</div>
 						</div>
+					</section>
+
+					<section className={styles.sectionWrapper}>
+						{/* ニュース */}
+						<HomeNews />
 					</section>
 
 					<section className={styles.sectionWrapper}>
@@ -47,11 +60,6 @@ export default function Home() {
 							酔っ払いいちゃいちゃガールズコメディ！
 						</p>
 						<p className={styles.topInyou}>引用：マンガクロス「上伊那ぼたん、酔へる姿は百合の花」公式サイト</p>
-					</section>
-
-					<section className={styles.sectionWrapper}>
-						{/* ニュース */}
-						<HomeNews />
 					</section>
 
 					<section className={styles.sectionWrapper}>

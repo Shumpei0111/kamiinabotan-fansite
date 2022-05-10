@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import New from "./new";
 import style from '../../styles/baseLinks.module.scss';
 
 export default function BaseLinks() {
@@ -18,7 +19,7 @@ export default function BaseLinks() {
                 </li>
                 <li>
                     <Link href="/quiz">
-                        <a>上伊那ぼたんクイズ</a>
+                        <a><New />上伊那ぼたんクイズ</a>
                     </Link>
                 </li>
             </ul>

@@ -1,10 +1,23 @@
 const tags = {
     episode: "エピソード",
     goods: "グッズ",
+    update: "アップデート",
 };
 
 
 const news = [
+    {
+        date: "2022.05.11",
+        head: "単行本題1巻がKindleで5月13日(金)23時59分まで無料公開中！",
+        url: "https://amzn.to/3FwiYb1",
+        tag: tags.goods,
+    },
+    {
+        date: "2022.05.06",
+        head: "上伊那ぼたんクイズのページを追加しました！",
+        url: "https://yuriyoi.site/quiz",
+        tag: tags.update,
+    },
     {
         date: "2022.04.28",
         head: "単行本題1巻の重版が決定しました！",

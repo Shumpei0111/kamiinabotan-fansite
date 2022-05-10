@@ -1,3 +1,5 @@
+import New from "./global/new";
+
 import news from "../storage/news";
 import style from '../styles/Home.module.scss';
 
@@ -12,11 +14,18 @@ export default function HomeNews() {
             </h2>
             <div>
                 <ul className={style.newsList}>
-                    {_news.map( n => {
+                    {_news.map( (n, ind) => {
                         return (
                             <li className={style.newsList__item} key={n.url}>
                                 <p className={style.newsDate}>{n.date}</p>
-                                <a className="underline" href={n.url} target="_blank" rel="noopener noreferrer">{n.head}</a>
+                                {ind === 0 ?
+                                    <>
+                                        <New />
+                                        <a className="underline" href={n.url} target="_blank" rel="noopener noreferrer">{n.head}</a>
+                                    </>
+                                    :
+                                    <a className="underline" href={n.url} target="_blank" rel="noopener noreferrer">{n.head}</a>
+                                }
                             </li>
                         )
                     } )}
