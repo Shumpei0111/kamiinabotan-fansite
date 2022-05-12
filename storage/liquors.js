@@ -666,6 +666,19 @@ const liquorList = {
             "genre": "リキュール",
             "episode": "29",
             "book_number": null
+        },
+        {
+            "id": 54,
+            "name": "ザ・グレンリベット 12年",
+            "description": "第29話で登場。ジンランがかなでを誘ったバーに置かれているお酒の一つ。グレンリベットはシングルモルトウイスキーのスタンダードともいえる銘柄で、「ザ・グレンリベット ナデューラ」はいぶきがウイスキーの中で一番好んでいる。（14話参照）",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/278eee68.94cc90ca.278eee69.d96145a6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcbeer%2F15051218%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/278eee68.94cc90ca.278eee69.d96145a6/?me_id=1312995&item_id=10026214&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fcbeer%2Fcabinet%2Fyoushu%2Fwhiskey01%2Fimgrc0067579331.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 20,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "ウイスキー",
+            "episode": "29",
+            "book_number": null
         }
     ]
 }
