@@ -69,6 +69,7 @@ export default function LiquorList() {
     const liqueurs = getListByGenres("リキュール");
     const shochus = getListByGenres("焼酎");
     const chuhai = getListByGenres("チューハイ");
+    const mead = getListByGenres("蜂蜜酒");
     const etc = getListByGenres("その他");
 
     const book1 = getListByBookNum(1);
@@ -85,6 +86,7 @@ export default function LiquorList() {
         {name: "リキュール", list:liqueurs, q: "liqueur"},
         {name: "焼酎", list:shochus, q: "shochu"},
         {name: "チューハイ", list:chuhai, q: "shochu_highball"},
+        {name: "蜂蜜酒", list:mead, q: "mead"},
         {name: "その他", list:etc, q: "etc"},
         {name: "1巻に登場するお酒", list:book1, q: "book1"},
         {name: "2巻に登場するお酒", list:book2, q: "book2"},
@@ -209,7 +211,7 @@ export default function LiquorList() {
                                                 <div className={style.item__meta}>
                                                     <p className={style.tag}>{liq.genre}</p>
                                                     {liq.episode ? <p className={style.tag}>{liq.episode}</p> : <></>}
-                                                    <p className={style.tag}>{liq.bookNumber}巻</p>
+                                                    {liq.bookNumber ? <p className={style.tag}>{liq.bookNumber}巻</p> : <></>}
                                                 </div>
                                                 <p className={style.item__description}>{liq.description}</p>
                                                 

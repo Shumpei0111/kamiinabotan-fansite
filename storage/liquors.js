@@ -653,6 +653,19 @@ const liquorList = {
             "genre": "蜂蜜酒",
             "episode": "25",
             "book_number": 3
+        },
+        {
+            "id": 53,
+            "name": "信州アブサン",
+            "description": "第29話で登場。ジンランがかなでを誘ったバーで、かなでがオーダーしたアブサン。「南信州のボタニカルでアブサンを作ろう！」を合言葉に始まった信州アブサンプロジェクト。ラベルに「南信州からゴッホへの贈り物」という文字ともにゴッホと少女が描かれている。ニガヨモギの苗植えや蒸留をはじめ、ラベル作成や瓶詰めまでプロジェクトメンバーで行っています。長野産のホワイトブランデーをベースにしたやさしい甘さが特徴。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/26c0c052.039d7715.26c0c053.eae4623b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchagatapark%2F167442206%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26c0c052.039d7715.26c0c053.eae4623b/?me_id=1294306&item_id=10051636&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fchagatapark%2Fcabinet%2F0509%2Fcatalog%2F202204%2F167442206.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 32,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "リキュール",
+            "episode": "29",
+            "book_number": null
         }
     ]
 }
