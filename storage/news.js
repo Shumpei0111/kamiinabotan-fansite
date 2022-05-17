@@ -2,10 +2,17 @@ const tags = {
     episode: "エピソード",
     goods: "グッズ",
     update: "アップデート",
+    campaign: "キャンペーン",
 };
 
 
 const news = [
+    {
+        date: "2022.05.18",
+        head: "次に来るマンガ大賞2022のエントリーが開始されました",
+        url: "https://tsugimanga.jp/",
+        tag: tags.campaign,
+    },
     {
         date: "2022.05.11",
         head: "単行本題1巻がKindleで5月13日(金)23時59分まで無料公開中！",
