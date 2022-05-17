@@ -12,8 +12,8 @@ export default function HomeNews() {
                 <p className="head__ja">ニュース</p>
                 <span className="head__en">News</span>
             </h2>
-            <div>
-                <ul className={style.newsList}>
+            <div className="relative">
+                <ul className={`${style.newsList} ${style.newsList__bg}`}>
                     {_news.map( (n, ind) => {
                         return (
                             <li className={style.newsList__item} key={n.url}>
