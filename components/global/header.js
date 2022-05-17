@@ -27,7 +27,7 @@ export default function Header(props) {
                     <div className={style.alert}>
                         <Marquee speed={50} gradient={false}>
                             {/* <a href="https://amzn.to/37VR9MD" className={`underline ${style.marqueeText}`} target="_blank" rel="noopener noreferrer">「{master.title}」第３巻好評発売中！</a> */}
-                            <a href="https://amzn.to/3FwiYb1" className={`underline ${style.marqueeText}`} target="_blank" rel="noopener noreferrer">「{master.title}」第1巻がKindleで5月13日(金)23時59分まで無料公開中！</a>
+                            <a href="https://tsugimanga.jp/" className={`underline ${style.marqueeText}`} target="_blank" rel="noopener noreferrer">次に来るマンガ大賞2022のエントリーが開始されました！</a>
                         </Marquee>
                     </div>
                 ) :
