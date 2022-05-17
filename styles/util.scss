@@ -59,6 +59,10 @@
     font-size: 1.2rem;
 }
 
+.text_ml {
+    font-size: 1.8rem;
+}
+
 /** margin **/
 
 .margin-0 {
@@ -104,6 +108,10 @@
 /** right **/
 .mr-8 {
     margin-right: 8px;
+}
+
+.mr-4 {
+    margin-right: 4px;
 }
 
 .separate {
@@ -222,4 +230,8 @@
     border-radius: 4px;
     height: 14px;
     font-weight: bold;
+}
+
+.colorBlue {
+    color: #45D2DB;
 }
