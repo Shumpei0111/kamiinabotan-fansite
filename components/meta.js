@@ -21,18 +21,18 @@ export default function Meta(props) {
                     <meta property="og:type" content="article" />
                 )
             }
-            <meta name="description" content={`マンガ「${product_title}」のファンサイトです。`} />
+            <meta name="description" content={`塀先生著、秋田書店「マンガクロス」で連載中のマンガ「${product_title}」のファンサイトです。登場するキャラはもちろん、お酒の情報なども掲載しています！`} />
             <meta property="og:url" content={url} />
             <meta property="og:title" content={title_tag} />
             <meta property="og:site_name" content={SITE_FULL_TITLE} />
-            <meta property="og:description" content={`マンガ「${product_title}」のファンサイトです。登場するキャラはもちろん、お酒の情報なども掲載しています！`} />
+            <meta property="og:description" content={`塀先生著、秋田書店「マンガクロス」で連載中のマンガ「${product_title}」のファンサイトです。登場するキャラはもちろん、お酒の情報なども掲載しています！`} />
             <meta property="og:image" content={imgURL} />
             <meta property="og:image:width" content={String(imgWidth)} />
             <meta property="og:image:height" content={String(imgHeight)} />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@seventhseven" />
             <meta name="twitter:title" content={title_tag} />
-            <meta name="twitter:description" content={`マンガ「${product_title}」のファンサイトです。登場するキャラはもちろん、お酒の情報なども掲載しています！`} />
+            <meta name="twitter:description" content={`塀先生著、秋田書店「マンガクロス」で連載中のマンガ「${product_title}」のファンサイトです。登場するキャラはもちろん、お酒の情報なども掲載しています！`} />
             <meta name="twitter:image" content={imgURL} />
         </Head>
     )
