@@ -137,7 +137,7 @@ export default function Quiz() {
 
                             <div className="mt-60 mb-60">
                                 <p>作者の塀先生もクイズに参加していただけました！結果は残念ながら9問正解...</p>
-                                <blockquote className="twitter-tweet"><p lang="ja" dir="ltr">10問中、9問正解しました！🍺<br />上伊那ぼたんクイズ10問／<a href="https://twitter.com/seventhseven?ref_src=twsrc%5Etfw">@seventhseven</a>より<br /> <a href="https://t.co/nAGQq4pmdq">https://t.co/nAGQq4pmdq</a><br /> <a href="https://twitter.com/hashtag/%E4%B8%8A%E4%BC%8A%E9%82%A3%E3%81%BC%E3%81%9F%E3%82%93?src=hash&amp;ref_src=twsrc%5Etfw">#上伊那ぼたん</a><br /> <br />カスなので普通に間違えた</p>&mdash; 塀(H3Y) 『上伊那ぼたん』3巻＆LINEスタンプ発売中 (@tonarinohey) <a href="https://twitter.com/tonarinohey/status/1522580508269740035?ref_src=twsrc%5Etfw">May 6, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                <blockquote className="twitter-tweet"><p lang="ja" dir="ltr">10問中、9問正解しました！🍺<br />上伊那ぼたんクイズ10問／<a href="https://twitter.com/seventhseven?ref_src=twsrc%5Etfw">@seventhseven</a>より<br /> <a href="https://t.co/nAGQq4pmdq">https://t.co/nAGQq4pmdq</a><br /> <a href="https://twitter.com/hashtag/%E4%B8%8A%E4%BC%8A%E9%82%A3%E3%81%BC%E3%81%9F%E3%82%93?src=hash&amp;ref_src=twsrc%5Etfw">#上伊那ぼたん</a><br /> <br />カスなので普通に間違えた</p>&mdash; 塀(H3Y) 『上伊那ぼたん』3巻＆LINEスタンプ発売中 (@tonarinohey) <a href="https://twitter.com/tonarinohey/status/1522580508269740035?ref_src=twsrc%5Etfw">May 6, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
                             </div>
 
                             {answered && modalOn ?
