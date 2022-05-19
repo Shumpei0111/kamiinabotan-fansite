@@ -19,7 +19,12 @@ export default function BaseLinks() {
                 </li>
                 <li>
                     <Link href="/quiz">
-                        <a><New />上伊那ぼたんクイズ</a>
+                        <a>上伊那ぼたんクイズ</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/clothes">
+                        <a><New />ファッションで見る</a>
                     </Link>
                 </li>
             </ul>

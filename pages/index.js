@@ -96,7 +96,7 @@ export default function Home() {
 							<div>
 								<p>第3巻の帯を<span className="bold">名取さな</span>さんが担当されました。</p>
 								<Image width={250} height={368} objectFit="contain" src="https://pbs.twimg.com/media/FN-HdK4agAUCr3Q?format=jpg&name=large" alt="第3巻 帯イメージ" />
-								<p>引用：<a className="underline" href="https://twitter.com/kamiinabotan/status/1504069741975326720?s=20&t=e6-v8nFljF1HGwOclZnAGA" target="_blank" rel="noopener noreferrer">公式Twitter</a>より</p>
+								<p className='inyouText'>引用：<a className="underline" href="https://twitter.com/kamiinabotan/status/1504069741975326720?s=20&t=e6-v8nFljF1HGwOclZnAGA" target="_blank" rel="noopener noreferrer">公式Twitter</a>より</p>
 								<div className="mt-32">
 									<p className="bold">名取さなさんについて</p>
 									<div>
@@ -127,7 +127,7 @@ export default function Home() {
 							<a href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">
 								<Image width={375} height={260} objectFit="contain" src="https://pbs.twimg.com/media/FNU7lNcaUAI1-IM?format=jpg&name=4096x4096" alt="第3巻 各書店の特典" />
 							</a> 
-							<p>引用：<a className="underline" href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">塀先生Twitter</a>より</p>
+							<p className='inyouText'>引用：<a className="underline" href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">塀先生Twitter</a>より</p>
 						</div>
 					</section>
 
