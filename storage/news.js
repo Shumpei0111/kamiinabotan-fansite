@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: "2022.05.28",
+        head: "Kindle版第1巻が半額セール中！",
+        url: "https://amzn.to/3z8v88H",
+        tag: tags.campaign,
+    },
+    {
         date: "2022.05.18",
         head: "次に来るマンガ大賞2022のエントリーが開始されました",
         url: "https://tsugimanga.jp/",

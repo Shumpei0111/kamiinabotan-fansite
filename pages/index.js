@@ -27,20 +27,25 @@ export default function Home() {
 				<main className={styles.main}>
 
 					<section className={styles.sectionWrapper}>
-						{/* ニュース */}
-						<HomeNews />
+						<div className={`${styles.siteDescription} width-300`}>
+							<div className='flex flex-column'>
+								<KikanComics bookNumbers={1} />
+								<p>Kindle版第1巻が半額セール中<br />この機会にぜひほろ酔い気分に浸りましょう🍺
+								</p>
+							</div>
+						</div>
 					</section>
 
 					<section className={styles.sectionWrapper}>
 						<div className={styles.topInyou}>
-							<Image width={386} height={200} objectFit="contain" src="https://mangacross.jp/images/comic/cSQw6TT0qND00AUZQf2I0cFqCAO08NGZq6yqLFEWbkM/image_sp/original.jpg?1647590065" alt="新刊のバナー" />
-							<p className={styles.inyouText}>引用：「<a className="underline" href="https://mangacross.jp/comics/kamiinabotan" target="_blank" rel="noopener noreferrer">上伊那ぼたん、酔へる姿は百合の花</a>」マンガクロス（秋田書店）</p>
+							{/* <Image width={386} height={200} objectFit="contain" src="https://mangacross.jp/images/comic/cSQw6TT0qND00AUZQf2I0cFqCAO08NGZq6yqLFEWbkM/image_sp/original.jpg?1647590065" alt="新刊のバナー" />
+							<p className={styles.inyouText}>引用：「<a className="underline" href="https://mangacross.jp/comics/kamiinabotan" target="_blank" rel="noopener noreferrer">上伊那ぼたん、酔へる姿は百合の花</a>」マンガクロス（秋田書店）</p> */}
 
 							<div className="mt-24 mb-24">
 								<div>
-									<p className="bold">最新29話公開中！</p>
+									<p className="bold text_mm">最新29話公開中！</p>
 									<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/32" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/32</a>
-									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;5月31日(火)</p>
+									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;<span className="bold">5月31日(火)</span></p>
 								</div>
 							</div>
 						</div>
@@ -50,6 +55,11 @@ export default function Home() {
 								<p>{master.site_description}</p>
 							</div>
 						</div>
+					</section>
+
+					<section className={styles.sectionWrapper}>
+						{/* ニュース */}
+						<HomeNews />
 					</section>
 
 					<section className={styles.sectionWrapper}>
@@ -77,7 +87,7 @@ export default function Home() {
 							<span className="head__en">Books</span>
 						</h2>
 						<div className="mb-24">
-							<KikanComics />
+							<KikanComics bookNumbers={3} />
 						</div>
 						<div className="mb-24">
 							<h3>帯について</h3>
