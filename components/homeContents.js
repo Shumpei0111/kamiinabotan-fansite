@@ -29,6 +29,11 @@ export default function HomeContents() {
                         <a>上伊那ぼたんクイズ</a>
                     </Link>
                 </li>
+                <li className={styles.item}>
+                    <Link href="/clothes">
+                        <a>ファッションで見る</a>
+                    </Link>
+                </li>
             </ul>
         </>
     )
