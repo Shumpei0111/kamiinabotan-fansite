@@ -25,19 +25,12 @@ export default function Home() {
 				<Meta />
 				{/* コンテンツスタート */}
 				<main className={styles.main}>
-				<section className={styles.sectionWrapper}>
-					<div className={styles.siteDescription}>
-						<New />
-						<p className="bold mt-8">
-							<a href="https://tsugimanga.jp/" className="underline colorBlue mr-4" target="_blank" rel="noopener noreferrer">次に来るマンガ大賞2022</a>のエントリーが開始されました！
-						</p>
-						<p className="mt-24">エントリー期間は<span className="bold">5月25日(水)11:00</span>まで<br />
-						エントリーして上伊那ぼたんを応援しよう！</p>
-						<div className="mt-32 mb-24">
-							<a className="underline colorBlue bold text_ml" href="https://seiga.nicovideo.jp/enquete/tsugimanga2022_entry" target="_blank" rel="noopener noreferrer">👉&nbsp;&nbsp;&nbsp;エントリーする</a><p className="text_ms mt-8">(外部ウィンドウが開きます)</p>
-						</div>
-					</div>
-				</section>
+
+					<section className={styles.sectionWrapper}>
+						{/* ニュース */}
+						<HomeNews />
+					</section>
+
 					<section className={styles.sectionWrapper}>
 						<div className={styles.topInyou}>
 							<Image width={386} height={200} objectFit="contain" src="https://mangacross.jp/images/comic/cSQw6TT0qND00AUZQf2I0cFqCAO08NGZq6yqLFEWbkM/image_sp/original.jpg?1647590065" alt="新刊のバナー" />
@@ -57,11 +50,6 @@ export default function Home() {
 								<p>{master.site_description}</p>
 							</div>
 						</div>
-					</section>
-
-					<section className={styles.sectionWrapper}>
-						{/* ニュース */}
-						<HomeNews />
 					</section>
 
 					<section className={styles.sectionWrapper}>
