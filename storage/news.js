@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: "2022.06.02",
+        head: "「ファッションで見る」ページを更新しました",
+        url: "https://yuriyoi.site/clothes",
+        tag: tags.update,
+    },
+    {
         date: "2022.05.28",
         head: "Kindle版第1巻が半額セール中！",
         url: "https://amzn.to/3z8v88H",
