@@ -39,7 +39,7 @@ export default function Clothes() {
 
                             <div className="flex">
                                 <div className="mb-24 ">
-                                    <Image src="/assets/img/nike_acronym.jpg" objectFit="contain" width={180} height={400} quality={90} alt="エアプレストの引用" />
+                                    <Image src="/assets/img/nike_acronym.jpg" objectFit="contain" width={200} height={420} alt="エアプレストの引用" />
                                     <p className="inyouText width-180">引用：<a className="underline" href="https://amzn.to/39SUayc" target='_blank' rel='noopener noreferrer'>「{master.title}」第1巻 p139</a></p>
                                 </div>
                                 <div>
