@@ -45,7 +45,7 @@ export default function Home() {
 								<div>
 									<p className="bold text_mm">最新29話公開中！</p>
 									<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/32" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/32</a>
-									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;<span className="bold">5月31日(火)</span></p>
+									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;<span className="bold">6月28日(火)</span></p>
 								</div>
 							</div>
 						</div>
@@ -141,7 +141,7 @@ export default function Home() {
 							<div>
 								<p className="bold">最新29話公開中！</p>
 								<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/32" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/32</a>
-								<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;5月31日(火)</p>
+								<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;6月28日(火)</p>
 							</div>
 						</div>
 					</section>
