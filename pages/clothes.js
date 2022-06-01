@@ -34,6 +34,43 @@ export default function Clothes() {
                     </div>
 
                     <div className="mb-60">
+                        <h3>{clothesItems.nike.AIR_PRESTO.name}</h3>
+                        <div className="mb-24">
+
+                            <div className="flex">
+                                <div className="mb-24 ">
+                                    <Image src="/assets/img/nike_acronym.jpg" objectFit="contain" width={180} height={400} alt="エアプレストの引用" />
+                                    <p className="inyouText width-180">引用：<a className="underline" href="https://amzn.to/39SUayc" target='_blank' rel='noopener noreferrer'>「{master.title}」第1巻 p139</a></p>
+                                </div>
+                                <div>
+                                    <Image src={clothesItems.nike.AIR_PRESTO.item.imgUrl} objectFit="contain" width={260} height={300} alt={`${clothesItems.nike.AIR_PRESTO.name}の画像`} />
+                                    <div className="flex">
+                                        <p className="text_ms">引用：<a className="underline" href="https://www.nike.com/jp/launch/t/air-presto-mid-utility-acronym-white-black-dynamic-yellow">NIKE公式サイト</a>より</p>
+                                        <a href={clothesItems.nike.AIR_PRESTO.shortUrl} className="underline bold text_ms" target='_blank' rel='noopener noreferrer'>Rakutenで見る</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p className="mb-24">「エアプレスト」シリーズは「足のためのTシャツ」というコンセプトで2000年にリリースされました。<br />リラックスした快適な履き心地を目指して作られたので、伸縮性にすぐれたアッパーと、近未来的なデザインが特徴的です。</p>
+
+                        <p className="mb-24"><span className="bold">ACRONYM（アクロニウム）</span>はアウトドアブランドのデザイナーとして経験を積んだErrolson Hugh(エロルソン・ヒュー)によって起ち上げられたブランドです。</p>
+
+                        <p className="mb-24">これまでNIKEとアクロニウムは何度もコラボしており、毎回即完売になるほどの人気シリーズ。アイテムによってはプレ値で取引されることも多く、スニーカーファンの中でも注目されているアイテムのひとつです。</p>
+                        
+                        <div className={`${style.info} mt-32 mb-60`}>
+                            <div className="mb-16">
+                                <p className="bold mb-4">NIKE SNKRS</p>
+                                <a className="underline" href="https://www.nike.com/jp/launch" target="_blank" rel="noopener noreferrer">https://acrnm.com/</a>
+                            </div>
+                            <div>
+                                <p className="bold mb-4">ACRONYM</p>
+                                <a className="underline" href="https://acrnm.com/" target="_blank" rel="noopener noreferrer">https://acrnm.com/</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mb-60">
                         <h3>SALONE</h3>
                         <p>ぼたんといぶきで初めてのおでかけで訪れたセレクトショップ(店名は登場しなかった)。</p>
                         <p>作中では代官山にあるが、モデルとなったのは千葉・柏にあるSALONE(サローネ)というセレクトショップ。</p>
