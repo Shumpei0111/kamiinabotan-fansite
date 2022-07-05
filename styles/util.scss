@@ -1,3 +1,4 @@
+@use './variables.module.scss' as v;
 /** position **/
 
 .relative {
@@ -276,4 +277,12 @@
 
 .colorBlue {
     color: #45D2DB;
+}
+
+
+/* common design */
+.frame {
+	padding: 16px 24px;
+	border: 1px solid v.$mainGrey;
+	border-radius: 4px;
 }

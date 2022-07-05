@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: "2022.07.06",
+        head: "最新話リンクの更新・TOPページのデザイン微修正しました",
+        url: "/",
+        tag: tags.update,
+    },
+    {
         date: "2022.06.02",
         head: "「ファッションで見る」ページを更新しました",
         url: "https://yuriyoi.site/clothes",

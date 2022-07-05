@@ -43,9 +43,9 @@ export default function Home() {
 
 							<div className="mt-24 mb-24">
 								<div>
-									<p className="bold text_mm">最新29話公開中！</p>
-									<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/32" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/32</a>
-									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;<span className="bold">6月28日(火)</span></p>
+									<p className="bold text_mm">最新30話公開中！</p>
+									<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/33" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/33</a>
+									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;<span className="bold">7月26日(火)</span></p>
 								</div>
 							</div>
 						</div>
@@ -95,7 +95,7 @@ export default function Home() {
 								<p>第3巻の帯を<span className="bold">名取さな</span>さんが担当されました。</p>
 								<Image width={250} height={368} objectFit="contain" src="https://pbs.twimg.com/media/FN-HdK4agAUCr3Q?format=jpg&name=large" alt="第3巻 帯イメージ" />
 								<p className='inyouText'>引用：<a className="underline" href="https://twitter.com/kamiinabotan/status/1504069741975326720?s=20&t=e6-v8nFljF1HGwOclZnAGA" target="_blank" rel="noopener noreferrer">公式Twitter</a>より</p>
-								<div className="mt-32">
+								<div className="mt-32 frame">
 									<p className="bold">名取さなさんについて</p>
 									<div>
 										<p className="mb-24">プロフィール（YouTubeチャンネル「<a className="underline" href="https://www.youtube.com/channel/UCIdEIHpS0TdkqRkHL5OkLtA/featured" target="_blank" rel="noopener noreferrer">さなちゃんねる</a>」より抜粋）</p>
@@ -121,11 +121,13 @@ export default function Home() {
 						</div>
 						<div>
 							<h3>書店特典</h3>
-							<p>第3巻書店特典は色々な衣装を身に纏ったジンランのカード付き。</p>
-							<a href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">
-								<Image width={375} height={260} objectFit="contain" src="https://pbs.twimg.com/media/FNU7lNcaUAI1-IM?format=jpg&name=4096x4096" alt="第3巻 各書店の特典" />
-							</a> 
-							<p className='inyouText'>引用：<a className="underline" href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">塀先生Twitter</a>より</p>
+							<div className='frame'>
+								<p>第3巻書店特典は色々な衣装を身に纏ったジンランのカード付き。</p>
+								<a href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">
+									<Image width={375} height={260} objectFit="contain" src="https://pbs.twimg.com/media/FNU7lNcaUAI1-IM?format=jpg&name=4096x4096" alt="第3巻 各書店の特典" />
+								</a> 
+								<p className='inyouText'>引用：<a className="underline" href="https://twitter.com/tonarinohey/status/1501172061066362884?s=20&t=AeHDw-sZ3D3M5ZKgz5bqGQ" target="_blank" rel="noopener noreferrer">塀先生Twitter</a>より</p>
+							</div>
 						</div>
 					</section>
 
@@ -139,9 +141,9 @@ export default function Home() {
 						</div>
 						<div className="mt-32">
 							<div>
-								<p className="bold">最新29話公開中！</p>
-								<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/32" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/32</a>
-								<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;6月28日(火)</p>
+								<p className="bold">最新30話公開中！</p>
+								<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/33" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/33</a>
+								<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;7月26日(火)</p>
 							</div>
 						</div>
 					</section>
