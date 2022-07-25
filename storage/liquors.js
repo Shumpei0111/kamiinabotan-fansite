@@ -679,6 +679,19 @@ const liquorList = {
             "genre": "ウイスキー",
             "episode": "29",
             "book_number": null
+        },
+        {
+            "id": 55,
+            "name": "百年の孤独",
+            "description": "第30話で登場。やえかが持ち込んだこのお酒は麦焼酎の中でも取扱いできるのが特約店のみのプレミア酒と名高い一品。通常、蒸留後はそのまま瓶詰めされるが、ウイスキー樽で長期間熟成させ、3年・4年・5年ものをブレンドするなど、手間隙をかけて芳醇な味わいと豊かな香りを作り上げている。ちなみに「百年の孤独」はマルケスの長編小説からとって名付けられた。",
+            "url": '<a href="https://hb.afl.rakuten.co.jp/ichiba/29e8c643.b2b49146.29e8c644.9e3bd4fd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyokogoshi%2Fshochu_003%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/29e8c643.b2b49146.29e8c644.9e3bd4fd/?me_id=1272723&item_id=10000243&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_gold%2Fyokogoshi%2Fnomi%2Fimages%2Fsho-chu%2F100nen-kodoku01.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
+            "marker_id": 33,
+            "imagePath": "",
+            "imageInyou": "",
+            "inyouURL": "",
+            "genre": "焼酎",
+            "episode": "30",
+            "book_number": null
         }
     ]
 }
