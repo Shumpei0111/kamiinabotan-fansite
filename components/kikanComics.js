@@ -2,9 +2,9 @@ import getSanitizeHtml from '../lib/getSanitizeHTML';
 import style from '../styles/kikanComics.module.scss';
 
 export default function KikanComics( props ) {
-    const { bookNumbers } = props;
+    // const { bookNumbers } = props;
 
-    const displayLength = Number(bookNumbers);
+    // const displayLength = Number(bookNumbers);
 
     const linkList = [
         {
@@ -29,12 +29,12 @@ export default function KikanComics( props ) {
 
     const displayList = ( () => {
         const arr = [];
-        for( let i = 0; i < displayLength; i++ ) {
+        for( let i = 0; i < linkList.length; i++ ) {
             arr.push(linkList[i] );
         }
         return arr;
     } )();
-
+    console.log(displayList);
 
     return(
         <div>
