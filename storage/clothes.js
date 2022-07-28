@@ -16,7 +16,11 @@ const clothesItems = {
         packT: {
             url: `<a href="https://hb.afl.rakuten.co.jp/ichiba/27f01fee.3faa4ed8.27f01fef.8b9ef6c8/_RTLink45436?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fonesanagehabm%2Fs52gc0189s23901100%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MSwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/27f01fee.3faa4ed8.27f01fef.8b9ef6c8/?me_id=1308102&item_id=10034645&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fonesanagehabm%2Fcabinet%2Fmm6%2Fmm6%2Fs52gc0189s23901100.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>`,
             shortUrl: "https://a.r10.to/h6VEja"
-        }
+        },
+        lazySundayMorning: {
+            url: `<a href="https://hb.afl.rakuten.co.jp/ichiba/29fc9431.991c94db.29fc9432.f6f8913e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2F3614273185820%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/29fc9431.991c94db.29fc9432.f6f8913e/?me_id=1275126&item_id=10066300&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Faquabouquet%2Fcabinet%2Fa09%2F3614273185820.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>`,
+            shortUrl: "https://a.r10.to/hkEM8e",
+        },
     },
     mykita: {
         eldermh1: {

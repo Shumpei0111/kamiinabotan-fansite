@@ -2,6 +2,8 @@ import { useRouter } from "next/router"
 import Layout from "../components/layout"
 import Meta from "../components/meta"
 import Image from "next/image";
+import H3 from '../components/partial/H3';
+import H4 from "../components/partial/H4";
 
 import getSanitizeHtml from '../lib/getSanitizeHTML';
 
@@ -27,16 +29,44 @@ export default function Clothes() {
                     
                     <div className={style.intro}>
                         <p>作品に関連するファッションやショップに関することをとりあげるページです。</p>
-
                         <p>登場するキャラクターにはそれぞれ衣装設計がなされていたり、実在するモチーフが散りばめられています。</p>
-
                         <p>それらを解剖しながら、どのような世界が広がっているか見ていきましょう。</p>
                     </div>
 
                     <div className="mb-60">
-                        <h3>{clothesItems.nike.AIR_PRESTO.name}</h3>
+                        <H3 text="Perfume" />
                         <div className="mb-24">
+                            <H4 text="LAZY SUNDAY MORNING" />
+                            <Image src="/assets/img/perfume.png" objectFit="contain" width={400} height={320} alt="ぼたんが普段つけている香水" />
+                            <p className="inyouText width-180">引用：<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/34" target='_blank' rel='noopener noreferrer'>「{master.title}」第31話 p8</a></p>
+                        </div>
 
+                        <div>
+                            <p className="mb-24">ぼたんは普段、マルジェラの香水を使っているようです。</p>
+                            <p className="mb-24">例に挙げた<span className="bold">「レイジー サンデー モーニング」</span>は、メゾン・マルジェラの中でも「Maison Margiela Fragrances(メゾン マルジェラ フレグランス)」というラインのアイテムです。</p>
+                            <p className="mb-24">ラベルにある<span className="bold">「REPLICA（レプリカ）」</span>は、<span className="bold">【記憶やムードを再現する】</span>という意味で名付けられました。中でもレプリカシリーズのフレグランスでもNo.1人気を誇るのがこの「レイジー サンデー モーニング」です。</p>
+                            <p className="mb-24">コンセプトは2003年のフィレンツェ（花の都フローレンス）の晴れた朝がテーマの、フレッシュでゆっくりとした気分にぴったりのムスク。</p>
+                            <p className="mb-24">洗い立てのリネンのような香りで、男女ともに使えるように調香されています。</p>
+                            <p className="mb-24">ラインナップも充実していて、このオードトワレのフレグランスの他、キャンドルやハンドクリームでもこの香りを楽しむことができます。</p>
+                        </div>
+                        <div>
+                            <p className="bold">香り</p>
+                            <p className="ml-8">レモン, ウッド, 緑茶, オレンジ, ムスク, ジャスミン, すずらん, アンバーウッド</p>
+                            <p className="bold">容量</p>
+                            <p className="ml-8">10ml, 30ml, 100ml</p>
+                        </div>
+                        <div>
+                            <div className="inline-block">
+                                <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(clothesItems.margiela.lazySundayMorning.url) }}></div>
+                                <a href={clothesItems.margiela.lazySundayMorning.shortUrl} className="underline bold text_ms" target='_blank' rel='noopener noreferrer'>Rakutenで見る</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mb-60">
+                        <H3 text={`Kicks`} />
+                        <div className="mb-24">
+                            <H4 text={`${clothesItems.nike.AIR_PRESTO.name}`} />
                             <div className="flex">
                                 <div className="mb-24 ">
                                     <Image src="/assets/img/nike_acronym.jpg" objectFit="contain" width={200} height={420} alt="エアプレストの引用" />
@@ -50,13 +80,15 @@ export default function Clothes() {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                        <p className="mb-24">「エアプレスト」シリーズは「足のためのTシャツ」というコンセプトで2000年にリリースされました。<br />リラックスした快適な履き心地を目指して作られ、伸縮性にすぐれたアッパーと、近未来的なデザインが特徴的です。</p>
 
-                        <p className="mb-24"><span className="bold">ACRONYM（アクロニウム）</span>はアウトドアブランドのデザイナーとして経験を積んだErrolson Hugh(エロルソン・ヒュー)によって起ち上げられたブランドです。</p>
+                        <div>
+                            <p className="mb-24">「エアプレスト」シリーズは「足のためのTシャツ」というコンセプトで2000年にリリースされました。<br />リラックスした快適な履き心地を目指して作られ、伸縮性にすぐれたアッパーと、近未来的なデザインが特徴的です。</p>
 
-                        <p className="mb-24">これまでNIKEとアクロニウムは何度もコラボしており、毎回即完売になるほどの人気シリーズ。アイテムによってはプレ値で取引されることも多く、スニーカーファンの中でも注目されているアイテムのひとつです。</p>
+                            <p className="mb-24"><span className="bold">ACRONYM（アクロニウム）</span>はアウトドアブランドのデザイナーとして経験を積んだErrolson Hugh(エロルソン・ヒュー)によって起ち上げられたブランドです。</p>
+
+                            <p className="mb-24">これまでNIKEとアクロニウムは何度もコラボしており、毎回即完売になるほどの人気シリーズ。アイテムによってはプレ値で取引されることも多く、スニーカーファンの中でも注目されているアイテムのひとつです。</p>
+                        </div>
                         
                         <div className={`${style.info} mt-32 mb-60`}>
                             <div className="mb-16">
@@ -71,10 +103,14 @@ export default function Clothes() {
                     </div>
 
                     <div className="mb-60">
-                        <h3>SALONE</h3>
-                        <p>ぼたんといぶきで初めてのおでかけで訪れたセレクトショップ(店名は登場しなかった)。</p>
-                        <p>作中では代官山にあるが、モデルとなったのは千葉・柏にあるSALONE(サローネ)というセレクトショップ。</p>
-                        <p>お店の窓にはずらりとお酒のボトルが飾られているのがポイント。<br />アパレルと飲食できるフードスタンドが併設されている形態のお店です。</p>
+                        <H3 text={`Shop`} />
+
+                        <H4 text="SALONE" />
+                        <div>
+                            <p>ぼたんといぶきで初めてのおでかけで訪れたセレクトショップ(店名は登場しなかった)。</p>
+                            <p>作中では代官山にあるが、モデルとなったのは千葉・柏にあるSALONE(サローネ)というセレクトショップ。</p>
+                            <p>お店の窓にはずらりとお酒のボトルが飾られているのがポイント。<br />アパレルと飲食できるフードスタンドが併設されている形態のお店です。</p>
+                        </div>
                         <div className="mt-16 mb-16">
                             <Image width={400} height={600} objectFit="contain" src="/assets/img/comic_salone.jpg" alt="SALONEがモデルとなった店が登場するページ" />
                             <p className="inyouText">引用：<a className="underline" href="https://amzn.to/39SUayc" target='_blank' rel='noopener noreferrer'>「{master.title}」第1巻 p53</a></p>
@@ -101,13 +137,16 @@ export default function Clothes() {
                             <p>SALONEは「<span className="bold">AURALEE(オーラリー)</span>」、「<span className="bold">BALENCIAGA(バレンシアガ)</span>」、「<span className="bold">MAISON MARGIELA(メゾン・マルジェラ)</span>」などの有名ブランドを扱うほか、「<span className="bold">EYEVAN(アイヴァン)</span>」や「<span className="bold">MYKITA(マイキータ)</span>」などのサングラスブランドもラインナップとしてあるのが特徴です。</p>
 
                             <div className="mt-32">
-                                <p className="bold">MAISON MARGIELA</p>
-                                <p className="mt-16">メゾン・マルジェラは1988年にデザイナーのマルタン・マルジェラによって設立されたフランスの高級ブランド。オートクチュール風と既製服、2つのコレクションを発表しています。</p>
-                                <p className="mt-16">手がけるプロダクトとしては、レディースウェア、メンズウェア、ジュエリー、シューズ、オブジェ、フレグランス、ホームグッズなど多岐にわたっています。</p>
-                                <p className="mt-16">デザインの独創性はもちろんのこと、地下鉄の駅や街角などでライブショーを行ったり、デザインを引き立たせるためにモデルの顔を布で覆うなど、型破りな表現方法を行うのも特徴です。</p>
-                                <p>ファッション業界への影響力も強く、歴史に名を残すメゾンの1つと言われています。</p>
-                                <p className="mt-16">設立当初のブランド名は「メゾン・マルタン・マルジェラ」だったが、2015年に現在の「メゾン・マルジェラ」に解明されました。</p>
-                                <p className="mt-16">現在マルジェラ本人はクリエイティブ・デザイナーを退き、後任のジョン・ガリアーノが務めています。</p>
+                                <H3 text="Blands" />
+                                <H4 text="MAISON MARGIELA" />
+                                <div>
+                                    <p>メゾン・マルジェラは1988年にデザイナーのマルタン・マルジェラによって設立されたフランスの高級ブランド。オートクチュール風と既製服、2つのコレクションを発表しています。</p>
+                                    <p className="mt-16">手がけるプロダクトとしては、レディースウェア、メンズウェア、ジュエリー、シューズ、オブジェ、フレグランス、ホームグッズなど多岐にわたっています。</p>
+                                    <p className="mt-16">デザインの独創性はもちろんのこと、地下鉄の駅や街角などでライブショーを行ったり、デザインを引き立たせるためにモデルの顔を布で覆うなど、型破りな表現方法を行うのも特徴です。</p>
+                                    <p>ファッション業界への影響力も強く、歴史に名を残すメゾンの1つと言われています。</p>
+                                    <p className="mt-16">設立当初のブランド名は「メゾン・マルタン・マルジェラ」だったが、2015年に現在の「メゾン・マルジェラ」に解明されました。</p>
+                                    <p className="mt-16">現在マルジェラ本人はクリエイティブ・デザイナーを退き、後任のジョン・ガリアーノが務めています。</p>
+                                </div>
                                 <div>
                                     <div className="mt-32 inline-block">
                                         <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(clothesItems.margiela.tabi.url) }}></div>
@@ -127,11 +166,13 @@ export default function Clothes() {
                             </div>
 
                             <div className="mt-32">
-                                <p className="bold">MYKITA</p>
-                                <p className="mt-16">マイキータはドイツのアイウェアブランドです。特許を取得した画期的なアイデアや確かな技術力・特徴的なデザインと様々なコラボアイテムが存在しているのが特徴です。</p>
-                                <p className="mt-16">デザイン〜製造まですべてベルリンにある自社工房で行われており、最新技術を使ったハイテク加工と、手作業による丁寧な仕事によって作られています。</p>
-                                <p>MYKITAというブランド名は、ドイツ語で保育施設という意味の「KITA」と、英語の「MY」を組み合わせた造語です。これは、最初のオフィスが元々保育園であったことが由来となっています。</p>
-                                <p>ちなみに、ドイツは日本のように保育園・幼稚園、託児所などの区別はあまりなく、保育施設を総称してKita（Kindertagesstätte）と呼んでいます。</p>
+                                <H4 text="MYKITA" />
+                                <div>
+                                    <p>マイキータはドイツのアイウェアブランドです。特許を取得した画期的なアイデアや確かな技術力・特徴的なデザインと様々なコラボアイテムが存在しているのが特徴です。</p>
+                                    <p className="mt-16">デザイン〜製造まですべてベルリンにある自社工房で行われており、最新技術を使ったハイテク加工と、手作業による丁寧な仕事によって作られています。</p>
+                                    <p>MYKITAというブランド名は、ドイツ語で保育施設という意味の「KITA」と、英語の「MY」を組み合わせた造語です。これは、最初のオフィスが元々保育園であったことが由来となっています。</p>
+                                    <p>ちなみに、ドイツは日本のように保育園・幼稚園、託児所などの区別はあまりなく、保育施設を総称してKita（Kindertagesstätte）と呼んでいます。</p>
+                                </div>
                                 {/* MYKITAの説明やリンクを載せる */}
                                 <div>
                                     <div className="mt-32 inline-block">
