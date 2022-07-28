@@ -43,9 +43,9 @@ export default function Home() {
 
 							<div className="mt-24 mb-24">
 								<div>
-									<p className="bold text_mm">最新30話公開中！</p>
-									<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/33" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/33</a>
-									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;<span className="bold">7月26日(火)</span></p>
+									<p className="bold text_mm">最新31話公開中！</p>
+									<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/34" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/34</a>
+									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;<span className="bold">8月30日(火)</span></p>
 								</div>
 							</div>
 						</div>
@@ -141,9 +141,9 @@ export default function Home() {
 						</div>
 						<div className="mt-32">
 							<div>
-								<p className="bold">最新30話公開中！</p>
-								<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/33" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/33</a>
-								<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;7月26日(火)</p>
+								<p className="bold">最新31話公開中！</p>
+								<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/34" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/34</a>
+								<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;8月30日(火)</p>
 							</div>
 						</div>
 					</section>
