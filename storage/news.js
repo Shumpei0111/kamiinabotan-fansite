@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: "2022.07.29",
+        head: "「ファッションで見る」に香水の項目を追加しました",
+        url: "https://yuriyoi.site/clothes",
+        tag: tags.update,
+    },
+    {
         date: "2022.07.26",
         head: "第31話が更新されました！",
         url: "https://mangacross.jp/comics/kamiinabotan/34",
