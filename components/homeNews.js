@@ -16,7 +16,7 @@ export default function HomeNews() {
                 <ul className={`${style.newsList} ${style.newsList__bg}`}>
                     {_news.map( (n, ind) => {
                         return (
-                            <li className={style.newsList__item} key={n.url}>
+                            <li className={style.newsList__item} key={ind}>
                                 <p className={style.newsDate}>{n.date}</p>
                                 {ind === 0 ?
                                     <>
