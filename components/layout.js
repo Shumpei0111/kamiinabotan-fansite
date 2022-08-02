@@ -18,7 +18,7 @@ export default function Layout({ children }) {
     ) ).map( item => ( item.props.title ) )
     .join( "" ) : "";
 
-    const sharePageTitle = pageTitle ? `${pageTitle} | ${SITE_FULL_TITLE}` : `${SITE_FULL_TITLE}`;
+    const sharePageTitle = `${pageTitle} | ${SITE_FULL_TITLE}`;
 
     const router = useRouter();
     const isIndexPage = router.pathname === '/';
