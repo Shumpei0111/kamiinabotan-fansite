@@ -21,6 +21,10 @@ const clothesItems = {
             url: `<a href="https://hb.afl.rakuten.co.jp/ichiba/29fc9431.991c94db.29fc9432.f6f8913e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2F3614273185820%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/29fc9431.991c94db.29fc9432.f6f8913e/?me_id=1275126&item_id=10066300&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Faquabouquet%2Fcabinet%2Fa09%2F3614273185820.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>`,
             shortUrl: "https://a.r10.to/hkEM8e",
         },
+        whispersInTheLibrary: {
+            url: `<a href="https://hb.afl.rakuten.co.jp/ichiba/2a1e6493.dff523dd.2a1e6494.cba77300/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-cat%2F23189l%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjAsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/2a1e6493.dff523dd.2a1e6494.cba77300/?me_id=1197538&item_id=10157957&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fb-cat%2Fcabinet%2Fdefault_images8%2F23189l-a.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>`,
+            shortUrl: "https://a.r10.to/haGE01"
+        },
     },
     mykita: {
         eldermh1: {

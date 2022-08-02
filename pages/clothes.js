@@ -36,31 +36,57 @@ export default function Clothes() {
                     <div className="mb-60">
                         <H3 text="Perfume" />
                         <div className="mb-24">
-                            <H4 text="LAZY SUNDAY MORNING" />
+                            <H4 text="LAZY SUNDAY MORNING / Whispers in the Library" />
                             <Image src="/assets/img/perfume.png" objectFit="contain" width={400} height={320} alt="ぼたんが普段つけている香水" />
                             <p className="inyouText width-180">引用：<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/34" target='_blank' rel='noopener noreferrer'>「{master.title}」第31話 p8</a></p>
                         </div>
 
                         <div>
                             <p className="mb-24">ぼたんは普段、マルジェラの香水を使っているようです。</p>
-                            <p className="mb-24">例に挙げた<span className="bold">「レイジー サンデー モーニング」</span>は、メゾン・マルジェラの中でも「Maison Margiela Fragrances(メゾン マルジェラ フレグランス)」というラインのアイテムです。</p>
+                            <p className="mb-24">例に挙げた<span className="bold">「レイジー サンデー モーニング」</span><span className="bold">「ウィスパーライブラリー」</span>は、メゾン・マルジェラの中でも「Maison Margiela Fragrances(メゾン マルジェラ フレグランス)」というラインのアイテムです。</p>
                             <p className="mb-24">ラベルにある<span className="bold">「REPLICA（レプリカ）」</span>は、<span className="bold">【記憶やムードを再現する】</span>という意味で名付けられました。中でもレプリカシリーズのフレグランスでもNo.1人気を誇るのがこの「レイジー サンデー モーニング」です。</p>
-                            <p className="mb-24">コンセプトは2003年のフィレンツェ（花の都フローレンス）の晴れた朝がテーマの、フレッシュでゆっくりとした気分にぴったりのムスク。</p>
-                            <p className="mb-24">洗い立てのリネンのような香りで、男女ともに使えるように調香されています。</p>
-                            <p className="mb-24">ラインナップも充実していて、このオードトワレのフレグランスの他、キャンドルやハンドクリームでもこの香りを楽しむことができます。</p>
-                        </div>
-                        <div>
-                            <p className="bold">香り</p>
-                            <p className="ml-8">レモン, ウッド, 緑茶, オレンジ, ムスク, ジャスミン, すずらん, アンバーウッド</p>
-                            <p className="bold">容量</p>
-                            <p className="ml-8">10ml, 30ml, 100ml</p>
-                        </div>
-                        <div>
-                            <div className="inline-block">
-                                <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(clothesItems.margiela.lazySundayMorning.url) }}></div>
-                                <a href={clothesItems.margiela.lazySundayMorning.shortUrl} className="underline bold text_ms" target='_blank' rel='noopener noreferrer'>Rakutenで見る</a>
+
+                            <div className="mb-60">
+                                <p className="mb-8 bold">LAZY SUNDAY MORNING</p>
+                                <p className="mb-24">コンセプトは2003年のフィレンツェ（花の都フローレンス）の晴れた朝がテーマの、フレッシュでゆっくりとした気分にぴったりのムスク。</p>
+                                <p className="mb-24">洗い立てのリネンのような香りで、男女ともに使えるように調香されています。</p>
+                                <p className="mb-24">ラインナップも充実していて、このオードトワレのフレグランスの他、キャンドルやハンドクリームでもこの香りを楽しむことができます。</p>
+
+                                <div>
+                                    <p className="bold">香り</p>
+                                    <p className="ml-8">レモン, ウッド, 緑茶, オレンジ, ムスク, ジャスミン, すずらん, アンバーウッド</p>
+                                    <p className="bold">容量</p>
+                                    <p className="ml-8">10ml, 30ml, 100ml</p>
+                                </div>
+                                <div>
+                                    <div className="inline-block">
+                                        <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(clothesItems.margiela.lazySundayMorning.url) }}></div>
+                                        <a href={clothesItems.margiela.lazySundayMorning.shortUrl} className="underline bold text_ms" target='_blank' rel='noopener noreferrer'>Rakutenで見る</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p className="mb-8 bold">Whispers in the Library</p>
+                                <p className="mb-24">コンセプトはその名の通り、オックスフォードの歴史ある図書館にゆっくりと流れる静寂な時間。古紙とワックスがけされた木の香りをイメージして調香されたフレグランスです。</p>
+                                <p className="mb-24">トップノートはコショウのようなスパイシーな香りで、ミドル〜ラストにかけてお香のような甘い香りに移り変わります。</p>
+                                <p className="mb-24">レイジーサンデーモーニングとともに、クセが少なく普段使いに適した香りといえるでしょう。</p>
+
+                                <div>
+                                    <p className="bold">香り</p>
+                                    <p className="ml-8">コショウ、バニラ、ウッディ、シダー</p>
+                                    <p className="bold">容量</p>
+                                    <p className="ml-8">10ml, 30ml, 100ml</p>
+                                </div>
+                                <div>
+                                    <div className="inline-block">
+                                        <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(clothesItems.margiela.whispersInTheLibrary.url) }}></div>
+                                        <a href={clothesItems.margiela.whispersInTheLibrary.shortUrl} className="underline bold text_ms" target='_blank' rel='noopener noreferrer'>Rakutenで見る</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
 
                     <div className="mb-60">
