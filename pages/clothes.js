@@ -17,7 +17,7 @@ export default function Clothes() {
     const TITLE = "ファッションで見る";
 
     return (
-        <Layout TITLE={TITLE}>
+        <Layout title={TITLE}>
             {router.isFallback ? (
                 <p>Loading...</p>
             ):(<>
