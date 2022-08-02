@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import Meta from "./meta";
 import Header from "./global/header";
 import BaseLinks from "./global/baseLinks";
 import KikanComics from "./kikanComics";
@@ -12,11 +11,8 @@ import TwitterShare from "./global/twitterShare";
 import { SITE_FULL_TITLE } from "../lib/constraint";
 import AdSpace from "./global/adSpace.js";
 
-export default function Layout({ children }) {
-    const pageTitle = children.props.children ? children.props.children.filter( children => (
-        children.type.name === "Meta"
-    ) ).map( item => ( item.props.title ) )
-    .join( "" ) : "";
+export default function Layout({ children, title }) {
+    const pageTitle = title ? title : "";
 
     const sharePageTitle = `${pageTitle} | ${SITE_FULL_TITLE}`;
 

@@ -10,14 +10,15 @@ import style from '../styles/chara.module.scss';
 export default function Episode() {
     const router = useRouter();
     const _characters = characters.data.slice();
+    const TITLE = "キャラクター一覧";
 
     return (
-        <Layout>
+        <Layout title={TITLE}>
             {router.isFallback ? (
                 <p>Loading...</p>
             ) : (
                 <>
-                    <Meta title="キャラクター一覧" />
+                    <Meta title={TITLE} />
                     <div className={style.charaMain}>
                         <h2>
                             <p className="head__ja">キャラクター一覧</p>

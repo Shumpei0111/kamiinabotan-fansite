@@ -16,6 +16,7 @@ export default function LiquorList() {
     const { q, rev } = router.query;
     const items = liquorList.data.slice();
     const makers = makerList.data.slice();
+    const TITLE = "登場するお酒一覧";
 
 
     ////////////////////////
@@ -164,12 +165,12 @@ export default function LiquorList() {
     ////////////////////////
     // レイアウト
     return (
-        <Layout>
+        <Layout title={TITLE}>
             {router.isFallback ? (
                 <p>Loading...</p>
             ) : (
                 <>
-                    <Meta title="登場するお酒一覧" />
+                    <Meta title={TITLE} />
                     <main>
                         <h2>
                             <p className="head__ja">お酒一覧</p>

@@ -5,10 +5,12 @@ import { SITE_FULL_TITLE, SITE_URL } from '../lib/constraint.js';
 import style from '../styles/policy.module.scss';
 
 export default function Policy() {
+    const TITLE = "プライバシーポリシー";
+
     return (
-        <Layout>
+        <Layout title={TITLE}>
             <div>
-                <Meta title="プライバシーポリシー" />
+                <Meta title={TITLE} />
                 <main>
                     <section className={style.introSection}>
                         <h2>

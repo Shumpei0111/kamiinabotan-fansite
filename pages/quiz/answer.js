@@ -10,6 +10,7 @@ import style from '../../styles/quiz.module.scss';
 
 export default function Answer() {
     const router = useRouter();
+    const TITLE = "上伊那ぼたんクイズ こたえ";
 
     const nadurra = `<a href="https://hb.afl.rakuten.co.jp/ichiba/27534781.eb326777.27534782.0635bead/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fricaoh%2F198189%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/27534781.eb326777.27534782.0635bead/?me_id=1192052&item_id=10006110&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fricaoh%2Fcabinet%2F199999%2F198189.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>`;
 
@@ -18,12 +19,12 @@ export default function Answer() {
     const akkeshi = `<a href="https://hb.afl.rakuten.co.jp/ichiba/275376a6.bbb95cf9.275376a7.1f4b956a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faburajin%2Fakkeshi1-200%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJkb3duIiwiY29tIjoxLCJjb21wIjoiZG93biIsInByaWNlIjowLCJib3IiOjAsImNvbCI6MCwiYmJ0biI6MCwicHJvZCI6MCwiYW1wIjpmYWxzZX0%3D" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/275376a6.bbb95cf9.275376a7.1f4b956a/?me_id=1270768&item_id=10014710&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Faburajin%2Fcabinet%2Fshohin%2Fventure-whisky%2Fimgrc0096399598.gif%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>`;
 
     return (
-        <Layout>
+        <Layout title={TITLE}>
             {router.isFallback ? (
                 <p>Loading...</p>
             ) : (
             <>
-                <Meta title="上伊那ぼたんクイズ こたえ" />
+                <Meta title={TITLE} />
                 <div>
                     <h2>
                         <p className="head__ja">上伊那ぼたんクイズのこたえ</p>

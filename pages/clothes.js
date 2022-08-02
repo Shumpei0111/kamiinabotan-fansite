@@ -14,13 +14,14 @@ import style from '../styles/clothes.module.scss';
 
 export default function Clothes() {
     const router = useRouter();
+    const TITLE = "ファッションで見る";
 
     return (
-        <Layout>
+        <Layout TITLE={TITLE}>
             {router.isFallback ? (
                 <p>Loading...</p>
             ):(<>
-                <Meta title="ファッションで見る"></Meta>
+                <Meta title={TITLE}></Meta>
                 <div className={style.clothesMain}>
                     <h2>
                         <p className="head__ja">ファッションで見る上伊那ぼたん</p>

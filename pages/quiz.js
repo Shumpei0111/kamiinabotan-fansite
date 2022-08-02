@@ -14,6 +14,8 @@ export default function Quiz() {
     const [answered, setAnswered] = useState(false);
     const [modalOn, setModalOn] = useState(false);
 
+    const TITLE = "上伊那ぼたんクイズ";
+
     // 正解のリスト
     const correctAnswers = appendQuiz.map( quiz => quiz.a );
 
@@ -72,11 +74,11 @@ export default function Quiz() {
     };
 
     return (
-        <Layout>
+        <Layout title={TITLE}>
             {router.isFallback ? (
                 <p>Loading...</p>
             ) : (<>
-                <Meta title="上伊那ぼたんクイズ" />
+                <Meta title={TITLE} />
                 <div>
                 {modalOn ?
                     <div className={style.modalOnCover} />
