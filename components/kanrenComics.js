@@ -29,7 +29,7 @@ export default function KanrenComics() {
             <div className="flex">
                 {
                     linkList.map( item => (
-                        <div className={style.linkItem} key={item.url}>
+                        <div className={style.linkItem} key={item.title}>
                             <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(item.html)}}></div>
                             <a href={item.url} className="underline" target="_blank" rel="noopener noreferrer">{item.title}(Amazon)</a>
                         </div>
