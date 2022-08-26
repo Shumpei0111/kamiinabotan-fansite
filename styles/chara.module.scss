@@ -5,6 +5,7 @@
 
     .intro {
         margin-bottom: 64px;
+        position: relative;
     }
 
     .charaNameList {
@@ -14,6 +15,11 @@
 
         .charaNameList__name {
             text-decoration: underline;
+
+            &:hover {
+                color: v.$mainBlue;
+                font-weight: bold;
+            }
         }
 
         .charaNameList__item {
@@ -30,6 +36,16 @@
             padding: 0;
         }
 
+    }
+
+    .stokerWrapper {
+        pointer-events: none;
+        position: fixed;
+        top: -50px;
+        left: -60px;
+        transform: translate(0,0);
+        z-index: -99;
+        opacity: .8;
     }
 
     .charaWrapper {
@@ -114,6 +130,10 @@
                     padding-left: 16px;
                 }
             }
+        }
+
+        .stokerWrapper {
+            display: none;
         }
     }
 }

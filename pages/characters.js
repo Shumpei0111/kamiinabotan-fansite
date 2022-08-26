@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Layout from "../components/layout";
@@ -11,6 +12,19 @@ export default function Episode() {
     const router = useRouter();
     const _characters = characters.data.slice();
     const TITLE = "キャラクター一覧";
+
+    const [ isShownImagePath, setIsShownImagePath ] = useState(undefined);
+    const [ hoverPositionX, setHoverPositionX ] = useState(0);
+    const [ hoverPositionY, setHoverPositionY ] = useState(0);
+
+    const onCharNameMouseEnterHandler = (e, path) => {
+        setIsShownImagePath(path);
+        setHoverPositionX( e.clientX );
+        setHoverPositionY( e.clientY );
+    }
+    const stokerImagePosition = {
+        transform: `translate(${hoverPositionX}px, ${hoverPositionY}px)`
+    };
 
     return (
         <Layout title={TITLE}>
@@ -29,16 +43,30 @@ export default function Episode() {
                         </p>
                         <div className={style.intro}>
                             <ul className={style.charaNameList}>
-                                {
-                                    _characters.map( c => {
-                                        return (
-                                            <li className={style.charaNameList__item} key={c.id}>
-                                                <a className={style.charaNameList__name} href={`#${c.id}`}>{c.name}</a>
-                                            </li>
-                                        )
-                                    } )
-                                }
+                                {_characters.map( c => {
+                                    return (
+                                        <li
+                                            className={style.charaNameList__item}
+                                            key={c.id}
+                                        >
+                                            <a
+                                                className={style.charaNameList__name}
+                                                href={`#${c.id}`}
+                                                onMouseMove={(e) => onCharNameMouseEnterHandler(e, c.imgPath)}
+                                                onMouseLeave={() => setIsShownImagePath(undefined)}
+                                            >
+                                                {c.name}
+                                            </a>
+                                        </li>
+                                    )
+                                } )}
                             </ul>
+                            {isShownImagePath && (
+                                <div className={style.stokerWrapper} style={stokerImagePosition}>
+                                    <Image src={isShownImagePath} objectFit="contain"
+                                        width={100} height={200} />
+                                </div>
+                            )}
                         </div>
                         <div className={`${style.charaWrapper} relative`}>
                             {
