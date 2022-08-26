@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: "2022.08.27",
+        head: "「キャラクター一覧」を更新しました",
+        url: "https://yuriyoi.site/characters",
+        tag: tags.update,
+    },
+    {
         date: "2022.08.03",
         head: "「ファッションで見る」の香水を更新しました",
         url: "https://yuriyoi.site/clothes",
