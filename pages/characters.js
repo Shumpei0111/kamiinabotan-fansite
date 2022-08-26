@@ -52,7 +52,9 @@ export default function Episode() {
                                             {
                                                 c.imgPath !== "" ?
                                                 <div className={style.charaImage}>
-                                                    <Image className={style.charaImage__image} src={c.imgPath} alt={`引用：「${master.title}」${c.ruby}の画像`} objectFit="contain" width={200} height={300} />
+                                                    <div className={style.charaImage__shadow}>
+                                                        <Image className={style.charaImage__image} src={c.imgPath} alt={`引用：「${master.title}」${c.ruby}の画像`} objectFit="contain" width={200} height={300} />
+                                                    </div>
                                                     <p className={style.charaImage__inyouText}>引用：「{master.title}」{c.inyou}</p>
                                                 </div>
 
