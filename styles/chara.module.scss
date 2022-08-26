@@ -94,6 +94,13 @@
         &__inyouText {
             font-size: 1.2rem;
         }
+
+        &__serif {
+            color: v.$mainPink;
+            font-weight: bold;
+            padding: 8px;
+            text-shadow: 2px 3px 3px rgba(0,0,0,0.1);
+        }
     }
 
     .distillery {
@@ -129,6 +136,12 @@
                     word-break: break-all;
                     padding-left: 16px;
                 }
+            }
+        }
+
+        .charaImage {
+            &__serif {
+                padding-left: 0;
             }
         }
 

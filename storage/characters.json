@@ -8,6 +8,7 @@
             "clothConcept": "華やか",
             "imgPath": "/assets/img/botan.jpg",
             "inyou": "第1巻 p43",
+            "serif": "あの特別はどんな「特別」？ 私と同じ？ それとも...",
             "model": {
                 "name": "マルス信州蒸溜所",
                 "url": "https://www.hombo.co.jp/company/kura/shinshu.html",
@@ -23,6 +24,7 @@
             "clothConcept": "ストレスフリー",
             "imgPath": "/assets/img/ibuki.jpg",
             "inyou": "第1巻 p61",
+            "serif": "たいへんな幸福",
             "model": {
                 "name": "三郎丸蒸留所",
                 "url": "https://www.wakatsuru.co.jp/saburomaru/",
@@ -38,6 +40,7 @@
             "clothConcept": "気品",
             "imgPath": "/assets/img/kanade.jpeg",
             "inyou": "第2巻 p73",
+            "serif": "ごめん 今のなし",
             "model": {
                 "name": "辰巳蒸留所",
                 "url": "https://www.facebook.com/TatsumiDistillery/",
@@ -53,6 +56,7 @@
             "clothConcept": "少女性と大人の気品",
             "imgPath": "/assets/img/yaeka.jpeg",
             "inyou": "第1巻 p70",
+            "serif": "人の気も知らないで...",
             "model": {
                 "name": "サントリー白州蒸溜所",
                 "url": "https://www.suntory.co.jp/factory/hakushu/",
@@ -68,6 +72,7 @@
             "clothConcept": "カジュアル・中性的",
             "imgPath": "/assets/img/akane.jpeg",
             "inyou": "第2巻 p36",
+            "serif": "私たち ひとつになれたらいいのにね",
             "model": {
                 "name": "遊佐蒸留所",
                 "url": "https://yuza-disty.jp/",
@@ -83,6 +88,7 @@
             "clothConcept": "-",
             "imgPath": "/assets/img/ginran.jpeg",
             "inyou": "第3巻 p46",
+            "serif": "好きだよ！",
             "model": {
                 "name": "KAVALAN / マスターブレンダー「張 郁嵐(イアン・チャン)」氏",
                 "url": "https://www.kavalan.jp/",
