@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from "next/router";
-import Image from "next/image";
 import Layout from "../components/layout";
 import Meta from "../components/meta";
 import MakerInfo from '../components/makerInfo';
+import LiquorInyouLink from '../components/liquorInyouLink';
+import LiquorSortContainer from '../components/liquorSortContainer';
+import LiquorAffiLink from '../components/liquorAffiLink';
+import LiquorItemTag from '../components/liquorItemTag';
 
 import liquorList from '../storage/liquors.js';
 import makerList from '../storage/markers.json';
-
-import getSanitizeHtml from '../lib/getSanitizeHTML';
 
 import style from '../styles/liquor.module.scss';
 
@@ -20,7 +21,7 @@ export default function LiquorList() {
     const TITLE = "登場するお酒一覧";
 
 
-    ////////////////////////
+    ////////////////////////////////////////////////
     // 表示用マージ配列
     const groups = items.map( item => {
         const baseItem = item;
@@ -54,14 +55,14 @@ export default function LiquorList() {
 
 
 
-    ////////////////////////
+    ////////////////////////////////////////////////
     // 表示リストの絞りこみ関数
     const base = groups.slice();
     const getListByGenres = (genre) => base.filter( item => item.genre === genre );
     const getListByBookNum = (num) => base.filter(item => item.bookNumber === num );
 
 
-    ////////////////////////
+    ////////////////////////////////////////////////
     // 絞りこみの事前リスト
     const beers = getListByGenres("ビール");
     const cocktails = getListByGenres("カクテル");
@@ -96,7 +97,7 @@ export default function LiquorList() {
     ];
 
 
-    ////////////////////////
+    ////////////////////////////////////////////////
     // 状態管理変数
     const initList = genreLists[0].list.slice();
     const [currentDisplayList, setCurrentDisplayList] = useState(initList);
@@ -105,7 +106,7 @@ export default function LiquorList() {
     const [isReverse, setIsReverse] = useState(false);
 
 
-    ////////////////////////
+    ////////////////////////////////////////////////
     // 絞りこみ実行関数
     const handleUpdateDisplayGenre = (ind) => {
         setChange(true);
@@ -122,7 +123,7 @@ export default function LiquorList() {
 
 
 
-    ////////////////////////
+    ////////////////////////////////////////////////
     // リストを昇順・降順に変更する
     function getReverseList(list) { return list.slice().reverse() };
     const handleUpdateReverseList = () => {
@@ -141,7 +142,7 @@ export default function LiquorList() {
     };
 
 
-    ////////////////////////
+    ////////////////////////////////////////////////
     // 状態変更関数
     useEffect(() => {
         if(!router.isReady) return;
@@ -163,94 +164,55 @@ export default function LiquorList() {
 
 
 
-    ////////////////////////
+    ////////////////////////////////////////////////
     // レイアウト
     return (
         <Layout title={TITLE}>
             {router.isFallback ? (
                 <p>Loading...</p>
-            ) : (
-                <>
-                    <Meta title={TITLE} />
-                    <main>
-                        <h2>
-                            <p className="head__ja">お酒一覧</p>
-                            <span className="head__en">Liquor list</span>
-                        </h2>
+            ) : (<>
+                <Meta title={TITLE} />
+                <main>
+                    <h2>
+                        <p className="head__ja">お酒一覧</p>
+                        <span className="head__en">Liquor list</span>
+                    </h2>
 
-                        <p className={style.intro}>この作品はお酒が重要なアイテムとして登場します。舞台である秩父の地酒も多く登場しています。</p>
+                    <p className={style.intro}>この作品はお酒が重要なアイテムとして登場します。舞台である秩父の地酒も多く登場しています。</p>
 
-                        <div className={style.categoryContainer}>
-                            <div className="flex just-between">
-                                <p className={style.category__title}>カテゴリー一覧</p>
-                                <p className={style.listReverseButton} onClick={()=>handleUpdateReverseList()}>
-                                    { !isReverse ? (
-                                        <span>新しい順に並び替える▲</span>
-                                        ) : (
-                                        <span>古い順に並び替える▼</span>
-                                    )}
-                                </p>
-                            </div>
-                            <ul className={style.category}>
-                                {
-                                    genreLists.map( (item, index) => (
-                                        <li onClick={()=>handleUpdateDisplayGenre(index)} className={`${style.category__item} ${currentInd === index ? style.current : ""}`} key={item.name}>
-                                            <span className={style.category__item__name}>{item.name}</span>
-                                            <span className={style.category__length}>{item.list.length}</span>
-                                        </li>
-                                    ) )
-                                }
-                            </ul>
+                    <LiquorSortContainer
+                        _style={style}
+                        handleUpdateReverseList={handleUpdateReverseList}
+                        isReverse={isReverse}
+                        genreLists={genreLists}
+                        handleUpdateDisplayGenre={handleUpdateDisplayGenre}
+                        currentInd={currentInd}
+                    />
+
+                    <div className={style.liquorContainer}>
+                        <div className={`${style.liquorItemList} ${isChange ? style.changing : ""}`}>
+                            {currentDisplayList.map( liq => {
+                                return (
+                                    <div className={style.liquorItemList__item} key={liq.id}>
+                                        <p className={style.item__name}>{liq.name}</p>
+                                        <LiquorItemTag _style={style} liq={liq} />
+                                        <p className={style.item__description}>{liq.description}</p>
+                                        
+                                        { liq.url && !liq.imagePath ?
+                                            <LiquorAffiLink _style={style} liq={liq} /> : <></>
+                                        }
+
+                                        { liq.imagePath ?
+                                            <LiquorInyouLink _style={style} liq={liq} /> : <></>
+                                        }
+                                        <MakerInfo style={style} liq={liq} />
+                                    </div>
+                                )
+                            } )}
                         </div>
-
-                        <div className={style.liquorContainer}>
-                            <div className={`${style.liquorItemList} ${isChange ? style.changing : ""}`}>
-                                {
-                                    currentDisplayList.map( liq => {
-                                        return (
-                                            <div className={style.liquorItemList__item} key={liq.id}>
-                                                <p className={style.item__name}>{liq.name}</p>
-                                                <div className={style.item__meta}>
-                                                    <p className={style.tag}>{liq.genre}</p>
-                                                    {liq.episode ? <p className={style.tag}>{liq.episode}</p> : <></>}
-                                                    {liq.bookNumber ? <p className={style.tag}>{liq.bookNumber}巻</p> : <></>}
-                                                </div>
-                                                <p className={style.item__description}>{liq.description}</p>
-                                                
-                                                { liq.url && !liq.imagePath ?
-                                                    <div className={style.item__imgEx}>
-                                                        <div dangerouslySetInnerHTML={{__html: getSanitizeHtml(liq.url) }}></div>
-                                                        <p className='underline bold textCenter'>{liq.name} | { liq.url.indexOf("rakuten") > 0 ? <span>Rakutenで購入する</span> : <span>Amazonで購入する</span>}</p>
-                                                    </div>
-                                                    :
-                                                    <></>
-                                                }
-
-                                                { liq.imagePath ?
-                                                    <div className={style.item__imgEx}>
-                                                        <Image width={240} height={200} objectFit="contain" src={liq.imagePath} alt={`引用：${liq.imageInyou}`} />
-                                                        <p className='text_ms textCenter'>
-                                                        引用：{ liq.inyouURL ?
-                                                            <a className="underline" href={liq.inyouURL} target="_blank" rel="noopener noreferrer">{liq.imageInyou}</a>
-                                                            :
-                                                            <>{liq.imageInyou}</>
-                                                        }
-                                                        </p>
-                                                    </div>
-                                                    :
-                                                    <></>
-                                                }
-
-                                                <MakerInfo style={style} liq={liq} />
-                                            </div>
-                                        )
-                                    } )
-                                }
-                            </div>
-                        </div>
-                    </main>
-                </>
-            )}
+                    </div>
+                </main>
+            </>)}
         </Layout>
     )
 }
