@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import { useRouter } from "next/router";
 import Layout from "../components/layout";
 import Meta from "../components/meta";
+import VoteButton from '../components/voteButton';
 import MakerInfo from '../components/makerInfo';
 import LiquorInyouLink from '../components/liquorInyouLink';
 import LiquorSortContainer from '../components/liquorSortContainer';
 import LiquorAffiLink from '../components/liquorAffiLink';
 import LiquorItemTag from '../components/liquorItemTag';
+import voteLiqourStatus from '../lib/usecase/voteLiqourStatus';
 
 import liquorList from '../storage/liquors.js';
 import makerList from '../storage/markers.json';
@@ -19,6 +21,10 @@ export default function LiquorList() {
     const items = liquorList.data.slice();
     const makers = makerList.data.slice();
     const TITLE = "登場するお酒一覧";
+
+    voteLiqourStatus.load();
+
+    const putVotedState = id => voteLiqourStatus.put( id );
 
 
     ////////////////////////////////////////////////
@@ -162,8 +168,6 @@ export default function LiquorList() {
     }, [q, rev, router, isReverse]);
 
 
-
-
     ////////////////////////////////////////////////
     // レイアウト
     return (
@@ -205,6 +209,7 @@ export default function LiquorList() {
                                         { liq.imagePath ?
                                             <LiquorInyouLink _style={style} liq={liq} /> : <></>
                                         }
+                                        <VoteButton liqourId={liq.id} putVotedState={putVotedState} />
                                         <MakerInfo style={style} liq={liq} />
                                     </div>
                                 )
