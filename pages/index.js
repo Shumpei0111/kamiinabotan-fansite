@@ -31,7 +31,7 @@ export default function Home() {
 					</div>
 
 					<section className={styles.sectionWrapper}>
-						<div className={`${styles.siteDescription}`}>
+						<div className='mt-60'>
 							<div className='flex'>
 								<KikanComics bookNumbers={1} />
 								<p>Kindle版第1巻が半額セール中<br />この機会にぜひほろ酔い気分に浸りましょう🍺
