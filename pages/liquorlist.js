@@ -168,6 +168,11 @@ export default function LiquorList() {
     }, [q, rev, router, isReverse]);
 
 
+
+    // TODO vote button
+    const isWIP = true;
+
+
     ////////////////////////////////////////////////
     // レイアウト
     return (
@@ -209,7 +214,11 @@ export default function LiquorList() {
                                         { liq.imagePath ?
                                             <LiquorInyouLink _style={style} liq={liq} /> : <></>
                                         }
-                                        <VoteButton liqourId={liq.id} putVotedState={putVotedState} />
+
+                                        { !isWIP?
+                                            <VoteButton liqourId={liq.id} putVotedState={putVotedState} /> : <></>
+                                        }
+
                                         <MakerInfo style={style} liq={liq} />
                                     </div>
                                 )
