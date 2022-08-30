@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: "2022.08.30",
+        head: "第32話が更新されました！",
+        url: "https://mangacross.jp/comics/kamiinabotan/35",
+        tag: tags.episode,
+    },
+    {
         date: "2022.08.27",
         head: "「キャラクター一覧」を更新しました",
         url: "https://yuriyoi.site/characters",
