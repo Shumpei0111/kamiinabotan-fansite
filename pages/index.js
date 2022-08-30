@@ -5,7 +5,7 @@ import HomeNews from '../components/homeNews';
 import HomeContents from '../components/homeContents';
 import KikanComics from '../components/kikanComics';
 import KanrenComics from '../components/kanrenComics';
-import New from '../components/global/new';
+import LatestEpisodeLink from '../components/latestEpisodeLink';
 
 import styles from '../styles/Home.module.scss';
 
@@ -26,9 +26,13 @@ export default function Home() {
 				{/* コンテンツスタート */}
 				<main className={styles.main}>
 
+					<div className="mt-24 mb-24">
+						<LatestEpisodeLink />
+					</div>
+
 					<section className={styles.sectionWrapper}>
-						<div className={`${styles.siteDescription} width-300`}>
-							<div className='flex flex-column'>
+						<div className={`${styles.siteDescription}`}>
+							<div className='flex'>
 								<KikanComics bookNumbers={1} />
 								<p>Kindle版第1巻が半額セール中<br />この機会にぜひほろ酔い気分に浸りましょう🍺
 								</p>
@@ -41,13 +45,6 @@ export default function Home() {
 							{/* <Image width={386} height={200} objectFit="contain" src="https://mangacross.jp/images/comic/cSQw6TT0qND00AUZQf2I0cFqCAO08NGZq6yqLFEWbkM/image_sp/original.jpg?1647590065" alt="新刊のバナー" />
 							<p className={styles.inyouText}>引用：「<a className="underline" href="https://mangacross.jp/comics/kamiinabotan" target="_blank" rel="noopener noreferrer">上伊那ぼたん、酔へる姿は百合の花</a>」マンガクロス（秋田書店）</p> */}
 
-							<div className="mt-24 mb-24">
-								<div>
-									<p className="bold text_mm">最新32話公開中！</p>
-									<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/35" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/35</a>
-									<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;<span className="bold">9月27日(火)</span></p>
-								</div>
-							</div>
 						</div>
 						<div>
 							<div className={styles.siteDescription}>
@@ -140,11 +137,7 @@ export default function Home() {
 							<a className="underline" href={master.published_url} target="_blank" rel="noopener noreferrer">「{master.title}」</a>
 						</div>
 						<div className="mt-32">
-							<div>
-								<p className="bold">最新31話公開中！</p>
-								<a className="underline" href="https://mangacross.jp/comics/kamiinabotan/35" target="_blank" rel="noreferrer noopener">https://mangacross.jp/comics/kamiinabotan/35</a>
-								<p className="mt-16">次回更新日&nbsp;👉&nbsp;&nbsp;&nbsp;9月27日(火)</p>
-							</div>
+							<LatestEpisodeLink />
 						</div>
 					</section>
 
