@@ -14,6 +14,7 @@ import TwitterTimeline from '../components/twitterTimeline';
 import TwitterShare from '../components/global/twitterShare';
 
 import { LINE_STAMP_URL, SITE_FULL_TITLE } from '../lib/constraint';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -38,6 +39,17 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
+						<div className='mt-60'>
+							<div>
+								<Link href="https://tonarinohey.fanbox.cc/posts">
+									<a target="_blank">
+										<Image width={800} height={500} objectFit="contain" src="/assets/img/fanbox_top.png" alt="_" />
+									</a>
+								</Link>
+								<p className='mt-24'>塀先生による<span className='bold'>PIXIV FANBOX</span>がスタートしました。</p>
+								<p>先生自身による各話の振り返りなどのコンテンツを見ることができます。ぜひチェックしてください！</p>
+							</div>
+						</div>
 					</section>
 
 					<section className={styles.sectionWrapper}>
@@ -60,6 +72,7 @@ export default function Home() {
 					</section>
 
 					<section className={styles.sectionWrapper}>
+						{/* あらすじ */}
 						<h2>
 							<p className="head__ja">あらすじ</p>
 							<span className="head__en">Story</span>
