@@ -8,10 +8,40 @@ const tags = {
 
 const news = [
     {
+        date: '2022.11.29',
+        head: '第35話が更新されました！',
+        url: 'https://mangacross.jp/comics/kamiinabotan/38',
+        tag: tags.episode,
+    },
+    {
+        date: '2022.10.26',
+        head: 'PIXIV FANBOXで「【上伊那ぼたん】第2話ネーム公開」がアップされました',
+        url: 'https://tonarinohey.fanbox.cc/posts/4657062',
+        tag: tags.goods,
+    },
+    {
         date: '2022.10.25',
         head: '第34話が更新されました！',
         url: 'https://mangacross.jp/comics/kamiinabotan/37',
         tag: tags.episode,
+    },
+    {
+        date: '2022.10.26',
+        head: 'PIXIV FANBOXで「【上伊那ぼたん】7話のお酒などを振り返る」がアップされました',
+        url: 'https://tonarinohey.fanbox.cc/posts/4654589',
+        tag: tags.goods,
+    },
+    {
+        date: '2022.10.13',
+        head: 'PIXIV FANBOXで「【上伊那ぼたん】第1話ネーム公開」がアップされました',
+        url: 'https://tonarinohey.fanbox.cc/posts/4590515',
+        tag: tags.goods,
+    },
+    {
+        date: '2022.10.12',
+        head: 'PIXIV FANBOXで「【上伊那ぼたん】6話のお酒などを振り返る」がアップされました',
+        url: 'https://tonarinohey.fanbox.cc/posts/4576240',
+        tag: tags.goods,
     },
     {
         date: '2022.10.06',
