@@ -14,6 +14,12 @@ const news = [
         tag: tags.episode,
     },
     {
+        date: '2022.11.23',
+        head: '繊維新聞に塀先生のインタビューが掲載されました！',
+        url: 'https://senken.co.jp/posts/manga-fashion',
+        tag: tags.other,
+    },
+    {
         date: '2022.10.26',
         head: 'PIXIV FANBOXで「【上伊那ぼたん】第2話ネーム公開」がアップされました',
         url: 'https://tonarinohey.fanbox.cc/posts/4657062',
