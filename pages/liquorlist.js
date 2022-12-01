@@ -210,41 +210,42 @@ export default function LiquorList() {
                             >
                                 {currentDisplayList.map((liq) => {
                                     return (
-                                        <div
-                                            id={liq.id}
-                                            className={style.liquorItemList__item}
-                                            key={liq.id}
-                                        >
-                                            <p className={style.item__name}>{liq.name}</p>
-                                            <LiquorItemTag _style={style} liq={liq} />
-                                            <p className={style.item__description}>
-                                                {liq.description}
-                                            </p>
+                                        <div className={style.liquorItemList__item} key={liq.id}>
+                                            <div
+                                                id={liq.id}
+                                                className={style.liquorItemList__nagative}
+                                            >
+                                                <p className={style.item__name}>{liq.name}</p>
+                                                <LiquorItemTag _style={style} liq={liq} />
+                                                <p className={style.item__description}>
+                                                    {liq.description}
+                                                </p>
 
-                                            {liq.url && !liq.imagePath ? (
-                                                <LiquorAffiLink _style={style} liq={liq} />
-                                            ) : (
-                                                <></>
-                                            )}
+                                                {liq.url && !liq.imagePath ? (
+                                                    <LiquorAffiLink _style={style} liq={liq} />
+                                                ) : (
+                                                    <></>
+                                                )}
 
-                                            {liq.imagePath ? (
-                                                <LiquorInyouLink _style={style} liq={liq} />
-                                            ) : (
-                                                <></>
-                                            )}
+                                                {liq.imagePath ? (
+                                                    <LiquorInyouLink _style={style} liq={liq} />
+                                                ) : (
+                                                    <></>
+                                                )}
 
-                                            <DrunkShare liq={liq} />
+                                                <DrunkShare liq={liq} />
 
-                                            {!isWIP ? (
-                                                <VoteButton
-                                                    liqourId={liq.id}
-                                                    putVotedState={putVotedState}
-                                                />
-                                            ) : (
-                                                <></>
-                                            )}
+                                                {!isWIP ? (
+                                                    <VoteButton
+                                                        liqourId={liq.id}
+                                                        putVotedState={putVotedState}
+                                                    />
+                                                ) : (
+                                                    <></>
+                                                )}
 
-                                            <MakerInfo style={style} liq={liq} />
+                                                <MakerInfo style={style} liq={liq} />
+                                            </div>
                                         </div>
                                     );
                                 })}
