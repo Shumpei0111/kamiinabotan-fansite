@@ -12,7 +12,7 @@ import voteLiqourStatus from '../lib/usecase/voteLiqourStatus';
 import { DrunkShare } from '../components/drunkShare';
 
 import liquorList from '../storage/liquors.js';
-import { getVotedLiqourList } from '../lib/usecase/saveVoteLiqour';
+import { createUserId, getVotedLiqourList } from '../lib/usecase/saveVoteLiqour';
 import makerList from '../storage/markers.json';
 
 import style from '../styles/liquor.module.scss';
@@ -25,6 +25,8 @@ export default function LiquorList() {
     const TITLE = '登場するお酒一覧';
     const [votedLiqours, setVotedLiqours] = useState([]);
     const [votedIds, setVotedIds] = useState({});
+    const [userId, setUserId] = useState('');
+    const [isDrunkIds, setIsDrunkIds] = useState([]);
 
     voteLiqourStatus.load();
 
@@ -33,6 +35,8 @@ export default function LiquorList() {
     useEffect(() => {
         try {
             (async () => {
+                setUserId(createUserId());
+
                 const list = await getVotedLiqourList();
                 setVotedLiqours([...list]);
             })();
@@ -44,6 +48,7 @@ export default function LiquorList() {
     useEffect(() => {
         if (Array.from(votedLiqours)) {
             const list = votedLiqours
+                .filter((item) => item.isVote)
                 .map((item) => item.liqourId)
                 .reduce((prev, id) => {
                     prev[`liqourId${id}`] = (Number(prev[`liqourId${id}`]) || 0) + 1;
@@ -51,8 +56,20 @@ export default function LiquorList() {
                 }, {});
 
             setVotedIds({ ...list });
+
+            const selfDrunkList = votedLiqours
+                .filter((item) => item.userId === userId)
+                .filter((item) => item.isVote)
+                .map((item) => item.id);
+            setIsDrunkIds([...selfDrunkList]);
         }
     }, [votedLiqours]);
+    console.log(isDrunkIds);
+
+    const getDrunkStatus = (id) => {
+        console.log('getDrunkStatus id', id, isDrunkIds.includes(id));
+        return isDrunkIds.includes(id);
+    };
 
     ////////////////////////////////////////////////
     // 表示用マージ配列
@@ -88,6 +105,7 @@ export default function LiquorList() {
             })(baseItem.episode),
             bookNumber: baseItem.book_number,
             voted: votedIds[`liqourId${baseItem.id}`] || 0,
+            drunkList: isDrunkIds,
         };
     });
 
@@ -263,6 +281,8 @@ export default function LiquorList() {
                                                         liqourId={liq.id}
                                                         putVotedState={putVotedState}
                                                         votePoint={liq.voted}
+                                                        userId={userId}
+                                                        isDrunk={getDrunkStatus(liq.id)}
                                                     />
                                                 ) : (
                                                     <></>

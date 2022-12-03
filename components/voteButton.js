@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
 import style from '../styles/voteButton.module.scss';
+import { updateVoteCount } from '../lib/usecase/saveVoteLiqour';
 
-export default function VoteButton({ liqourId, putVotedState, votePoint }) {
+export default function VoteButton({ liqourId, putVotedState, votePoint, userId, isDrunk }) {
     const _liquorId = liqourId;
     const [isDisplay, setDisplay] = useState(false);
     const [voteCounter, setVoteCounter] = useState(0);
     const [isVoted, setVoted] = useState(false);
     const [isWait, setWait] = useState(false);
 
-    const wait = async (delay = 3000) => {
+    const wait = async (delay = 1000) => {
         setWait(true);
         return new Promise((res) => {
             setTimeout(() => {
@@ -41,32 +42,34 @@ export default function VoteButton({ liqourId, putVotedState, votePoint }) {
     const countUp = (counter) => setVoteCounter(counter + 1);
     const countDown = (counter) => setVoteCounter(counter - 1);
 
-    const updateCount = (count) => {
-        if (!isVoted) {
-            // countUp(count);
-            setVoted(true);
-            console.log(_liquorId);
-            putVotedState(_liquorId);
-        } else {
-            // countDown(count);
-            setVoted(false);
-            console.log(_liquorId);
-            putVotedState(_liquorId);
-        }
-    };
+    // const updateCount = (count) => {
+    //     if (!isVoted) {
+    //         // countUp(count);
+    //         setVoted(true);
+    //         console.log(_liquorId);
+    //         putVotedState(_liquorId);
+    //     } else {
+    //         // countDown(count);
+    //         setVoted(false);
+    //         console.log(_liquorId);
+    //         putVotedState(_liquorId);
+    //     }
+    // };
 
     /////////////////////////////
     // クリックイベントのコールバック
     const handleVote = async () => {
         if (isWait) return;
 
-        let count = voteCounter;
-        updateCount(count);
+        // let count = voteCounter;
+        // updateCount(count);
+        updateVoteCount({ liqourId, userId, isDrunk });
 
         await updateVoteModal();
     };
 
-    const buttonText = isVoted ? 'もう飲んだよ！' : 'まだ飲んでないよ';
+    console.log(isDrunk);
+    const buttonText = isDrunk ? 'もう飲んだよ！' : 'まだ飲んでないよ';
 
     return (
         <div className={`${style.voteButtonContainer}`}>
@@ -78,11 +81,11 @@ export default function VoteButton({ liqourId, putVotedState, votePoint }) {
                 ❤️🍺
             </span>
 
-            <p className="bold mb-8">🍺 これ飲んだよカウンター</p>
+            <p className="bold mb-8">🍺 みんなの飲んだよカウンター</p>
 
             <div className={`flex align-item-center ${style.voteButtonWrapper}`}>
                 <button
-                    className={`${style.voteButton} ${isVoted ? style.isVotedButton : ''}`}
+                    className={`${style.voteButton} ${isDrunk ? style.isVotedButton : ''}`}
                     onClick={() => handleVote()}
                 >
                     {buttonText}
