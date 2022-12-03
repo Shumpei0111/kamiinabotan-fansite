@@ -23,12 +23,36 @@ export default function LiquorList() {
     const items = liquorList.data.slice();
     const makers = makerList.data.slice();
     const TITLE = '登場するお酒一覧';
+    const [votedLiqours, setVotedLiqours] = useState([]);
+    const [votedIds, setVotedIds] = useState({});
 
     voteLiqourStatus.load();
 
     const putVotedState = (id) => voteLiqourStatus.put(id);
 
-    getVotedLiqourList();
+    useEffect(() => {
+        try {
+            (async () => {
+                const list = await getVotedLiqourList();
+                setVotedLiqours([...list]);
+            })();
+        } catch (error) {
+            console.warn(error.message);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (Array.from(votedLiqours)) {
+            const list = votedLiqours
+                .map((item) => item.liqourId)
+                .reduce((prev, id) => {
+                    prev[`liqourId${id}`] = (Number(prev[`liqourId${id}`]) || 0) + 1;
+                    return prev;
+                }, {});
+
+            setVotedIds({ ...list });
+        }
+    }, [votedLiqours]);
 
     ////////////////////////////////////////////////
     // 表示用マージ配列
@@ -63,14 +87,14 @@ export default function LiquorList() {
                 return `#${epi}`;
             })(baseItem.episode),
             bookNumber: baseItem.book_number,
+            voted: votedIds[`liqourId${baseItem.id}`] || 0,
         };
     });
 
     ////////////////////////////////////////////////
     // 表示リストの絞りこみ関数
-    const base = groups.slice();
-    const getListByGenres = (genre) => base.filter((item) => item.genre === genre);
-    const getListByBookNum = (num) => base.filter((item) => item.bookNumber === num);
+    const getListByGenres = (genre) => groups.filter((item) => item.genre === genre);
+    const getListByBookNum = (num) => groups.filter((item) => item.bookNumber === num);
 
     ////////////////////////////////////////////////
     // 絞りこみの事前リスト
@@ -81,7 +105,7 @@ export default function LiquorList() {
     const sakes = getListByGenres('日本酒');
     const liqueurs = getListByGenres('リキュール');
     const shochus = getListByGenres('焼酎');
-    const chuhai = getListByGenres('チューハイ');
+    const shochu_highball = getListByGenres('チューハイ');
     const mead = getListByGenres('蜂蜜酒');
     const etc = getListByGenres('その他');
 
@@ -90,7 +114,7 @@ export default function LiquorList() {
     const book3 = getListByBookNum(3);
 
     const genreLists = [
-        { name: 'すべて', list: base, q: null },
+        { name: 'すべて', list: groups, q: null },
         { name: 'ビール', list: beers, q: 'beer' },
         { name: 'カクテル', list: cocktails, q: 'cocktail' },
         { name: 'ワイン', list: wines, q: 'wine' },
@@ -98,7 +122,7 @@ export default function LiquorList() {
         { name: '日本酒', list: sakes, q: 'sake' },
         { name: 'リキュール', list: liqueurs, q: 'liqueur' },
         { name: '焼酎', list: shochus, q: 'shochu' },
-        { name: 'チューハイ', list: chuhai, q: 'shochu_highball' },
+        { name: 'チューハイ', list: shochu_highball, q: 'shochu_highball' },
         { name: '蜂蜜酒', list: mead, q: 'mead' },
         { name: 'その他', list: etc, q: 'etc' },
         { name: '1巻に登場するお酒', list: book1, q: 'book1' },
@@ -108,8 +132,7 @@ export default function LiquorList() {
 
     ////////////////////////////////////////////////
     // 状態管理変数
-    const initList = genreLists[0].list.slice();
-    const [currentDisplayList, setCurrentDisplayList] = useState(initList);
+    const [currentDisplayList, setCurrentDisplayList] = useState(genreLists[0].list);
     const [currentInd, setCurrentInd] = useState(0);
     const [isChange, setChange] = useState(false);
     const [isReverse, setIsReverse] = useState(false);
@@ -169,10 +192,10 @@ export default function LiquorList() {
         const resList = rev === 'true' || isReverse ? getReverseList(displayList) : displayList;
         setCurrentDisplayList(resList);
         setCurrentInd(targetInd);
-    }, [q, rev, router, isReverse]);
+    }, [q, rev, router, isReverse, votedIds]);
 
     // TODO: vote button
-    const isWIP = true;
+    const isWIP = false;
 
     ////////////////////////////////////////////////
     // レイアウト
@@ -239,6 +262,7 @@ export default function LiquorList() {
                                                     <VoteButton
                                                         liqourId={liq.id}
                                                         putVotedState={putVotedState}
+                                                        votePoint={liq.voted}
                                                     />
                                                 ) : (
                                                     <></>
