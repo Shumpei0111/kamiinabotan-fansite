@@ -12,7 +12,7 @@ import voteLiqourStatus from '../lib/usecase/voteLiqourStatus';
 import { DrunkShare } from '../components/drunkShare';
 
 import liquorList from '../storage/liquors.js';
-// import { getVotedLiqourList } from '../lib/usecase/saveVoteLiqour';
+import { getVotedLiqourList } from '../lib/usecase/saveVoteLiqour';
 import makerList from '../storage/markers.json';
 
 import style from '../styles/liquor.module.scss';
@@ -28,7 +28,7 @@ export default function LiquorList() {
 
     const putVotedState = (id) => voteLiqourStatus.put(id);
 
-    // getVotedLiqourList();
+    getVotedLiqourList();
 
     ////////////////////////////////////////////////
     // 表示用マージ配列
@@ -171,7 +171,7 @@ export default function LiquorList() {
         setCurrentInd(targetInd);
     }, [q, rev, router, isReverse]);
 
-    // TODO vote button
+    // TODO: vote button
     const isWIP = true;
 
     ////////////////////////////////////////////////
