@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import style from '../styles/voteButton.module.scss';
 import { updateVoteCount } from '../lib/usecase/saveVoteLiqour';
 
-export default function VoteButton({ liqourId, putVotedState, votePoint, userId, isDrunk }) {
-    const _liquorId = liqourId;
+export default function VoteButton({ liqourId, votePoint, userId, isDrunk }) {
     const [isDisplay, setDisplay] = useState(false);
     const [voteCounter, setVoteCounter] = useState(0);
-    const [isVoted, setVoted] = useState(false);
+    const [isVoted, _] = useState(false);
     const [isWait, setWait] = useState(false);
+    const [hadDrunk, setHadDrunk] = useState(false);
 
     const wait = async (delay = 1000) => {
         setWait(true);
@@ -39,37 +39,25 @@ export default function VoteButton({ liqourId, putVotedState, votePoint, userId,
 
     ////////////////////
     // 得票数管理
-    const countUp = (counter) => setVoteCounter(counter + 1);
-    const countDown = (counter) => setVoteCounter(counter - 1);
-
-    // const updateCount = (count) => {
-    //     if (!isVoted) {
-    //         // countUp(count);
-    //         setVoted(true);
-    //         console.log(_liquorId);
-    //         putVotedState(_liquorId);
-    //     } else {
-    //         // countDown(count);
-    //         setVoted(false);
-    //         console.log(_liquorId);
-    //         putVotedState(_liquorId);
-    //     }
-    // };
+    const countUp = () => setVoteCounter((prev) => prev + 1);
 
     /////////////////////////////
     // クリックイベントのコールバック
     const handleVote = async () => {
         if (isWait) return;
 
-        // let count = voteCounter;
-        // updateCount(count);
-        updateVoteCount({ liqourId, userId, isDrunk });
+        if (!drunkState) {
+            setHadDrunk((hadDrunk = !hadDrunk));
+        }
+        countUp();
+
+        updateVoteCount({ liqourId, userId, isDrunk: hadDrunk });
 
         await updateVoteModal();
     };
 
-    console.log(isDrunk);
-    const buttonText = isDrunk ? 'もう飲んだよ！' : 'まだ飲んでないよ';
+    const drunkState = !!(isDrunk || hadDrunk);
+    const buttonText = drunkState ? 'もう飲んだよ！' : 'まだ飲んでないよ';
 
     return (
         <div className={`${style.voteButtonContainer}`}>
@@ -85,7 +73,7 @@ export default function VoteButton({ liqourId, putVotedState, votePoint, userId,
 
             <div className={`flex align-item-center ${style.voteButtonWrapper}`}>
                 <button
-                    className={`${style.voteButton} ${isDrunk ? style.isVotedButton : ''}`}
+                    className={`${style.voteButton} ${drunkState ? style.isVotedButton : ''}`}
                     onClick={() => handleVote()}
                 >
                     {buttonText}

@@ -30,8 +30,6 @@ export default function LiquorList() {
 
     voteLiqourStatus.load();
 
-    const putVotedState = (id) => voteLiqourStatus.put(id);
-
     useEffect(() => {
         try {
             (async () => {
@@ -43,10 +41,11 @@ export default function LiquorList() {
         } catch (error) {
             console.warn(error.message);
         }
-    }, []);
+    }, [userId]);
 
     useEffect(() => {
         if (Array.from(votedLiqours)) {
+            // 投票されたお酒のリストから件数を集約してn杯目のnの値に代入する数を作る
             const list = votedLiqours
                 .filter((item) => item.isVote)
                 .map((item) => item.liqourId)
@@ -59,16 +58,13 @@ export default function LiquorList() {
 
             const selfDrunkList = votedLiqours
                 .filter((item) => item.userId === userId)
-                .filter((item) => item.isVote)
-                .map((item) => item.id);
+                .filter((item) => item.isVote === true);
             setIsDrunkIds([...selfDrunkList]);
         }
     }, [votedLiqours]);
-    console.log(isDrunkIds);
 
     const getDrunkStatus = (id) => {
-        console.log('getDrunkStatus id', id, isDrunkIds.includes(id));
-        return isDrunkIds.includes(id);
+        return isDrunkIds.find((item) => Number(item.liqourId) === id);
     };
 
     ////////////////////////////////////////////////
@@ -279,7 +275,6 @@ export default function LiquorList() {
                                                 {!isWIP ? (
                                                     <VoteButton
                                                         liqourId={liq.id}
-                                                        putVotedState={putVotedState}
                                                         votePoint={liq.voted}
                                                         userId={userId}
                                                         isDrunk={getDrunkStatus(liq.id)}
