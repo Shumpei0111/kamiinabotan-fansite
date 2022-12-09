@@ -17,7 +17,7 @@
     box-sizing: border-box;
 
     &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 97%;
         left: 51%;
@@ -28,7 +28,7 @@
     }
 
     &::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 99%;
         left: 50%;
@@ -75,4 +75,23 @@
     line-height: 1.7;
     text-align: center;
     border-left: none;
+}
+
+@media (max-width: 400px) {
+    .voteButtonWrapper {
+        width: 100%;
+    }
+
+    .voteButton {
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+        margin-right: 0;
+    }
+
+    .voteResult {
+        width: 100%;
+        border-radius: 0 0 4px 4px;
+        margin-right: 0;
+        border-left: 1px solid v.$mainGrey;
+    }
 }
