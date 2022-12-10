@@ -57,7 +57,6 @@ export default function VoteButton({ liqourId, votePoint, userId, isDrunk }) {
     };
 
     const drunkState = !!(isDrunk || hadDrunk);
-    const buttonText = drunkState ? 'もう飲んだよ！' : 'まだ飲んでないよ';
 
     return (
         <div className={`${style.voteButtonContainer}`}>
@@ -66,19 +65,24 @@ export default function VoteButton({ liqourId, votePoint, userId, isDrunk }) {
                     isDisplay ? style.voteActive : ''
                 }`}
             >
-                ❤️🍺
+                乾杯❤️🍺
             </span>
 
-            <p className="bold mb-8">🍺 みんなの飲んだよカウンター</p>
+            <p className="mb-8">
+                <span className="bold">🍺 みんなの飲んだよカウンター</span>
+            </p>
 
             <div className={`flex align-item-center ${style.voteButtonWrapper}`}>
                 <button
                     className={`${style.voteButton} ${drunkState ? style.isVotedButton : ''}`}
                     onClick={() => handleVote()}
                 >
-                    {buttonText}
+                    もう飲んだよ！
                 </button>
                 <p className={`${style.voteResult}`}>{voteCounter}杯目</p>
+                <span className="text_ms mt-8">
+                    飲んだら「もう飲んだよ！」ボタンをクリックしよう🍺
+                </span>
             </div>
         </div>
     );
