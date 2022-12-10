@@ -80,10 +80,10 @@ export default function VoteButton({ liqourId, votePoint, userId, isDrunk }) {
                     もう飲んだよ！
                 </button>
                 <p className={`${style.voteResult}`}>{voteCounter}杯目</p>
-                <span className="text_ms mt-8">
-                    飲んだら「もう飲んだよ！」ボタンをクリックしよう🍺
-                </span>
             </div>
+            <p className="text_ms mt-8">
+                飲んだことがあったら「もう飲んだよ！」ボタンをクリックしよう🍺
+            </p>
         </div>
     );
 }
