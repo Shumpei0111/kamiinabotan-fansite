@@ -8,6 +8,13 @@ const tags = {
 
 const news = [
     {
+        date: '2022.12.10',
+        head: 'お酒一覧ページに「みんなの飲んだよカウンター」を追加しました！',
+        url: '/liquorlist',
+        tag: tags.update,
+    },
+
+    {
         date: '2022.11.29',
         head: '第35話が更新されました！',
         url: 'https://mangacross.jp/comics/kamiinabotan/38',
