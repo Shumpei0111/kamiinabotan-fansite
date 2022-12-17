@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: '2022.12.16',
+        head: 'PIXIV FANBOXで「【上伊那ぼたん】第3話ネーム公開」がアップされました',
+        url: 'https://tonarinohey.fanbox.cc/posts/4937227',
+        tag: tags.goods,
+    },
+    {
         date: '2022.12.10',
         head: 'お酒一覧ページに「みんなの飲んだよカウンター」を追加しました！',
         url: '/liquorlist',
