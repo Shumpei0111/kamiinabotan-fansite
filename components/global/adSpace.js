@@ -10,17 +10,31 @@ export default function AdSpace() {
 
     const yonayona = `<table border="0" cellpadding="0" cellspacing="0"><tr><td><div style="background-color:#FFFFFF;width:138px;margin:0px;padding:5px 0;text-align:center;overflow:hidden;"><a href="https://hb.afl.rakuten.co.jp/ichiba/274a21ba.bca6fa0e.274a21bb.a995f917/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyonayona%2F562929%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIxMjh4MTI4IiwibmFtIjoxLCJuYW1wIjoiZG93biIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjowLCJjb2wiOjAsImJidG4iOjAsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/274a21ba.bca6fa0e.274a21bb.a995f917/?me_id=1100064&item_id=10000242&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_gold%2Fyonayona%2F2019%2Fset_hajimete_don%2Fsquare_01_900.jpg%3F_ex%3D128x128&s=128x128&t=picttext" border="0" style="margin:2px" alt="" title=""></a><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word"><a href="https://hb.afl.rakuten.co.jp/ichiba/274a21ba.bca6fa0e.274a21bb.a995f917/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyonayona%2F562929%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIxMjh4MTI4IiwibmFtIjoxLCJuYW1wIjoiZG93biIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjowLCJjb2wiOjAsImJidG4iOjAsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  >クラフトビール 飲み比べ よなよなエール ビール ギフト 送料無料 お酒 プレゼ...</a></p></div><br><p style="font-size:12px;line-height:1.4em;margin:5px;word-wrap:break-word"></p></td></tr></table>`;
 
+    const glenlivet = `<table border="0" cellpadding="0" cellspacing="0"><tr><td><div style="background-color:#FFFFFF;width:138px;margin:0px;padding:5px 0;text-align:center;overflow:hidden;"><a href="https://hb.afl.rakuten.co.jp/ichiba/26d7427b.7ed623f2.26d7427c.8674b7ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwhisky%2F510104%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIxMjh4MTI4IiwibmFtIjoxLCJuYW1wIjoiZG93biIsImNvbSI6MCwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjowLCJjb2wiOjAsImJidG4iOjAsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26d7427b.7ed623f2.26d7427c.8674b7ad/?me_id=1322933&item_id=10002960&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fwhisky%2Fcabinet%2Frakuten4%2F510104_1.jpg%3F_ex%3D128x128&s=128x128&t=picttext" border="0" style="margin:2px" alt="" title=""></a><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word"><a href="https://hb.afl.rakuten.co.jp/ichiba/26d7427b.7ed623f2.26d7427c.8674b7ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwhisky%2F510104%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIxMjh4MTI4IiwibmFtIjoxLCJuYW1wIjoiZG93biIsImNvbSI6MCwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjowLCJjb2wiOjAsImJidG4iOjAsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  >ザ・グレンリベット 12年 40度 700ml[ウイスキー][ウィスキー][長S]</a></p></div></td></tr></table>`;
+
+    const kodoku = `<table border="0" cellpadding="0" cellspacing="0"><tr><td><div style="background-color:#FFFFFF;width:138px;margin:0px;padding:5px 0;text-align:center;overflow:hidden;"><a href="https://hb.afl.rakuten.co.jp/ichiba/2e1cbb57.63c7fc41.2e1cbb58.52095d38/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffirst19782012%2F2001871%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIxMjh4MTI4IiwibmFtIjoxLCJuYW1wIjoiZG93biIsImNvbSI6MCwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjowLCJjb2wiOjAsImJidG4iOjAsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/2e1cbb57.63c7fc41.2e1cbb58.52095d38/?me_id=1371100&item_id=10001230&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Ffirst19782012%2Fcabinet%2Fitem%2Fitem_shochu%2Fitem_shochu_2%2F2001871.jpg%3F_ex%3D128x128&s=128x128&t=picttext" border="0" style="margin:2px" alt="" title=""></a><p style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word"><a href="https://hb.afl.rakuten.co.jp/ichiba/2e1cbb57.63c7fc41.2e1cbb58.52095d38/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffirst19782012%2F2001871%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIxMjh4MTI4IiwibmFtIjoxLCJuYW1wIjoiZG93biIsImNvbSI6MCwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjowLCJjb2wiOjAsImJidG4iOjAsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  >【大量入荷！】　百年の孤独　麦焼酎　樫樽貯蔵　40度　720ml(箱付き)</a></p></div></td></tr></table>`;
 
     return (
         <div className={style.adSpaceContainer}>
             <h3>マンガのお供にいかがですか？</h3>
             <div className={`flex ${style.adSpace}`}>
-                <div className={style.adSpaceItem} dangerouslySetInnerHTML={{__html: getSanitizeHtml(vertere)}}></div>
-                <div className={style.adSpaceItem} dangerouslySetInnerHTML={{__html: getSanitizeHtml(uchu)}}></div>
-                <div className={style.adSpaceItem} dangerouslySetInnerHTML={{__html: getSanitizeHtml(coedo)}}></div>
-                <div className={style.adSpaceItem} dangerouslySetInnerHTML={{__html: getSanitizeHtml(yonayona)}}></div>
+                <div
+                    className={style.adSpaceItem}
+                    dangerouslySetInnerHTML={{ __html: getSanitizeHtml(glenlivet) }}
+                ></div>
+                <div
+                    className={style.adSpaceItem}
+                    dangerouslySetInnerHTML={{ __html: getSanitizeHtml(kodoku) }}
+                ></div>
+                <div
+                    className={style.adSpaceItem}
+                    dangerouslySetInnerHTML={{ __html: getSanitizeHtml(coedo) }}
+                ></div>
+                <div
+                    className={style.adSpaceItem}
+                    dangerouslySetInnerHTML={{ __html: getSanitizeHtml(yonayona) }}
+                ></div>
             </div>
         </div>
-    )
-
-};
+    );
+}
