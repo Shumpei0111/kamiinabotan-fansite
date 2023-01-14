@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import New from "./new";
+import New from './new';
 import style from '../../styles/baseLinks.module.scss';
 
 export default function BaseLinks() {
@@ -24,10 +24,10 @@ export default function BaseLinks() {
                 </li>
                 <li>
                     <Link href="/clothes">
-                        <a><New />ファッションで見る</a>
+                        <a>ファッションで見る</a>
                     </Link>
                 </li>
             </ul>
         </div>
-    )
+    );
 }
