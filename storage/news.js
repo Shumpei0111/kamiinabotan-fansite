@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: '2023.2.2',
+        head: 'お酒一覧ページに「秩父梅ざけカップ」を追加しました',
+        url: '/liquorlist',
+        tag: tags.update,
+    },
+    {
         date: '2023.1.31',
         head: '第36話が更新されました！',
         url: 'https://mangacross.jp/comics/kamiinabotan/39',
