@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: '2023.1.31',
+        head: '第36話が更新されました！',
+        url: 'https://mangacross.jp/comics/kamiinabotan/39',
+        tag: tags.episode,
+    },
+    {
         date: '2022.12.16',
         head: 'PIXIV FANBOXで「【上伊那ぼたん】第3話ネーム公開」がアップされました',
         url: 'https://tonarinohey.fanbox.cc/posts/4937227',
