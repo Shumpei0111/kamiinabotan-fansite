@@ -7,7 +7,6 @@
             "url": "https://chichibubeer.shop-pro.jp/",
             "introduction": "",
             "twitter": "Chichibubeer"
-
         },
         {
             "id": 2,
@@ -16,7 +15,6 @@
             "url": "http://chichibuwine.co.jp/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 3,
@@ -25,7 +23,6 @@
             "url": "https://www.nikka.com/products/malt/yoichi_miyagikyo/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 4,
@@ -34,7 +31,6 @@
             "url": "https://www.beamsuntory.com/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 5,
@@ -43,7 +39,6 @@
             "url": "https://chichibunishiki.com/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 6,
@@ -52,7 +47,6 @@
             "url": "https://www.asahigroup-holdings.com/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 7,
@@ -61,7 +55,6 @@
             "url": "",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 8,
@@ -70,7 +63,6 @@
             "url": "",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 9,
@@ -79,7 +71,6 @@
             "url": "https://www.facebook.com/TatsumiDistillery/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 10,
@@ -88,7 +79,6 @@
             "url": "http://www.aramasa.jp/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 11,
@@ -97,7 +87,6 @@
             "url": "http://kikuzakari.jp/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 12,
@@ -106,7 +95,6 @@
             "url": "http://www.yukikura.com/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 13,
@@ -115,7 +103,6 @@
             "url": "",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 14,
@@ -132,7 +119,6 @@
             "url": "https://www.brewdog.com/uk",
             "introduction": "",
             "twitter": "brewdog"
-
         },
         {
             "id": 16,
@@ -141,7 +127,6 @@
             "url": "https://www.hoppy-happy.com/",
             "introduction": "",
             "twitter": "HoppyBeverageCo"
-
         },
         {
             "id": 17,
@@ -150,7 +135,6 @@
             "url": "https://niizawa-brewery.co.jp/",
             "introduction": "",
             "twitter": "niizawabrewery"
-
         },
         {
             "id": 18,
@@ -159,7 +143,6 @@
             "url": "https://coedobrewery.com/jp/",
             "introduction": "",
             "twitter": "COEDOBREWERY"
-
         },
         {
             "id": 19,
@@ -168,7 +151,6 @@
             "url": "https://www.kirin.co.jp/",
             "introduction": "",
             "twitter": "Kirin_Company"
-
         },
         {
             "id": 20,
@@ -177,7 +159,6 @@
             "url": "https://www.theglenlivet.jp/",
             "introduction": "",
             "twitter": "PernodRicard_jp"
-
         },
         {
             "id": 21,
@@ -186,7 +167,6 @@
             "url": "https://www.fujizakura-beer.jp/",
             "introduction": "",
             "twitter": "fujizakurahb"
-
         },
         {
             "id": 22,
@@ -195,7 +175,6 @@
             "url": "https://www.bukou.co.jp/",
             "introduction": "",
             "twitter": "bukousyuzou"
-
         },
         {
             "id": 23,
@@ -204,7 +183,6 @@
             "url": "https://wolfburn.com/",
             "introduction": "",
             "twitter": "wolfburn_whisky"
-
         },
         {
             "id": 24,
@@ -213,7 +191,6 @@
             "url": "https://uchubrewing.com/",
             "introduction": "",
             "twitter": "uchubrewing"
-
         },
         {
             "id": 25,
@@ -222,7 +199,6 @@
             "url": "https://www.tsurumi-jp.com/",
             "introduction": "",
             "twitter": "tsurumi1873"
-
         },
         {
             "id": 26,
@@ -231,7 +207,6 @@
             "url": "https://koganeyu.com/",
             "introduction": "",
             "twitter": "koganeyu1"
-
         },
         {
             "id": 27,
@@ -240,7 +215,6 @@
             "url": "https://www.kavalan.jp/",
             "introduction": "",
             "twitter": "clubkavalan"
-
         },
         {
             "id": 28,
@@ -249,7 +223,6 @@
             "url": "http://verterebrew.com/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 29,
@@ -258,7 +231,6 @@
             "url": "https://www.asahiinryo.co.jp",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 30,
@@ -267,7 +239,6 @@
             "url": "http://akkeshi-distillery.com/",
             "introduction": "",
             "twitter": ""
-
         },
         {
             "id": 31,
@@ -276,7 +247,6 @@
             "url": "https://www.instagram.com/chichibumead_nektar/",
             "introduction": "",
             "twitter": "nektarjp"
-
         },
         {
             "id": 32,
@@ -285,7 +255,6 @@
             "url": "https://vinvie.jp/",
             "introduction": "",
             "twitter": "vinviejp"
-
         },
         {
             "id": 33,
@@ -294,7 +263,38 @@
             "url": "https://www.kurokihonten.co.jp/",
             "introduction": "",
             "twitter": ""
-
+        },
+        {
+            "id": 34,
+            "name": "千代の光酒造株式会社",
+            "address": "〒944-0061 新潟県妙高市窪松原656",
+            "url": "http://chiyonohikari.com/",
+            "introduction": "",
+            "twitter": ""
+        },
+        {
+            "id": 35,
+            "name": "大洋酒造株式会社",
+            "address": "〒958-0857 新潟県村上市飯野1-4-31",
+            "url": "https://www.taiyo-sake.co.jp/",
+            "introduction": "",
+            "twitter": "taiyozakari"
+        },
+        {
+            "id": 36,
+            "name": "株式会社北雪酒造",
+            "address": "〒952-0706 新潟県佐渡市徳和2377番地2",
+            "url": "https://sake-hokusetsu.com/",
+            "introduction": "",
+            "twitter": "hokusetsushuzou"
+        },
+        {
+            "id": 37,
+            "name": "越銘醸株式会社",
+            "address": "〒940-0217 新潟県長岡市栃尾大町2-8",
+            "url": "https://koshimeijo.jp/",
+            "introduction": "",
+            "twitter": "koshimeijo"
         }
     ]
 }
