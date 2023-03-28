@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: '2023.3.28',
+        head: '第38話が更新されました！',
+        url: 'https://mangacross.jp/comics/kamiinabotan/41',
+        tag: tags.episode,
+    },
+    {
         date: '2023.2.28',
         head: '第37話が更新されました！',
         url: 'https://mangacross.jp/comics/kamiinabotan/40',

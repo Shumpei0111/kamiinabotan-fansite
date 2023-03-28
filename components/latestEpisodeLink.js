@@ -1,7 +1,7 @@
 export default function LatestEpisodeLink() {
-    const current_episode_num = '37';
-    const current_episode_link = 'https://mangacross.jp/comics/kamiinabotan/40';
-    const next_update_date = '3月28日(火)';
+    const current_episode_num = '38';
+    const current_episode_link = 'https://mangacross.jp/comics/kamiinabotan/41';
+    const next_update_date = '4月25日(火)';
 
     return (
         <div>
