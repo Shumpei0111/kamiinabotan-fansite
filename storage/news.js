@@ -8,16 +8,46 @@ const tags = {
 
 const news = [
     {
+        date: '2023.4.25',
+        head: '第39話が更新されました！',
+        url: 'https://mangacross.jp/comics/kamiinabotan/42',
+        tag: tags.episode,
+    },
+    {
+        date: '2023.4.20',
+        head: 'PIXIV FANBOXで「【上伊那ぼたん】第7話ネーム公開」がアップされました',
+        url: 'https://tonarinohey.fanbox.cc/posts/5770727',
+        tag: tags.goods,
+    },
+    {
         date: '2023.3.28',
         head: '第38話が更新されました！',
         url: 'https://mangacross.jp/comics/kamiinabotan/41',
         tag: tags.episode,
     },
     {
+        date: '2023.3.14',
+        head: 'PIXIV FANBOXで「【上伊那ぼたん】第6話ネーム公開」がアップされました',
+        url: 'https://tonarinohey.fanbox.cc/posts/5494118',
+        tag: tags.goods,
+    },
+    {
         date: '2023.2.28',
         head: '第37話が更新されました！',
         url: 'https://mangacross.jp/comics/kamiinabotan/40',
         tag: tags.episode,
+    },
+    {
+        date: '2023.2.25',
+        head: 'PIXIV FANBOXで「【上伊那ぼたん】第5話ネーム公開」がアップされました',
+        url: 'https://tonarinohey.fanbox.cc/posts/5367995',
+        tag: tags.goods,
+    },
+    {
+        date: '2023.2.4',
+        head: 'PIXIV FANBOXで「【上伊那ぼたん】第4話ネーム公開」がアップされました',
+        url: 'https://tonarinohey.fanbox.cc/posts/5236414',
+        tag: tags.goods,
     },
     {
         date: '2023.2.2',
