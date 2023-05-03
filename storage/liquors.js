@@ -802,7 +802,7 @@ const liquorList = {
         },
         {
             id: 59,
-            name: '越の鶴 純米吟醸 ',
+            name: '越の鶴 純米吟醸',
             description:
                 '第37話で登場。ぼたんといぶきが訪れた「ぽんしゅ館」でスタッフおすすめボードにて紹介されていた日本酒（純米吟醸）。雑味がなくフレッシュな味わい。程よい甘さがあり、日本酒初心者におすすめの一品。越の鶴はシリーズとなっており、長岡産「山田錦」を使った「プレミアム本醸造」や、地元栃尾の棚田で社員が自ら栽培した酒米「五百万石」を使用した「ドメーヌ」がある。ちなみにドメーヌとはワイン用語で、自分の土地で栽培し、醸造・瓶詰めを一貫して行うことを指す。',
             url: '<a href="https://hb.afl.rakuten.co.jp/ichiba/26c0c68e.5f23fd94.26c0c68f.cc3177cf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fechigo%2F105803%2F&link_type=pict&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9" target="_blank" rel="nofollow sponsored noopener" style="word-wrap:break-word;"  ><img src="https://hbb.afl.rakuten.co.jp/hgb/26c0c68e.5f23fd94.26c0c68f.cc3177cf/?me_id=1180314&item_id=10000960&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fechigo%2Fcabinet%2F00192114%2Fimgrc0087092695.jpg%3F_ex%3D240x240&s=240x240&t=pict" border="0" style="margin:2px" alt="" title=""></a>',
@@ -811,6 +811,20 @@ const liquorList = {
             imageInyou: '',
             inyouURL: '',
             genre: '日本酒',
+            episode: '37',
+            book_number: null,
+        },
+        {
+            id: 60,
+            name: '面向未来',
+            description:
+                '第38話で登場。ぼたんといぶきが訪れた新潟県魚沼市にある「八海醸造 魚沼の里」の八海山雪室でしか手に入らない焼酎。雪室は作中にある通り、雪を利用した天然の冷蔵庫。およそ1,000トンの雪と貯蔵物を置いて冷やす「氷室型」を採用している。約4℃前後の環境を保ちながら長期間低音貯蔵したことでまろやかな口当たりの日本酒を熟成させることができる。いぶきたちが購入した【面向未来】は、その雪室の焼酎貯蔵庫で作られている。こちらはオーク樽でじっくり熟成しており、他の日本酒と同様、口当たりもまろやか。専用に蒸留され、専用棚で最長5年貯蔵することができる。指定した年月に届けてくれるメモリアル焼酎はぜひ試したい。(https://www.uonuma-no-sato.jp/facility/yukimuro_syoucyu-cyozouko/)',
+            url: '',
+            marker_id: 39,
+            imagePath: 'https://www.uonuma-no-sato.jp/img/memorial-flow/memorial-flow-top.gif',
+            imageInyou: 'メモリアル焼酎 「面向未来」 ご購入から受け渡しまで ｜ 雪室 ｜魚沼の里',
+            inyouURL: 'https://www.uonuma-no-sato.jp/memorial-flow/',
+            genre: '焼酎',
             episode: '37',
             book_number: null,
         },

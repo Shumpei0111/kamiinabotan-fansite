@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: '2023.5.4',
+        head: 'お酒一覧ページに「面向未来」を追加しました',
+        url: '/liquorlist#60',
+        tag: tags.update,
+    },
+    {
         date: '2023.4.25',
         head: '第39話が更新されました！',
         url: 'https://mangacross.jp/comics/kamiinabotan/42',
@@ -30,6 +36,12 @@ const news = [
         head: 'PIXIV FANBOXで「【上伊那ぼたん】第6話ネーム公開」がアップされました',
         url: 'https://tonarinohey.fanbox.cc/posts/5494118',
         tag: tags.goods,
+    },
+    {
+        date: '2023.3.5',
+        head: 'お酒一覧ページに「越の鶴 純米吟醸」など4種を追加しました',
+        url: '/liquorlist',
+        tag: tags.update,
     },
     {
         date: '2023.2.28',

@@ -295,6 +295,22 @@
             "url": "https://koshimeijo.jp/",
             "introduction": "",
             "twitter": "koshimeijo"
+        },
+        {
+            "id": 38,
+            "name": "越銘醸株式会社",
+            "address": "〒940-0217 新潟県長岡市栃尾大町2-8",
+            "url": "https://koshimeijo.jp/",
+            "introduction": "",
+            "twitter": "koshimeijo"
+        },
+        {
+            "id": 39,
+            "name": "魚沼の里",
+            "address": "〒949-7112 新潟県南魚沼市長森",
+            "url": "https://www.uonuma-no-sato.jp/",
+            "introduction": "",
+            "twitter": ""
         }
     ]
 }
