@@ -26,6 +26,15 @@ export default function Header(props) {
                 <div className={style.alert}>
                     <Marquee speed={50} gradient={false}>
                         <a
+                            href="https://amzn.to/3JjmxV2"
+                            className={`underline ${style.marqueeText}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            4巻は6月20日発売予定！
+                        </a>
+                        <p>｜</p>
+                        <a
                             href="https://amzn.to/37VR9MD"
                             className={`underline ${style.marqueeText}`}
                             target="_blank"

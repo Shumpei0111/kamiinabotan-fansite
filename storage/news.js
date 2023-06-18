@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: '2023.6.18',
+        head: '単行本4巻が6月20日(火)に発売します',
+        url: 'https://amzn.to/3Jjxype',
+        tag: tags.goods,
+    },
+    {
         date: '2023.5.4',
         head: 'お酒一覧ページに「面向未来」を追加しました',
         url: '/liquorlist#60',
