@@ -5,7 +5,7 @@ import New from './global/new';
 
 const { KAMIINA_BOTAN } = BOOKS_LINK;
 
-export default function KikanComics() {
+export default function KikanComics({ ad }) {
     const linkList = [
         {
             book_number: 1,
@@ -46,20 +46,28 @@ export default function KikanComics() {
             <div className="flex">
                 {displayList.map((item, i) => (
                     <div className={style.linkItem} key={item.title}>
-                        <div dangerouslySetInnerHTML={{ __html: getSanitizeHtml(item.html) }}></div>
+                        <div
+                            dangerouslySetInnerHTML={{
+                                __html: getSanitizeHtml(ad ? item.html : ''),
+                            }}
+                        ></div>
                         {i === displayList.length - 1 && (
                             <div style={{ paddingBottom: '0.5rem' }}>
                                 <New />
                             </div>
                         )}
-                        <a
-                            href={item.url}
-                            className="underline"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {item.title}(Amazon)
-                        </a>
+                        {ad ? (
+                            <a
+                                href={item.url}
+                                className="underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {item.title}(Amazon)
+                            </a>
+                        ) : (
+                            <span>{item.title}</span>
+                        )}
                     </div>
                 ))}
             </div>

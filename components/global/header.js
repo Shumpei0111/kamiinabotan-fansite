@@ -4,12 +4,15 @@ import Marquee from 'react-fast-marquee';
 import * as style from '../../styles/header.module.scss';
 import Link from 'next/link';
 import { useScrollHandler } from '../../lib/useScrollHandler';
+import { useComfirmUseCookie } from '../../hooks/useComfirmUseCookie';
 
 import { useState, useEffect } from 'react';
 
 export default function Header(props) {
     const scroll = useScrollHandler();
     const hasAlert = true;
+    const { setting } = useComfirmUseCookie();
+    const displayCondition = setting && setting.setting && setting.setting.ad === true;
 
     const [narrowViewClassName, setNarrowViewClassName] = useState('');
     useEffect(() => {
@@ -25,23 +28,34 @@ export default function Header(props) {
             {hasAlert ? (
                 <div className={style.alert}>
                     <Marquee speed={50} gradient={false}>
-                        <a
-                            href="https://amzn.to/3JjmxV2"
-                            className={`underline ${style.marqueeText}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            4巻は6月20日発売予定！
-                        </a>
-                        <p>｜</p>
-                        <a
-                            href="https://amzn.to/37VR9MD"
-                            className={`underline ${style.marqueeText}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            「{master.title}」第３巻好評発売中！
-                        </a>
+                        {displayCondition ? (
+                            <>
+                                <a
+                                    href="https://amzn.to/3JjmxV2"
+                                    className={`underline ${style.marqueeText}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    4巻は6月20日発売予定！
+                                </a>
+                                <p>｜</p>
+                                <a
+                                    href="https://amzn.to/37VR9MD"
+                                    className={`underline ${style.marqueeText}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    「{master.title}」第３巻好評発売中！
+                                </a>
+                            </>
+                        ) : (
+                            <>
+                                <span>4巻は6月20日発売予定！</span>
+                                <p>｜</p>
+                                <span>「{master.title}」第３巻好評発売中！</span>
+                            </>
+                        )}
+
                         {/* <a href="https://amzn.to/3SgDimN" className={`underline ${style.marqueeText}`} target="_blank" rel="noopener noreferrer">Kindle版第1巻が半額セール中！</a> */}
                     </Marquee>
                 </div>

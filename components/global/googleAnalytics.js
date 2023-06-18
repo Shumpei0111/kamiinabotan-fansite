@@ -1,11 +1,15 @@
-import Script from "next/script";
-import { existsGaId, GA_ID } from "../../lib/gtag.js";
+import Script from 'next/script';
+import { existsGaId, GA_ID } from '../../lib/gtag.js';
 
-const GoogleAnalytics = () => (
+const GoogleAnalytics = ({ isRefuseGa }) => (
     <>
-        {existsGaId && (
+        {existsGaId && isRefuseGa === false && (
             <>
-                <Script defer src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+                <Script
+                    defer
+                    src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+                    strategy="afterInteractive"
+                />
                 <Script id="ga" defer strategy="afterInteractive">
                     {`
                         window.dataLayer = window.dataLayer || [];
@@ -17,5 +21,5 @@ const GoogleAnalytics = () => (
             </>
         )}
     </>
-)
+);
 export default GoogleAnalytics;
