@@ -5,8 +5,12 @@
         { "name": "Instagram", "url": "https://www.instagram.com/tonarinohey/" },
         { "name": "blog", "url": "https://tonarinohey.hatenablog.com/" },
         { "name": "PIXIV", "url": "https://www.pixiv.net/users/2473929" },
-        { "name": "PIXIV FANBOX", "url": "https://tonarinohey.fanbox.cc/posts/4472682?utm_campaign=post_page&utm_medium=share&utm_source=twitter "  },
-        { "name": "マシュマロ", "url": "https://marshmallow-qa.com/tonarinohey" }
+        {
+            "name": "PIXIV FANBOX",
+            "url": "https://tonarinohey.fanbox.cc/posts/4472682?utm_campaign=post_page&utm_medium=share&utm_source=twitter "
+        },
+        { "name": "マシュマロ", "url": "https://marshmallow-qa.com/tonarinohey" },
+        { "name": "Fantia", "url": "https://fantia.jp/fanclubs/491726" }
     ],
     "title": "上伊那ぼたん、酔へる姿は百合の花",
     "kana": "かみいなぼたん、よへるすがたはゆりのはな",
