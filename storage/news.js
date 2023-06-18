@@ -14,6 +14,12 @@ const news = [
         tag: tags.goods,
     },
     {
+        date: '2023.6.15',
+        head: '塀先生がFantiaを開始しました',
+        url: 'https://fantia.jp/posts/2042539',
+        tag: tags.goods,
+    },
+    {
         date: '2023.5.4',
         head: 'お酒一覧ページに「面向未来」を追加しました',
         url: '/liquorlist#60',

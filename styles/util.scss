@@ -10,8 +10,13 @@
     flex-wrap: wrap;
 }
 
+.flex-col,
 .flex-column {
     flex-direction: column;
+}
+
+.flex-start {
+    align-items: flex-start;
 }
 
 .gap-16 {

@@ -23,6 +23,8 @@ module.exports = {
             'static.nike.com',
             'www.absinthemarket.com',
             'www.uonuma-no-sato.jp',
+            'c.fantia.jp',
+            'downloads.fanbox.cc',
         ],
     },
 };
