@@ -43,7 +43,7 @@ export default function Home() {
                     <section className={styles.sectionWrapper}>
                         <div className="mt-60">
                             <div className="flex">
-                                <KikanComics bookNumbers={1} />
+                                <KikanComics ad={displayCondition} bookNumbers={1} />
                             </div>
                         </div>
                         <div className="mt-60 flex">
@@ -138,7 +138,7 @@ export default function Home() {
                             <span className="head__en">Books</span>
                         </h2>
                         <div className="mb-24">
-                            <KikanComics bookNumbers={4} />
+                            <KikanComics ad={displayCondition} bookNumbers={4} />
                         </div>
                         <div className="mb-24">
                             <h3>
