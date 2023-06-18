@@ -12,7 +12,7 @@ import styles from '../styles/Home.module.scss';
 import master from '../storage/master.json';
 import TwitterTimeline from '../components/twitterTimeline';
 import TwitterShare from '../components/global/twitterShare';
-import TopViewTweet from '../components/topViewTweet';
+import TopViewTweet from '../components/TopViewTweet';
 import New from '../components/global/new';
 
 import { LINE_STAMP_URL, SITE_FULL_TITLE } from '../lib/constraint';
