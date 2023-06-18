@@ -5,6 +5,14 @@
     position: relative;
 }
 
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +89,12 @@
 .inyouText {
     font-size: 1.2rem;
     padding-bottom: 8px;
+}
+
+/** padding **/
+
+.p-24 {
+    padding: 24px;
 }
 
 /** margin **/
@@ -189,6 +203,10 @@
     bottom: 20%;
 }
 
+.bottom-0 {
+    bottom: 0;
+}
+
 .--bubble {
     width: 420px;
     height: 380px;
@@ -263,6 +281,10 @@
 
 .width-180 {
     width: 180px;
+}
+
+.w-full {
+    width: 100vw;
 }
 
 /** deco **/

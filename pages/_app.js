@@ -1,18 +1,21 @@
 import React from 'react';
 import GoogleAnalytics from '../components/global/googleAnalytics.js';
+import { ComfirmUseCookie } from '../components/global/comfirmUseCookie.js';
+import { useComfirmUseCookie } from '../hooks/useComfirmUseCookie.js';
 
 import '../styles/globals.css';
 import '../styles/util.scss';
 
-
 function MyApp({ Component, pageProps }) {
-	return (
-		<>
-			<GoogleAnalytics />
+    const { isShowComfirmUseCookie, handler } = useComfirmUseCookie();
 
-			<Component {...pageProps} />
-		</>
-	)
+    return (
+        <div className="relative">
+            <GoogleAnalytics />
+            {isShowComfirmUseCookie && <ComfirmUseCookie callback={handler} />}
+            <Component {...pageProps} />
+        </div>
+    );
 }
 
-export default MyApp
+export default MyApp;
