@@ -14,7 +14,6 @@ export default function TopViewTweet() {
                     June 14, 2023
                 </a>
             </blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
         </div>
     );
 }
