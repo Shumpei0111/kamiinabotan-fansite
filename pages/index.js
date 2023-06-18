@@ -14,12 +14,15 @@ import TwitterTimeline from '../components/twitterTimeline';
 import TwitterShare from '../components/global/twitterShare';
 import TopViewTweet from '../components/TopViewTweet';
 import New from '../components/global/new';
-
+import { useComfirmUseCookie } from '../hooks/useComfirmUseCookie';
 import { LINE_STAMP_URL, SITE_FULL_TITLE } from '../lib/constraint';
 import Link from 'next/link';
 
 export default function Home() {
     const authSNS = master.author_sns.slice();
+    const { setting } = useComfirmUseCookie();
+    console.log('setting:', setting);
+    const displayCondition = !!(setting && setting.setting && setting.setting.ad === true);
 
     return (
         <Layout>
@@ -101,7 +104,7 @@ export default function Home() {
 
                     <section className={styles.sectionWrapper}>
                         {/* ニュース */}
-                        <HomeNews />
+                        <HomeNews displayCondition={displayCondition} />
                     </section>
 
                     <section className={styles.sectionWrapper}>
@@ -445,7 +448,7 @@ export default function Home() {
                             </div>
                             <div className={styles.authReleasedGoods}>
                                 <h3>著者関連書籍</h3>
-                                <KanrenComics />
+                                <KanrenComics displayCondition={displayCondition} />
                             </div>
                         </div>
                     </section>

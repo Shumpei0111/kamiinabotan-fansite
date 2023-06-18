@@ -14,6 +14,7 @@ import { DrunkShare } from '../components/drunkShare';
 import liquorList from '../storage/liquors.js';
 import { createUserId, getVotedLiqourList } from '../lib/usecase/saveVoteLiqour';
 import makerList from '../storage/markers.json';
+import { useComfirmUseCookie } from '../hooks/useComfirmUseCookie';
 
 import style from '../styles/liquor.module.scss';
 
@@ -27,6 +28,8 @@ export default function LiquorList() {
     const [votedIds, setVotedIds] = useState({});
     const [userId, setUserId] = useState('');
     const [isDrunkIds, setIsDrunkIds] = useState([]);
+
+    const { setting } = useComfirmUseCookie();
 
     voteLiqourStatus.load();
 
@@ -78,7 +81,7 @@ export default function LiquorList() {
             id: baseItem.id,
             name: baseItem.name,
             description: baseItem.description,
-            url: baseItem.url,
+            url: setting && setting.setting && setting.setting.ad === true ? baseItem.url : '',
             imagePath: baseItem.imagePath,
             imageInyou: baseItem.imageInyou,
             inyouURL: baseItem.inyouURL,
