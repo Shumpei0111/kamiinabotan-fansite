@@ -80,7 +80,7 @@ export const useComfirmUseCookie = () => {
                 <p className="text_ms">
                     当サイトはアクセス解析のためにGoogle
                     Analyticsを使用しています。また、当サイトは広告配信のためにGoogle
-                    AdSenseを使用しています。これらのサービスでCookieを使用しています。Cookieの使用に同意しますか？
+                    AdSenseやその他のインターネット広告についてCookieを使用しています。Cookieの使用に同意しますか？
                 </p>
                 <div className="flex gap-16 mt-16">
                     <button className="text_ms cursor-pointer" onClick={() => handleComfirm()}>
