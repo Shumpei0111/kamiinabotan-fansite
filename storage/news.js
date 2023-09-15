@@ -8,6 +8,18 @@ const tags = {
 
 const news = [
     {
+        date: '2023.9.14',
+        head: '受注生産コラボアイテムが発表されました！',
+        url: 'https://x.com/Cluster54761099/status/1702140377929843071?s=20',
+        tag: tags.goods,
+    },
+    {
+        date: '2023.8.29',
+        head: '第41話が更新されました！',
+        url: 'https://mangacross.jp/comics/kamiinabotan/44',
+        tag: tags.episode,
+    },
+    {
         date: '2023.6.18',
         head: '単行本4巻が6月20日(火)に発売します',
         url: 'https://amzn.to/3Jjxype',

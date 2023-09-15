@@ -5,34 +5,34 @@ import New from './global/new';
 
 const { KAMIINA_BOTAN } = BOOKS_LINK;
 
-export default function KikanComics({ ad }) {
-    const linkList = [
-        {
-            book_number: 1,
-            title: KAMIINA_BOTAN.vol1.title,
-            html: KAMIINA_BOTAN.vol1.html,
-            url: KAMIINA_BOTAN.vol1.url,
-        },
-        {
-            book_number: 2,
-            title: KAMIINA_BOTAN.vol2.title,
-            html: KAMIINA_BOTAN.vol2.html,
-            url: KAMIINA_BOTAN.vol2.url,
-        },
-        {
-            book_number: 3,
-            title: KAMIINA_BOTAN.vol3.title,
-            html: KAMIINA_BOTAN.vol3.html,
-            url: KAMIINA_BOTAN.vol3.url,
-        },
-        {
-            book_number: 4,
-            title: KAMIINA_BOTAN.vol4.title,
-            html: KAMIINA_BOTAN.vol4.html,
-            url: KAMIINA_BOTAN.vol4.url,
-        },
-    ];
+export const linkList = [
+    {
+        book_number: 1,
+        title: KAMIINA_BOTAN.vol1.title,
+        html: KAMIINA_BOTAN.vol1.html,
+        url: KAMIINA_BOTAN.vol1.url,
+    },
+    {
+        book_number: 2,
+        title: KAMIINA_BOTAN.vol2.title,
+        html: KAMIINA_BOTAN.vol2.html,
+        url: KAMIINA_BOTAN.vol2.url,
+    },
+    {
+        book_number: 3,
+        title: KAMIINA_BOTAN.vol3.title,
+        html: KAMIINA_BOTAN.vol3.html,
+        url: KAMIINA_BOTAN.vol3.url,
+    },
+    {
+        book_number: 4,
+        title: KAMIINA_BOTAN.vol4.title,
+        html: KAMIINA_BOTAN.vol4.html,
+        url: KAMIINA_BOTAN.vol4.url,
+    },
+];
 
+export default function KikanComics({ ad }) {
     const displayList = (() => {
         const arr = [];
         for (let i = 0; i < linkList.length; i++) {

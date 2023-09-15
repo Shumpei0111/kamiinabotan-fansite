@@ -17,6 +17,7 @@ import New from '../components/global/new';
 import { useComfirmUseCookie } from '../hooks/useComfirmUseCookie';
 import { LINE_STAMP_URL, SITE_FULL_TITLE } from '../lib/constraint';
 import Link from 'next/link';
+import NewestKikanComic from '../components/newestKikanComic';
 
 export default function Home() {
     const authSNS = master.author_sns.slice();
@@ -32,7 +33,7 @@ export default function Home() {
                 <main className={styles.main}>
                     <div className="mt-24 mb-24">
                         <New />
-                        <p>4巻は6月20日発売予定！</p>
+                        <p>地産地消Cafe&BarのClusterさんとのコラボアイテムがリリースされました！<br />2023年9月23日までの期間限定の受注生産のためおはやめに！</p>
                         <TopViewTweet />
                     </div>
 
@@ -43,16 +44,35 @@ export default function Home() {
                     <section className={styles.sectionWrapper}>
                         <div className="mt-60">
                             <div className="flex">
-                                <KikanComics ad={displayCondition} bookNumbers={1} />
+                                <NewestKikanComic ad={displayCondition} />
                             </div>
+                        </div>
+                        <div className="mt-60">
+                            <New />
+                            <Link href="https://fantia.jp/fanclubs/491726">
+                                <a target="_blank">
+                                    <Image
+                                        width={400}
+                                        height={250}
+                                        objectFit="contain"
+                                        src="/assets/img/fantia-top.png"
+                                        alt="_"
+                                    />
+                                </a>
+                            </Link>
+                            <p className="mt-24">
+                                塀先生による<span className="bold">Fantia</span>
+                                もスタートしました。
+                            </p>
+                            <p>こちらもお見逃しなく！</p>
                         </div>
                         <div className="mt-60 flex">
                             <div>
                                 <Link href="https://tonarinohey.fanbox.cc/posts">
                                     <a target="_blank">
                                         <Image
-                                            width={800}
-                                            height={500}
+                                            width={400}
+                                            height={250}
                                             objectFit="contain"
                                             src="/assets/img/fanbox_top.png"
                                             alt="_"
@@ -66,25 +86,6 @@ export default function Home() {
                                 <p>
                                     先生自身による各話の振り返りなどのコンテンツを見ることができます。ぜひチェックしてください！
                                 </p>
-                            </div>
-                            <div className="mt-60">
-                                <New />
-                                <Link href="https://fantia.jp/fanclubs/491726">
-                                    <a target="_blank">
-                                        <Image
-                                            width={800}
-                                            height={500}
-                                            objectFit="contain"
-                                            src="/assets/img/fantia-top.png"
-                                            alt="_"
-                                        />
-                                    </a>
-                                </Link>
-                                <p className="mt-24">
-                                    塀先生による<span className="bold">Fantia</span>
-                                    もスタートしました。
-                                </p>
-                                <p>こちらもお見逃しなく！</p>
                             </div>
                         </div>
                     </section>
