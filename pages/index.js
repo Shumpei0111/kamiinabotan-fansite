@@ -34,6 +34,9 @@ export default function Home() {
                     <div className="mt-24 mb-24">
                         <New />
                         <p>地産地消Cafe&BarのClusterさんとのコラボアイテムがリリースされました！<br />2023年9月23日までの期間限定の受注生産のためおはやめに！</p>
+                        <div className='pt-16 pb-16 bold underline'>
+                            <Link href="https://clusterbeer.saleshop.jp/items/2033285" target="_blank" rel="noopener noreferrer">👕 販売リンク（別ウィンドウで開きます）</Link>
+                        </div>
                         <TopViewTweet />
                     </div>
 
