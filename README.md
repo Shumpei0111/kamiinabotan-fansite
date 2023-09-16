@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# このサイトについて
 
-## Getting Started
+「上伊那ぼたん、酔へる姿は百合の花」の応援サイトを作りました！
 
-First, run the development server:
+サイトリンク
+- [百合に酔う。](http://yuriyoi.site)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+キャラクターや、作中に出てきたお酒のリストなどを掲載しています。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+まだお酒のリストは未完成なので、これからも引き続きコンテンツを追加していきます。
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Attention
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+このサイトはマンガクロスで連載中の漫画「上伊那ぼたん、酔へる姿は百合の花」のファンサイトです。原作者様ならびに秋田書店様とは一切関係ございません。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 運営開始
 
-## Learn More
+2022年4月〜
 
-To learn more about Next.js, take a look at the following resources:
+開始時のツイート
+- [https://x.com/seventhseven/status/1515502800792272898?s=20](https://x.com/seventhseven/status/1515502800792272898?s=20)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 技術スタック
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- FrontEnd
+  - Next.js
+- Infra
+  - Vercel
+- Test
+  - playwirght
