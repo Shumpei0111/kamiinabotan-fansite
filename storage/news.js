@@ -8,6 +8,12 @@ const tags = {
 
 const news = [
     {
+        date: '2023.9.26',
+        head: '第42話が更新されました！',
+        url: 'https://mangacross.jp/comics/kamiinabotan/45',
+        tag: tags.episode,
+    },
+    {
         date: '2023.9.14',
         head: '受注生産コラボアイテムが発表されました！',
         url: 'https://x.com/Cluster54761099/status/1702140377929843071?s=20',
