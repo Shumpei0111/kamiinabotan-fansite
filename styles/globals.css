@@ -102,12 +102,18 @@ body {
   height: 94px;
   background-color: #45D2DB;
   border-radius: 41% 59% 58% 42% / 45% 49% 51% 55%;
+  transition: .3s;
 }
 
 .backHomeLink {
   color: white;
   font-weight: bold;
   padding: 24px;
+}
+
+.backHome:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 header .narrowView {
