@@ -36,23 +36,12 @@ export default function Header(props) {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    4巻は6月20日発売予定！
-                                </a>
-                                <p>｜</p>
-                                <a
-                                    href="https://amzn.to/37VR9MD"
-                                    className={`underline ${style.marqueeText}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    「{master.title}」第３巻好評発売中！
+                                    「{master.title}」第４巻好評発売中！
                                 </a>
                             </>
                         ) : (
                             <>
-                                <span>4巻は6月20日発売予定！</span>
-                                <p>｜</p>
-                                <span>「{master.title}」第３巻好評発売中！</span>
+                                <span>「{master.title}」第４巻好評発売中！</span>
                             </>
                         )}
 
