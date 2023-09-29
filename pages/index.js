@@ -19,7 +19,7 @@ import { LINE_STAMP_URL, SITE_FULL_TITLE } from '../lib/constraint';
 import Link from 'next/link';
 import NewestKikanComic from '../components/newestKikanComic';
 
-export default function Home() {
+export default function Home({ buildDate }) {
     const authSNS = master.author_sns.slice();
     const { setting } = useComfirmUseCookie();
     console.log('setting:', setting);
@@ -31,6 +31,7 @@ export default function Home() {
                 <Meta />
                 {/* コンテンツスタート */}
                 <main className={styles.main}>
+                    <p className='text-right text_ms'>最終更新日：{buildDate}</p>
                     <div className="mt-24 mb-24">
                         <New />
                         <p>地産地消Cafe&BarのClusterさんとのコラボアイテムがリリースされました！<br />2023年9月23日までの期間限定の受注生産のためおはやめに！</p>
@@ -470,4 +471,17 @@ export default function Home() {
             </div>
         </Layout>
     );
+}
+
+
+export async function getStaticProps() {
+    const now = new Date().toISOString();
+    const dateObj = new Date(now);
+    const buildDate =  `${dateObj.getFullYear()}/${String(dateObj.getMonth() + 1).padStart(2, '0')}/${String(dateObj.getDate()).padStart(2, '0')}`;
+
+    return {
+        props: {
+            buildDate
+        },
+    };
 }
